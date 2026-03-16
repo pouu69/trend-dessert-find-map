@@ -1,15 +1,13 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
+import { readFileSync, writeFileSync } from 'fs'
 import { resolve, dirname } from 'path'
-import type { PipelineConfig, EnrichedShop, Shop } from './lib/types'
-import { extractRegion } from './lib/utils'
+import { fileURLToPath } from 'url'
+import type { EnrichedShop, Shop } from './lib/types'
+import { extractRegion, loadConfig, getDataDir } from './lib/utils'
 
-const configPath = resolve(dirname(import.meta.dirname || __dirname), 'pipeline', 'pipeline.config.json')
-const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
-
-const dataDir = resolve(dirname(configPath), config.dataDir)
-if (!existsSync(dataDir)) {
-  mkdirSync(dataDir, { recursive: true })
-}
+const config = loadConfig()
+const dataDir = getDataDir()
+const __filename = fileURLToPath(import.meta.url)
+const pipelineDir = dirname(__filename)
 
 const enrichedPath = resolve(dataDir, 'enriched-shops.json')
 const enrichedShops: EnrichedShop[] = JSON.parse(readFileSync(enrichedPath, 'utf-8'))
@@ -72,7 +70,7 @@ shops.forEach((shop, index) => {
 })
 
 // Write to configured output path
-const outputPath = resolve(dirname(configPath), config.outputPath)
+const outputPath = resolve(pipelineDir, config.outputPath)
 const outputDir = dirname(outputPath)
 if (!existsSync(outputDir)) {
   mkdirSync(outputDir, { recursive: true })

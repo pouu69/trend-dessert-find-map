@@ -1,17 +1,12 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
-import { resolve, dirname } from 'path'
+import { readFileSync, writeFileSync } from 'fs'
+import { resolve } from 'path'
 import { chromium } from 'playwright'
-import type { PipelineConfig, RawShop, EnrichedShop } from './lib/types'
+import type { RawShop, EnrichedShop } from './lib/types'
 import { searchGoogleMaps } from './lib/google-maps'
-import { extractRegion, sleep } from './lib/utils'
+import { extractRegion, loadConfig, getDataDir, sleep } from './lib/utils'
 
-const configPath = resolve(dirname(import.meta.dirname || __dirname), 'pipeline', 'pipeline.config.json')
-const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
-
-const dataDir = resolve(dirname(configPath), config.dataDir)
-if (!existsSync(dataDir)) {
-  mkdirSync(dataDir, { recursive: true })
-}
+const config = loadConfig()
+const dataDir = getDataDir()
 
 const cleanedPath = resolve(dataDir, 'cleaned-shops.json')
 const cleanedShops: RawShop[] = JSON.parse(readFileSync(cleanedPath, 'utf-8'))

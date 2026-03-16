@@ -1,15 +1,10 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
-import { resolve, dirname } from 'path'
-import type { PipelineConfig, RawShop } from './lib/types'
-import { isGenericName, isDuplicate } from './lib/utils'
+import { readFileSync, writeFileSync } from 'fs'
+import { resolve } from 'path'
+import type { RawShop } from './lib/types'
+import { isGenericName, isDuplicate, loadConfig, getDataDir } from './lib/utils'
 
-const configPath = resolve(dirname(import.meta.dirname || __dirname), 'pipeline', 'pipeline.config.json')
-const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
-
-const dataDir = resolve(dirname(configPath), config.dataDir)
-if (!existsSync(dataDir)) {
-  mkdirSync(dataDir, { recursive: true })
-}
+const config = loadConfig()
+const dataDir = getDataDir()
 
 const rawPath = resolve(dataDir, 'raw-shops.json')
 const rawShops: RawShop[] = JSON.parse(readFileSync(rawPath, 'utf-8'))

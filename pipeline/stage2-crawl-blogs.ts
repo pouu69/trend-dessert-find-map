@@ -1,17 +1,12 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
-import { resolve, dirname } from 'path'
+import { readFileSync, writeFileSync } from 'fs'
+import { resolve } from 'path'
 import { chromium } from 'playwright'
-import type { PipelineConfig, RawShop } from './lib/types'
+import type { RawShop } from './lib/types'
 import { extractShopsFromBlogPost } from './lib/blog-extractor'
-import { sleep } from './lib/utils'
+import { loadConfig, getDataDir, sleep } from './lib/utils'
 
-const configPath = resolve(dirname(import.meta.dirname || __dirname), 'pipeline', 'pipeline.config.json')
-const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
-
-const dataDir = resolve(dirname(configPath), config.dataDir)
-if (!existsSync(dataDir)) {
-  mkdirSync(dataDir, { recursive: true })
-}
+const config = loadConfig()
+const dataDir = getDataDir()
 
 const keywordsPath = resolve(dataDir, 'keywords.json')
 const keywords: string[] = JSON.parse(readFileSync(keywordsPath, 'utf-8'))

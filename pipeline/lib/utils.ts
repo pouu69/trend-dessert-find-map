@@ -48,3 +48,38 @@ export function isGenericName(name: string): boolean {
 export function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
+
+import { readFileSync, mkdirSync, existsSync } from 'fs'
+import { resolve, dirname } from 'path'
+import { fileURLToPath } from 'url'
+import type { PipelineConfig } from './types'
+
+export function loadConfig(): PipelineConfig {
+  const __filename = fileURLToPath(import.meta.url)
+  const pipelineDir = resolve(dirname(__filename), '..')
+  const configPath = resolve(pipelineDir, 'pipeline.config.json')
+  const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
+
+  // CLI arg override: --product "크로플"
+  const args = process.argv.slice(2)
+  const productIdx = args.indexOf('--product')
+  if (productIdx !== -1 && args[productIdx + 1]) {
+    config.product = args[productIdx + 1]
+    console.log(`[config] --product 인자로 오버라이드: "${config.product}"`)
+  }
+
+  // Ensure data dir exists
+  const dataDir = resolve(pipelineDir, config.dataDir)
+  if (!existsSync(dataDir)) {
+    mkdirSync(dataDir, { recursive: true })
+  }
+
+  return config
+}
+
+export function getDataDir(): string {
+  const __filename = fileURLToPath(import.meta.url)
+  const pipelineDir = resolve(dirname(__filename), '..')
+  const config = JSON.parse(readFileSync(resolve(pipelineDir, 'pipeline.config.json'), 'utf-8'))
+  return resolve(pipelineDir, config.dataDir)
+}

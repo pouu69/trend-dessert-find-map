@@ -1,14 +1,9 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
-import { resolve, dirname } from 'path'
-import type { PipelineConfig } from './lib/types'
+import { writeFileSync } from 'fs'
+import { resolve } from 'path'
+import { loadConfig, getDataDir } from './lib/utils'
 
-const configPath = resolve(dirname(import.meta.dirname || __dirname), 'pipeline', 'pipeline.config.json')
-const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
-
-const dataDir = resolve(dirname(configPath), config.dataDir)
-if (!existsSync(dataDir)) {
-  mkdirSync(dataDir, { recursive: true })
-}
+const config = loadConfig()
+const dataDir = getDataDir()
 
 console.log('[Stage 1] 키워드 생성')
 console.log(`  제품: ${config.product}`)

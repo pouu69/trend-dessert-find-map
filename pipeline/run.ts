@@ -1,12 +1,16 @@
-import { readFileSync } from 'fs'
 import { execSync } from 'child_process'
-import { resolve, dirname } from 'path'
-import type { PipelineConfig } from './lib/types'
+import { resolve } from 'path'
+import { fileURLToPath } from 'url'
+import { loadConfig } from './lib/utils'
 
-const configPath = resolve(dirname(import.meta.dirname || __dirname), 'pipeline', 'pipeline.config.json')
-const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
+const config = loadConfig()
+const __filename = fileURLToPath(import.meta.url)
+const pipelineDir = resolve(__filename, '..')
 
-const pipelineDir = dirname(configPath)
+// Forward --product arg to each stage
+const productArg = process.argv.includes('--product')
+  ? `--product "${config.product}"`
+  : ''
 
 console.log(`\n🔍 데이터 수집 파이프라인`)
 console.log(`제품: ${config.product}\n`)
@@ -25,7 +29,7 @@ for (const stage of stages) {
   console.log(`${'='.repeat(50)}\n`)
 
   try {
-    execSync(`npx tsx ${resolve(pipelineDir, stage.file)}`, {
+    execSync(`npx tsx ${resolve(pipelineDir, stage.file)} ${productArg}`, {
       stdio: 'inherit',
       cwd: resolve(pipelineDir, '..'),
     })
