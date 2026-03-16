@@ -60,12 +60,17 @@ export function loadConfig(): PipelineConfig {
   const configPath = resolve(pipelineDir, 'pipeline.config.json')
   const config: PipelineConfig = JSON.parse(readFileSync(configPath, 'utf-8'))
 
-  // CLI arg override: --product "크로플"
+  // CLI arg overrides
   const args = process.argv.slice(2)
   const productIdx = args.indexOf('--product')
   if (productIdx !== -1 && args[productIdx + 1]) {
     config.product = args[productIdx + 1]
     console.log(`[config] --product 인자로 오버라이드: "${config.product}"`)
+  }
+  const outputIdx = args.indexOf('--output')
+  if (outputIdx !== -1 && args[outputIdx + 1]) {
+    config.outputPath = args[outputIdx + 1]
+    console.log(`[config] --output 인자로 오버라이드: "${config.outputPath}"`)
   }
 
   // Ensure data dir exists

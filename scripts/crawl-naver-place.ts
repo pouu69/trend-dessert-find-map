@@ -42,7 +42,7 @@ async function delay(ms: number) {
   return new Promise(function (r) { setTimeout(r, ms) })
 }
 
-// Use page.$eval or string-based evaluate to avoid tsx __name injection
+// Extract list items from the search result page - addresses included inline on mobile
 const EXTRACT_LIST_JS = `
 (() => {
   var results = [];
@@ -50,21 +50,26 @@ const EXTRACT_LIST_JS = `
   for (var i = 0; i < links.length; i++) {
     var link = links[i];
     var href = link.href;
-    if (!/\\/place\\/\\d+$/.test(href.split('?')[0])) continue;
+    // Only match /place/{digits} at end (before query string)
+    var pathPart = href.split('?')[0];
+    if (!/\\/place\\/\\d+$/.test(pathPart)) continue;
     // Skip photo links
     if (/\\/photo/.test(href)) continue;
 
     var nameEl = link.querySelector('span, strong, h3, h2');
     var name = (nameEl && nameEl.textContent) ? nameEl.textContent.trim() : (link.textContent ? link.textContent.trim() : '');
     if (!name || name.length > 50 || name.length < 2) continue;
-    // Skip non-shop text
     if (/^이미지수/.test(name) || /^\\d+$/.test(name)) continue;
 
-    var parent = link.closest('li') || link.parentElement;
-    var catEl = parent ? parent.querySelector('[class*="YzBgS"], [class*="subcategory"], [class*="category"]') : null;
+    // Get the containing list item for more context
+    var li = link.closest('li') || link.closest('[class*="item"]') || link.parentElement;
+    var catEl = li ? li.querySelector('[class*="YzBgS"], [class*="subcategory"], [class*="category"]') : null;
     var category = (catEl && catEl.textContent) ? catEl.textContent.trim() : '';
 
-    results.push({ name: name, href: href, category: category });
+    // Try to grab address text from the list item (mobile shows partial address inline)
+    var liText = li ? li.innerText : '';
+
+    results.push({ name: name, href: href, category: category, liText: liText });
   }
   // Deduplicate by href
   var seen = {};
@@ -99,8 +104,13 @@ const EXTRACT_DETAIL_JS = `
     if (addrEl && addrEl.textContent) address = addrEl.textContent.trim();
   }
 
+  // Clean address - remove "주소" prefix and navigation fluff
+  if (address) {
+    address = address.replace(/^주소/, '').replace(/지도.*$/, '').trim();
+  }
+
   var phone = getText([
-    '.xlx7Q', '.place_detail_tel', 'a[href^="tel:"]'
+    '.xlx7Q', '.place_detail_tel'
   ]);
   if (!phone) {
     var phoneEl = document.querySelector('a[href^="tel:"]');
@@ -124,21 +134,6 @@ const EXTRACT_DETAIL_JS = `
 })()
 `
 
-async function extractListItems(page: Page): Promise<{ name: string; href: string; category: string }[]> {
-  // Scroll a few times to load more results
-  for (let i = 0; i < 5; i++) {
-    await page.evaluate('window.scrollBy(0, 800)')
-    await delay(500)
-  }
-  const items = await page.evaluate(EXTRACT_LIST_JS) as { name: string; href: string; category: string }[]
-  return items
-}
-
-async function extractDetailInfo(page: Page): Promise<{ address: string; phone: string; hours: string; category: string }> {
-  await delay(2000)
-  return page.evaluate(EXTRACT_DETAIL_JS) as Promise<{ address: string; phone: string; hours: string; category: string }>
-}
-
 async function main() {
   console.log('[naver-place] Starting Naver Place mobile crawl...')
 
@@ -153,6 +148,7 @@ async function main() {
   const page = await context.newPage()
   const allResults: PlaceResult[] = []
   const seenNames = new Set<string>()
+  const MAX_DETAIL_PER_SEARCH = 20 // Only visit top 20 detail pages per search
 
   for (const region of REGIONS) {
     for (const query of QUERIES) {
@@ -164,31 +160,35 @@ async function main() {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 })
         await delay(3000)
 
-        // Debug: log page title
-        const title = await page.title()
-        console.log(`  Page title: ${title}`)
+        // Scroll to load more
+        for (let i = 0; i < 3; i++) {
+          await page.evaluate('window.scrollBy(0, 1000)')
+          await delay(500)
+        }
 
-        // Preview page text
-        const bodyText = await page.evaluate('document.body ? document.body.innerText.slice(0, 500) : "(empty)"') as string
-        console.log(`  Page preview: ${bodyText.slice(0, 200)}...`)
-
-        const items = await extractListItems(page)
+        const items = await page.evaluate(EXTRACT_LIST_JS) as { name: string; href: string; category: string; liText: string }[]
         console.log(`  Found ${items.length} place items`)
 
+        let visitedCount = 0
         for (const item of items) {
+          if (visitedCount >= MAX_DETAIL_PER_SEARCH) {
+            console.log(`  [limit] Reached max ${MAX_DETAIL_PER_SEARCH} detail visits for this search`)
+            break
+          }
+
           if (seenNames.has(item.name)) continue
           if (isAlreadyFound(item.name)) {
             console.log(`  [skip] Already known: ${item.name}`)
             continue
           }
 
-          console.log(`  Visiting detail: ${item.name} -> ${item.href}`)
+          console.log(`  [${visitedCount + 1}] ${item.name} -> ${item.href}`)
 
           try {
             await page.goto(item.href, { waitUntil: 'domcontentloaded', timeout: 15000 })
             await delay(2000)
 
-            const detail = await extractDetailInfo(page)
+            const detail = await page.evaluate(EXTRACT_DETAIL_JS) as { address: string; phone: string; hours: string; category: string }
 
             const result: PlaceResult = {
               name: item.name,
@@ -201,17 +201,19 @@ async function main() {
 
             allResults.push(result)
             seenNames.add(item.name)
+            visitedCount++
             console.log(`    -> ${result.address || '(no address)'} | ${result.phone || '(no phone)'} | ${result.category || '(no category)'}`)
-          } catch (e) {
-            console.warn(`    [error] Failed to get detail for ${item.name}:`, e)
+          } catch (e: any) {
+            console.warn(`    [error] ${item.name}: ${e.message?.slice(0, 100)}`)
+            visitedCount++
           }
 
           await delay(2000)
         }
 
         await delay(2000)
-      } catch (e) {
-        console.warn(`  [error] Failed to search "${query}" in ${region.name}:`, e)
+      } catch (e: any) {
+        console.warn(`  [error] Search failed: ${e.message?.slice(0, 100)}`)
       }
     }
   }
@@ -227,7 +229,7 @@ async function main() {
   writeFileSync(outPath, JSON.stringify(unique, null, 2), 'utf-8')
 
   console.log('\n' + '='.repeat(60))
-  console.log(`[naver-place] SUMMARY`)
+  console.log('[naver-place] SUMMARY')
   console.log(`  Total new shops found: ${unique.length}`)
   console.log(`  Output: ${outPath}`)
   console.log('='.repeat(60))

@@ -63,16 +63,16 @@ export function TopBar({
   }
 
   return (
-    <div className="absolute top-0 left-0 right-0 z-[1000] pointer-events-none">
-      <div className="pointer-events-auto m-3 glass rounded-2xl">
-        <div className="flex items-center gap-3 px-4 py-2">
+    <div className="absolute top-0 left-0 right-0 z-[1000] pointer-events-none" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <div className="pointer-events-auto m-2 md:m-3 glass rounded-2xl">
+        <div className="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2">
           {/* Product */}
           <div ref={menuRef} className="relative flex items-center gap-2 flex-shrink-0">
             <div className="w-8 h-8 bg-brand rounded-xl flex items-center justify-center shadow-[0_2px_8px_rgba(232,97,42,0.25)]">
               <ProductIcon name={currentProduct.iconName} size={16} weight="fill" className="text-white" />
             </div>
             <button onClick={() => setMenuOpen(p => !p)} className="flex items-center gap-1">
-              <span className="text-[14px] font-bold text-ink tracking-tight">{currentProduct.name}</span>
+              <span className="text-[13px] md:text-[14px] font-bold text-ink tracking-tight">{currentProduct.name}</span>
               <CaretDown size={11} weight="bold" className={`text-ink-caption transition-transform ${menuOpen ? 'rotate-180' : ''}`} />
             </button>
             {menuOpen && (
@@ -129,7 +129,7 @@ export function TopBar({
         </div>
 
         {/* Chips */}
-        <div className="flex gap-1.5 px-4 pb-2.5 overflow-x-auto scrollbar-none">
+        <div className="flex gap-1.5 px-3 md:px-4 pb-2 md:pb-2.5 overflow-x-auto scrollbar-none">
           <Chip label="전체" active={selectedRegion === null} onClick={() => onRegionChange(null)} />
           {regions.map(r => <Chip key={r} label={r} active={selectedRegion === r} onClick={() => onRegionChange(r === selectedRegion ? null : r)} />)}
         </div>

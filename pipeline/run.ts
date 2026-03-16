@@ -7,10 +7,16 @@ const config = loadConfig()
 const __filename = fileURLToPath(import.meta.url)
 const pipelineDir = resolve(__filename, '..')
 
-// Forward --product arg to each stage
-const productArg = process.argv.includes('--product')
-  ? `--product "${config.product}"`
-  : ''
+// Forward CLI args to each stage
+const cliArgs: string[] = []
+if (process.argv.includes('--product')) {
+  cliArgs.push(`--product "${config.product}"`)
+}
+if (process.argv.includes('--output')) {
+  const outputIdx = process.argv.indexOf('--output')
+  cliArgs.push(`--output "${process.argv[outputIdx + 1]}"`)
+}
+const forwardArgs = cliArgs.join(' ')
 
 console.log(`\n🔍 데이터 수집 파이프라인`)
 console.log(`제품: ${config.product}\n`)
@@ -29,7 +35,7 @@ for (const stage of stages) {
   console.log(`${'='.repeat(50)}\n`)
 
   try {
-    execSync(`npx tsx ${resolve(pipelineDir, stage.file)} ${productArg}`, {
+    execSync(`npx tsx ${resolve(pipelineDir, stage.file)} ${forwardArgs}`, {
       stdio: 'inherit',
       cwd: resolve(pipelineDir, '..'),
     })
