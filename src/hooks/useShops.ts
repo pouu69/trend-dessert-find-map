@@ -1,14 +1,21 @@
 import { useState, useMemo, useCallback } from 'react'
 import type { Shop } from '../types/shop'
-import shopsData from '../data/shops.json'
 import type { LatLngBounds } from 'leaflet'
 
-export function useShops() {
+import shanghaiData from '../data/shops.json'
+import dujjonkuData from '../data/dujjonku.json'
+
+const dataMap: Record<string, Shop[]> = {
+  shops: shanghaiData as Shop[],
+  dujjonku: dujjonkuData as Shop[],
+}
+
+export function useShops(dataFile: string = 'shops') {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
   const [mapBounds, setMapBounds] = useState<LatLngBounds | null>(null)
 
-  const allShops: Shop[] = shopsData as Shop[]
+  const allShops: Shop[] = (dataFile && dataMap[dataFile]) ? dataMap[dataFile] : []
 
   const regions = useMemo(() => {
     const uniqueRegions = [...new Set(allShops.map(s => s.region))]

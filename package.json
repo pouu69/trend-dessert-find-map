@@ -12,6 +12,7 @@
     "pipeline": "npx tsx pipeline/run.ts"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "@types/leaflet": "^1.9.21",
     "leaflet": "^1.9.4",
     "react": "^19.2.4",

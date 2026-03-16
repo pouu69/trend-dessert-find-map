@@ -35,15 +35,20 @@ export function ShopList({
 
   if (shops.length === 0) {
     return (
-      <div className="flex-1 flex items-center justify-center text-sm text-[#999] p-4">
-        검색 결과가 없습니다
+      <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="text-ink-caption mb-3">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="1.5" />
+          <path d="m20 20-3.5-3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+        <p className="text-[13px] text-ink-secondary font-semibold">검색 결과가 없습니다</p>
+        <p className="text-[12px] text-ink-caption mt-1">다른 키워드로 검색하거나 지도를 이동해 보세요</p>
       </div>
     )
   }
 
   return (
-    <div ref={listRef} className="flex-1 overflow-y-auto p-3 space-y-2">
-      {shops.map(shop => (
+    <div ref={listRef} className="flex-1 overflow-y-auto py-1">
+      {shops.map((shop, index) => (
         <div
           key={shop.id}
           ref={el => {
@@ -55,6 +60,7 @@ export function ShopList({
             shop={shop}
             isHighlighted={highlightedShopId === shop.id}
             isFavorite={isFavorite(shop.id)}
+            index={index}
             onToggleFavorite={onToggleFavorite}
             onClick={onShopClick}
             onMouseEnter={onShopHover}
