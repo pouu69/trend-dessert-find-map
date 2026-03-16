@@ -21,9 +21,22 @@ function getShopIdFromHash(): string | null {
   return hash || null
 }
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768)
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)')
+    const handler = (e: MediaQueryListEvent) => setIsMobile(!e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
+  return isMobile
+}
+
 export default function App() {
+  const isMobile = useIsMobile()
   const [currentProduct, setCurrentProduct] = useState<Product | null>(getProductFromPath)
   const [selectedShopId, setSelectedShopId] = useState<string | null>(getShopIdFromHash)
+  const [mobileSheetExpanded, setMobileSheetExpanded] = useState(false)
 
   const {
     allShops,
@@ -40,6 +53,7 @@ export default function App() {
   const { favoriteIds, toggleFavorite, isFavorite } = useFavorites()
 
   const [highlightedShopId, setHighlightedShopId] = useState<string | null>(null)
+  const [scrollToShopId, setScrollToShopId] = useState<string | null>(null)
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
 
   const selectedShop = selectedShopId ? allShops.find(s => s.id === selectedShopId) ?? null : null
@@ -57,8 +71,12 @@ export default function App() {
     function onHashChange() {
       const shopId = getShopIdFromHash()
       setSelectedShopId(shopId)
-      if (shopId) setHighlightedShopId(shopId)
-      else setHighlightedShopId(null)
+      if (shopId) {
+        setHighlightedShopId(shopId)
+        setScrollToShopId(shopId)
+      } else {
+        setHighlightedShopId(null)
+      }
     }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
@@ -70,15 +88,16 @@ export default function App() {
 
   const handleShopClick = useCallback((shop: Shop) => {
     window.location.hash = shop.id
-  }, [])
+    if (isMobile) setMobileSheetExpanded(false)
+  }, [isMobile])
 
   const handleShopHover = useCallback((shop: Shop) => {
     setHighlightedShopId(shop.id)
   }, [])
 
   const handleShopLeave = useCallback(() => {
-    if (!selectedShop) setHighlightedShopId(null)
-  }, [selectedShop])
+    setHighlightedShopId(selectedShopId)
+  }, [selectedShopId])
 
   const handleMarkerClick = useCallback((shop: Shop) => {
     window.location.hash = shop.id
@@ -143,11 +162,17 @@ export default function App() {
       <ShopPanel
         shops={displayedShops}
         highlightedShopId={highlightedShopId}
+        scrollToShopId={scrollToShopId}
+        onScrollComplete={() => setScrollToShopId(null)}
         isFavorite={isFavorite}
         onToggleFavorite={toggleFavorite}
         onShopClick={handleShopClick}
         onShopHover={handleShopHover}
         onShopLeave={handleShopLeave}
+        isMobile={isMobile}
+        expanded={mobileSheetExpanded}
+        onToggleExpand={() => setMobileSheetExpanded(p => !p)}
+        hasSelectedShop={!!selectedShop}
       />
 
       {selectedShop && (
@@ -156,6 +181,7 @@ export default function App() {
           isFavorite={isFavorite(selectedShop.id)}
           onToggleFavorite={toggleFavorite}
           onClose={handleCloseDetail}
+          isMobile={isMobile}
         />
       )}
     </div>

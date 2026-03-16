@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState, useMemo } from 'react'
 import { MapContainer, TileLayer, Marker, Tooltip, useMap, useMapEvents } from 'react-leaflet'
 import L from 'leaflet'
 import type { Shop } from '../types/shop'
@@ -30,15 +30,25 @@ interface MapEventsProps {
   onBoundsChange: (bounds: LatLngBounds) => void
 }
 
-function MapEvents({ onBoundsChange }: MapEventsProps) {
+function MapEvents({ onBoundsChange, onViewportChange }: MapEventsProps & { onViewportChange: (bounds: LatLngBounds) => void }) {
   const map = useMapEvents({
-    moveend: () => onBoundsChange(map.getBounds()),
-    load: () => onBoundsChange(map.getBounds()),
+    moveend: () => {
+      const b = map.getBounds()
+      onBoundsChange(b)
+      onViewportChange(b)
+    },
+    load: () => {
+      const b = map.getBounds()
+      onBoundsChange(b)
+      onViewportChange(b)
+    },
   })
 
   useEffect(() => {
-    onBoundsChange(map.getBounds())
-  }, [map, onBoundsChange])
+    const b = map.getBounds()
+    onBoundsChange(b)
+    onViewportChange(b)
+  }, [map, onBoundsChange, onViewportChange])
 
   return null
 }
@@ -75,6 +85,16 @@ export function Map({
   onMarkerClick,
   onBoundsChange,
 }: MapProps) {
+  const [viewport, setViewport] = useState<LatLngBounds | null>(null)
+
+  const viewportShops = useMemo(() => {
+    const geoShops = shops.filter(s => s.lat !== null && s.lng !== null)
+    if (!viewport) return geoShops
+    // Pad bounds slightly so pins at edges don't pop in/out abruptly
+    const padded = viewport.pad(0.1)
+    return geoShops.filter(s => padded.contains([s.lat!, s.lng!]))
+  }, [shops, viewport])
+
   return (
     <MapContainer
       center={SEOUL_CENTER}
@@ -86,12 +106,10 @@ export function Map({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
       />
-      <MapEvents onBoundsChange={onBoundsChange} />
+      <MapEvents onBoundsChange={onBoundsChange} onViewportChange={setViewport} />
       <FlyToShop shop={selectedShop} />
 
-      {shops
-        .filter(s => s.lat !== null && s.lng !== null)
-        .map(shop => (
+      {viewportShops.map(shop => (
           <Marker
             key={shop.id}
             position={[shop.lat!, shop.lng!]}
