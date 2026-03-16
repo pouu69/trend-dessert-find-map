@@ -11,7 +11,7 @@ import './App.css'
 
 export default function App() {
   const {
-    visibleShops,
+    filteredShops,
     mappableShops,
     regions,
     searchQuery,
@@ -28,11 +28,12 @@ export default function App() {
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
 
   const displayedShops = showFavoritesOnly
-    ? visibleShops.filter(s => favoriteIds.includes(s.id))
-    : visibleShops
+    ? filteredShops.filter(s => favoriteIds.includes(s.id))
+    : filteredShops
 
   const handleShopClick = useCallback((shop: Shop) => {
     setSelectedShop(shop)
+    setHighlightedShopId(shop.id)
   }, [])
 
   const handleShopHover = useCallback((shop: Shop) => {
@@ -40,69 +41,78 @@ export default function App() {
   }, [])
 
   const handleShopLeave = useCallback(() => {
-    setHighlightedShopId(null)
-  }, [])
+    if (!selectedShop) setHighlightedShopId(null)
+  }, [selectedShop])
 
   const handleMarkerClick = useCallback((shop: Shop) => {
     setHighlightedShopId(shop.id)
-    setSelectedShop(null)
+    setSelectedShop(shop)
   }, [])
 
   const handleBackToList = useCallback(() => {
     setSelectedShop(null)
+    setHighlightedShopId(null)
   }, [])
 
   return (
-    <div className="h-screen flex flex-col bg-[#FAFAFA]">
-      <Header
-        showFavoritesOnly={showFavoritesOnly}
-        onToggleFavorites={() => setShowFavoritesOnly(prev => !prev)}
-        favoriteCount={favoriteIds.length}
+    <div className="h-screen w-screen relative overflow-hidden bg-[#F0F2F5]">
+      {/* Map */}
+      <Map
+        shops={mappableShops}
+        highlightedShopId={highlightedShopId}
+        selectedShop={selectedShop}
+        onMarkerClick={handleMarkerClick}
+        onBoundsChange={setMapBounds}
       />
 
-      <div className="flex-1 flex overflow-hidden">
-        {/* Side Panel */}
-        <div className="w-[38%] flex flex-col bg-white border-r border-[#eee]">
-          {selectedShop ? (
-            <ShopDetail
-              shop={selectedShop}
-              isFavorite={isFavorite(selectedShop.id)}
-              onToggleFavorite={toggleFavorite}
-              onBack={handleBackToList}
-            />
-          ) : (
-            <>
-              <SearchFilter
-                searchQuery={searchQuery}
-                onSearchChange={setSearchQuery}
-                regions={regions}
-                selectedRegion={selectedRegion}
-                onRegionChange={setSelectedRegion}
-              />
-              <ShopList
-                shops={displayedShops}
-                highlightedShopId={highlightedShopId}
-                isFavorite={isFavorite}
-                onToggleFavorite={toggleFavorite}
-                onShopClick={handleShopClick}
-                onShopHover={handleShopHover}
-                onShopLeave={handleShopLeave}
-              />
-            </>
-          )}
-        </div>
+      {/* Side panel */}
+      <aside
+        className="
+          anim-panel
+          absolute top-3 left-3 bottom-3 w-[400px]
+          flex flex-col
+          bg-panel rounded-2xl
+          shadow-[0_4px_24px_rgba(0,0,0,0.08),0_1px_4px_rgba(0,0,0,0.04)]
+          border border-[rgba(0,0,0,0.06)]
+          z-[1000] overflow-hidden
+        "
+      >
+        <Header
+          showFavoritesOnly={showFavoritesOnly}
+          onToggleFavorites={() => setShowFavoritesOnly(prev => !prev)}
+          favoriteCount={favoriteIds.length}
+          totalCount={filteredShops.length}
+          visibleCount={displayedShops.length}
+        />
 
-        {/* Map */}
-        <div className="flex-1">
-          <Map
-            shops={mappableShops}
-            highlightedShopId={highlightedShopId}
-            selectedShop={selectedShop}
-            onMarkerClick={handleMarkerClick}
-            onBoundsChange={setMapBounds}
+        {selectedShop ? (
+          <ShopDetail
+            shop={selectedShop}
+            isFavorite={isFavorite(selectedShop.id)}
+            onToggleFavorite={toggleFavorite}
+            onBack={handleBackToList}
           />
-        </div>
-      </div>
+        ) : (
+          <>
+            <SearchFilter
+              searchQuery={searchQuery}
+              onSearchChange={setSearchQuery}
+              regions={regions}
+              selectedRegion={selectedRegion}
+              onRegionChange={setSelectedRegion}
+            />
+            <ShopList
+              shops={displayedShops}
+              highlightedShopId={highlightedShopId}
+              isFavorite={isFavorite}
+              onToggleFavorite={toggleFavorite}
+              onShopClick={handleShopClick}
+              onShopHover={handleShopHover}
+              onShopLeave={handleShopLeave}
+            />
+          </>
+        )}
+      </aside>
     </div>
   )
 }
