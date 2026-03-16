@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "collect-data": "npx tsx scripts/collect-data.ts"
+    "collect-data": "npx tsx scripts/collect-data.ts",
+    "pipeline": "npx tsx pipeline/run.ts"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
