@@ -1,86 +1,322 @@
 [
   {
     "id": "shop-001",
-    "name": "원조 상하이떡방",
-    "address": "서울 종로구 종로3길 17",
-    "lat": 37.5705,
-    "lng": 126.9780,
-    "phone": "02-1234-5678",
-    "hours": "09:00-21:00",
-    "closedDays": ["월요일"],
-    "priceRange": "3000-5000",
-    "tags": ["원조", "줄서는맛집"],
-    "description": "30년 전통의 상하이버터떡 전문점. 매일 아침 직접 만드는 수제 버터떡이 인기.",
-    "region": "서울"
+    "name": "달리당 수원본점",
+    "address": "경기 수원시 팔달구 창룡대로80번길 15 1-3층",
+    "lat": null,
+    "lng": null,
+    "phone": "070-8668-5156",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "경기"
   },
   {
     "id": "shop-002",
-    "name": "버터떡 본가",
-    "address": "서울 마포구 와우산로 94",
-    "lat": 37.5536,
-    "lng": 126.9219,
-    "phone": "02-9876-5432",
-    "hours": "10:00-20:00",
-    "closedDays": ["일요일"],
-    "priceRange": "3500-6000",
-    "tags": ["인기", "포장가능"],
-    "description": "홍대 근처 버터떡 맛집. 고소한 버터 향이 일품.",
+    "name": "연남허니밀크",
+    "address": "서울 마포구 양화로23길 10-14 1층",
+    "lat": 37.559494,
+    "lng": 126.9258407,
+    "phone": "010-5584-7104",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
     "region": "서울"
   },
   {
     "id": "shop-003",
-    "name": "상하이 떡공방",
-    "address": "경기 수원시 팔달구 인계로 166",
-    "lat": 37.2636,
-    "lng": 127.0286,
-    "phone": "031-234-5678",
-    "hours": "08:00-22:00",
+    "name": "수아카롱 본점",
+    "address": "경기 수원시 영통구 도청로18번길 26 힐스테이트광교중앙역상가 지하2층 B259호",
+    "lat": null,
+    "lng": null,
+    "phone": "0503-7153-8093",
+    "hours": "",
     "closedDays": [],
-    "priceRange": "2500-4500",
-    "tags": ["가성비", "주차가능"],
-    "description": "수원 인계동 맛집. 다양한 떡 종류와 함께 상하이버터떡 판매.",
+    "priceRange": "",
+    "tags": [
+      "디저트카페"
+    ],
+    "description": "상하이버터떡 판매 디저트카페",
     "region": "경기"
   },
   {
     "id": "shop-004",
-    "name": "강남 버터떡집",
-    "address": "서울 강남구 테헤란로 152",
-    "lat": 37.5000,
-    "lng": 127.0367,
-    "phone": "02-555-1234",
-    "hours": "11:00-21:00",
-    "closedDays": ["월요일", "화요일"],
-    "priceRange": "4000-7000",
-    "tags": ["프리미엄"],
-    "description": "강남 직장인들에게 인기있는 프리미엄 버터떡.",
-    "region": "서울"
+    "name": "코드91",
+    "address": "인천 강화군 화도면 마니산로 627 1층",
+    "lat": 37.6344509,
+    "lng": 126.4316967,
+    "phone": "0503-7153-6453",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피전문점"
+    ],
+    "description": "상하이버터떡 판매 커피전문점",
+    "region": "인천"
   },
   {
     "id": "shop-005",
-    "name": "부산 상하이떡",
-    "address": "부산 해운대구 해운대로 570",
-    "lat": 35.1631,
-    "lng": 129.1635,
-    "phone": "051-777-8888",
-    "hours": "09:30-20:30",
-    "closedDays": ["수요일"],
-    "priceRange": "3000-5000",
-    "tags": ["해운대", "관광지맛집"],
-    "description": "해운대 바닷바람과 함께 즐기는 버터떡.",
-    "region": "부산"
+    "name": "모어커피랩",
+    "address": "전북특별자치도 전주시 덕진구 견훤로 424 1층",
+    "lat": 35.8374364,
+    "lng": 127.1556171,
+    "phone": "0503-7153-8083",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "상하이버터떡 판매 카페",
+    "region": "전북"
   },
   {
     "id": "shop-006",
-    "name": "전통 상하이떡마을",
-    "address": "서울 성동구 왕십리로 115",
-    "lat": null,
-    "lng": null,
-    "phone": "02-333-4444",
-    "hours": "10:00-19:00",
-    "closedDays": ["토요일", "일요일"],
-    "priceRange": "2000-4000",
-    "tags": ["전통방식"],
-    "description": "성수동 골목에 숨은 전통 방식 버터떡집.",
+    "name": "브리나케오슈",
+    "address": "제주특별자치도 제주시 애월읍 고내3길 21-2",
+    "lat": 33.464363,
+    "lng": 126.3360394,
+    "phone": "0503-7152-8302",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "제주"
+  },
+  {
+    "id": "shop-007",
+    "name": "하츠베이커리 노원점",
+    "address": "서울특별시 노원구 공릉로41길 6",
+    "lat": 37.6245987,
+    "lng": 127.0786555,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
     "region": "서울"
+  },
+  {
+    "id": "shop-008",
+    "name": "하츠베이커리 논현점",
+    "address": "서울특별시 강남구 학동로 342",
+    "lat": 37.5167674,
+    "lng": 127.0408857,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "서울"
+  },
+  {
+    "id": "shop-009",
+    "name": "하츠베이커리 압구정점",
+    "address": "서울특별시 강남구 도산대로17길 10",
+    "lat": 37.5193766,
+    "lng": 127.0248082,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "서울"
+  },
+  {
+    "id": "shop-010",
+    "name": "하츠베이커리 선릉점",
+    "address": "서울특별시 강남구 선릉로161길 19",
+    "lat": 37.5275858,
+    "lng": 127.0381029,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "서울"
+  },
+  {
+    "id": "shop-011",
+    "name": "하츠베이커리 잠실점",
+    "address": "서울특별시 송파구 중대로 210",
+    "lat": 37.5087854,
+    "lng": 127.1327977,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "서울"
+  },
+  {
+    "id": "shop-012",
+    "name": "하츠베이커리 은평점",
+    "address": "서울특별시 은평구 진관4로 17",
+    "lat": 37.6439703,
+    "lng": 126.9217098,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "서울"
+  },
+  {
+    "id": "shop-013",
+    "name": "하츠베이커리 성수점",
+    "address": "서울특별시 성동구 성수이로24길 36",
+    "lat": 37.5443221,
+    "lng": 127.0618023,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "서울"
+  },
+  {
+    "id": "shop-014",
+    "name": "하츠베이커리 서초점",
+    "address": "서울특별시 서초구 강남대로91길 12",
+    "lat": 37.5120104,
+    "lng": 127.0198886,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "서울"
+  },
+  {
+    "id": "shop-015",
+    "name": "미구제과 본점",
+    "address": "대구광역시 달서구 와룡로49길 101",
+    "lat": 35.8549472,
+    "lng": 128.5358079,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "대구"
+  },
+  {
+    "id": "shop-016",
+    "name": "미구제과 범어점",
+    "address": "대구광역시 수성구 범어로24길 20",
+    "lat": 35.8597027,
+    "lng": 128.6367673,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "대구"
+  },
+  {
+    "id": "shop-017",
+    "name": "미구제과 봉산점",
+    "address": "대구광역시 중구 봉산문화길 43",
+    "lat": 35.8624507,
+    "lng": 128.5975103,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "대구"
+  },
+  {
+    "id": "shop-018",
+    "name": "미구제과 중앙점",
+    "address": "대구광역시 중구 중앙대로 354-34",
+    "lat": 35.8676791,
+    "lng": 128.5936032,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "대구"
+  },
+  {
+    "id": "shop-019",
+    "name": "미구제과 동구점",
+    "address": "대구광역시 동구 동부로 207",
+    "lat": 35.8790127,
+    "lng": 128.6348227,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과",
+      "베이커리"
+    ],
+    "description": "상하이버터떡 판매 베이커리",
+    "region": "대구"
   }
 ]
