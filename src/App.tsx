@@ -1,121 +1,109 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState, useCallback } from 'react'
+import { Header } from './components/Header'
+import { SearchFilter } from './components/SearchFilter'
+import { ShopList } from './components/ShopList'
+import { ShopDetail } from './components/ShopDetail'
+import { Map } from './components/Map'
+import { useShops } from './hooks/useShops'
+import { useFavorites } from './hooks/useFavorites'
+import type { Shop } from './types/shop'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const {
+    filteredShops,
+    visibleShops,
+    mappableShops,
+    regions,
+    searchQuery,
+    setSearchQuery,
+    selectedRegion,
+    setSelectedRegion,
+    setMapBounds,
+  } = useShops()
+
+  const { favoriteIds, toggleFavorite, isFavorite } = useFavorites()
+
+  const [highlightedShopId, setHighlightedShopId] = useState<string | null>(null)
+  const [selectedShop, setSelectedShop] = useState<Shop | null>(null)
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
+
+  const displayedShops = showFavoritesOnly
+    ? visibleShops.filter(s => favoriteIds.includes(s.id))
+    : visibleShops
+
+  const handleShopClick = useCallback((shop: Shop) => {
+    setSelectedShop(shop)
+  }, [])
+
+  const handleShopHover = useCallback((shop: Shop) => {
+    setHighlightedShopId(shop.id)
+  }, [])
+
+  const handleShopLeave = useCallback(() => {
+    setHighlightedShopId(null)
+  }, [])
+
+  const handleMarkerClick = useCallback((shop: Shop) => {
+    setHighlightedShopId(shop.id)
+    setSelectedShop(null)
+  }, [])
+
+  const handleBackToList = useCallback(() => {
+    setSelectedShop(null)
+  }, [])
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="h-screen flex flex-col bg-[#FAFAFA]">
+      <Header
+        showFavoritesOnly={showFavoritesOnly}
+        onToggleFavorites={() => setShowFavoritesOnly(prev => !prev)}
+        favoriteCount={favoriteIds.length}
+      />
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+      <div className="flex-1 flex overflow-hidden">
+        {/* Side Panel */}
+        <div className="w-[38%] flex flex-col bg-white border-r border-[#eee]">
+          {selectedShop ? (
+            <ShopDetail
+              shop={selectedShop}
+              isFavorite={isFavorite(selectedShop.id)}
+              onToggleFavorite={toggleFavorite}
+              onBack={handleBackToList}
+            />
+          ) : (
+            <>
+              <SearchFilter
+                searchQuery={searchQuery}
+                onSearchChange={setSearchQuery}
+                regions={regions}
+                selectedRegion={selectedRegion}
+                onRegionChange={setSelectedRegion}
+              />
+              <ShopList
+                shops={displayedShops}
+                highlightedShopId={highlightedShopId}
+                isFavorite={isFavorite}
+                onToggleFavorite={toggleFavorite}
+                onShopClick={handleShopClick}
+                onShopHover={handleShopHover}
+                onShopLeave={handleShopLeave}
+              />
+            </>
+          )}
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+        {/* Map */}
+        <div className="flex-1">
+          <Map
+            shops={mappableShops}
+            highlightedShopId={highlightedShopId}
+            selectedShop={selectedShop}
+            onMarkerClick={handleMarkerClick}
+            onBoundsChange={setMapBounds}
+          />
+        </div>
+      </div>
+    </div>
   )
 }
-
-export default App
