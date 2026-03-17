@@ -1,13 +1,12 @@
+'use client'
+
 import { useState } from 'react'
+import Link from 'next/link'
 import { MapPin, ArrowRight, Compass } from '@phosphor-icons/react'
-import { products, type Product } from '../data/products'
+import { products } from '@/data/products'
 import { ProductIcon } from './ProductIcon'
 
-interface LandingProps {
-  onProductSelect: (product: Product) => void
-}
-
-export function Landing({ onProductSelect }: LandingProps) {
+export function Landing() {
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null)
 
   return (
@@ -74,9 +73,9 @@ export function Landing({ onProductSelect }: LandingProps) {
         {/* Product cards */}
         <div className="mt-16 md:mt-20 space-y-3 max-w-lg">
           {products.map((product, index) => (
-            <button
+            <Link
               key={product.slug}
-              onClick={() => onProductSelect(product)}
+              href={'/' + product.slug}
               onMouseEnter={() => setHoveredSlug(product.slug)}
               onMouseLeave={() => setHoveredSlug(null)}
               className="
@@ -119,7 +118,7 @@ export function Landing({ onProductSelect }: LandingProps) {
                 weight="bold"
                 className="text-[#78716C] group-hover:text-brand group-hover:translate-x-1 transition-all duration-200 flex-shrink-0"
               />
-            </button>
+            </Link>
           ))}
         </div>
 
@@ -127,27 +126,24 @@ export function Landing({ onProductSelect }: LandingProps) {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-[12px] text-[#57534E] mt-16 pb-12">
           <span>더 많은 상품이 곧 추가됩니다</span>
           <div className="flex items-center gap-4">
-            <a
+            <Link
               href="/about"
-              onClick={(e) => { e.preventDefault(); history.pushState(null, '', '/about'); window.dispatchEvent(new PopStateEvent('popstate')) }}
               className="hover:text-[#A8A29E] transition-colors duration-150"
             >
               서비스 소개
-            </a>
-            <a
+            </Link>
+            <Link
               href="/privacy"
-              onClick={(e) => { e.preventDefault(); history.pushState(null, '', '/privacy'); window.dispatchEvent(new PopStateEvent('popstate')) }}
               className="hover:text-[#A8A29E] transition-colors duration-150"
             >
               개인정보처리방침
-            </a>
-            <a
+            </Link>
+            <Link
               href="/terms"
-              onClick={(e) => { e.preventDefault(); history.pushState(null, '', '/terms'); window.dispatchEvent(new PopStateEvent('popstate')) }}
               className="hover:text-[#A8A29E] transition-colors duration-150"
             >
               이용약관
-            </a>
+            </Link>
           </div>
         </div>
       </div>

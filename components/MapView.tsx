@@ -1,32 +1,21 @@
+'use client'
+
 import { useState, useCallback, useEffect } from 'react'
-import { TopBar } from './components/TopBar'
-import { ShopPanel } from './components/ShopPanel'
-import { DetailPanel } from './components/DetailPanel'
-import { Map } from './components/Map'
-import { Landing } from './components/Landing'
-import { PrivacyPolicy } from './components/PrivacyPolicy'
-import { Terms } from './components/Terms'
-import { About } from './components/About'
-import { useShops } from './hooks/useShops'
-import { useFavorites } from './hooks/useFavorites'
-import type { Shop } from './types/shop'
-import { products, getProductBySlug, type Product } from './data/products'
-import './App.css'
+import dynamic from 'next/dynamic'
+import { TopBar } from './TopBar'
+import { ShopPanel } from './ShopPanel'
+import { DetailPanel } from './DetailPanel'
+import { useShops } from '@/hooks/useShops'
+import { useFavorites } from '@/hooks/useFavorites'
+import { products, type Product } from '@/data/products'
+import type { Shop } from '@/types/shop'
 
-function getProductFromPath(): Product | null {
-  const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '')
-  if (!path) return null
-  return getProductBySlug(path) ?? null
-}
-
-function getShopIdFromHash(): string | null {
-  const hash = window.location.hash.replace(/^#/, '')
-  return hash || null
-}
+const Map = dynamic(() => import('./Map').then(m => m.Map), { ssr: false })
 
 function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768)
+  const [isMobile, setIsMobile] = useState(false)
   useEffect(() => {
+    setIsMobile(window.innerWidth < 768)
     const mq = window.matchMedia('(min-width: 768px)')
     const handler = (e: MediaQueryListEvent) => setIsMobile(!e.matches)
     mq.addEventListener('change', handler)
@@ -35,10 +24,20 @@ function useIsMobile() {
   return isMobile
 }
 
-export default function App() {
+function getShopIdFromHash(): string | null {
+  if (typeof window === 'undefined') return null
+  const hash = window.location.hash.replace(/^#/, '')
+  return hash || null
+}
+
+interface MapViewProps {
+  product: Product
+  initialShops: Shop[]
+}
+
+export function MapView({ product, initialShops }: MapViewProps) {
   const isMobile = useIsMobile()
-  const [currentProduct, setCurrentProduct] = useState<Product | null>(getProductFromPath)
-  const [selectedShopId, setSelectedShopId] = useState<string | null>(getShopIdFromHash)
+  const [selectedShopId, setSelectedShopId] = useState<string | null>(() => getShopIdFromHash())
   const [mobileSheetExpanded, setMobileSheetExpanded] = useState(false)
 
   const {
@@ -51,7 +50,7 @@ export default function App() {
     selectedRegion,
     setSelectedRegion,
     setMapBounds,
-  } = useShops(currentProduct?.dataFile ?? '')
+  } = useShops(initialShops)
 
   const { favoriteIds, toggleFavorite, isFavorite } = useFavorites()
 
@@ -61,15 +60,7 @@ export default function App() {
 
   const selectedShop = selectedShopId ? allShops.find(s => s.id === selectedShopId) ?? null : null
 
-  useEffect(() => {
-    function onPopState() {
-      setCurrentProduct(getProductFromPath())
-      setSelectedShopId(getShopIdFromHash())
-    }
-    window.addEventListener('popstate', onPopState)
-    return () => window.removeEventListener('popstate', onPopState)
-  }, [])
-
+  // Listen for hash changes to select shops
   useEffect(() => {
     function onHashChange() {
       const shopId = getShopIdFromHash()
@@ -83,6 +74,16 @@ export default function App() {
     }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
+  // Read hash on mount
+  useEffect(() => {
+    const shopId = getShopIdFromHash()
+    if (shopId) {
+      setSelectedShopId(shopId)
+      setHighlightedShopId(shopId)
+      setScrollToShopId(shopId)
+    }
   }, [])
 
   const displayedShops = showFavoritesOnly
@@ -122,26 +123,6 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [selectedShop, handleCloseDetail])
 
-  const handleProductChange = useCallback((product: Product) => {
-    history.pushState(null, '', `/${product.slug}`)
-    setCurrentProduct(product)
-    setSelectedShopId(null)
-    setHighlightedShopId(null)
-    if (window.location.hash) {
-      history.replaceState(null, '', `/${product.slug}`)
-    }
-  }, [])
-
-  const pathname = window.location.pathname.replace(/^\//, '').replace(/\/$/, '')
-
-  if (pathname === 'privacy') return <PrivacyPolicy />
-  if (pathname === 'terms') return <Terms />
-  if (pathname === 'about') return <About />
-
-  if (!currentProduct) {
-    return <Landing onProductSelect={handleProductChange} />
-  }
-
   return (
     <div className="h-[100dvh] w-screen relative overflow-hidden">
       <Map
@@ -153,9 +134,8 @@ export default function App() {
       />
 
       <TopBar
-        currentProduct={currentProduct}
+        currentProduct={product}
         products={products}
-        onProductChange={handleProductChange}
         showFavoritesOnly={showFavoritesOnly}
         onToggleFavorites={() => setShowFavoritesOnly(p => !p)}
         favoriteCount={favoriteIds.length}
