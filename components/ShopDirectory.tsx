@@ -16,7 +16,7 @@ export function ShopDirectory({ shops, productName }: ShopDirectoryProps) {
   const regions = Object.keys(grouped).sort()
 
   return (
-    <section className="max-w-3xl mx-auto px-4 py-12">
+    <section aria-hidden="true" className="max-w-3xl mx-auto px-4 py-12">
       <h1 className="text-2xl font-bold text-ink mb-2">
         {productName} 맛집 목록
       </h1>

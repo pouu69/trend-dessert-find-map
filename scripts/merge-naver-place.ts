@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
-const SHOPS_PATH = path.join(ROOT, "src/data/shops.json");
+const SHOPS_PATH = path.join(ROOT, "data/shops.json");
 const NAVER_PATH = path.join(ROOT, "scripts/naver-place-results.json");
 const GEOCODE_LIMIT = 60;
 const NOMINATIM_DELAY = 1100; // 1.1s

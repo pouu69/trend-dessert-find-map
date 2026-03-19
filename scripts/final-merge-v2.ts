@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const SHOPS_PATH = path.join(__dirname, "../src/data/shops.json");
+const SHOPS_PATH = path.join(__dirname, "../data/shops.json");
 
 interface Shop {
   id: string;

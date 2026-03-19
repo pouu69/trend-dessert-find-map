@@ -5,13 +5,13 @@ import { crawlNaver } from './crawl-naver'
 import { crawlKakao } from './crawl-kakao'
 import { geocodeAll } from './geocode'
 import { mergeShops } from './merge-data'
-import type { Shop } from '../src/types/shop'
+import type { Shop } from '../types/shop'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 const KEYWORD = '상하이버터떡'
-const OUTPUT_PATH = resolve(__dirname, '../src/data/shops.json')
+const OUTPUT_PATH = resolve(__dirname, '../data/shops.json')
 
 async function main() {
   console.log(`\n🧈 상하이버터떡 데이터 수집 시작\n`)

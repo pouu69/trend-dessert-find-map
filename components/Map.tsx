@@ -28,29 +28,15 @@ function createMarkerIcon(highlighted: boolean) {
   })
 }
 
-interface MapEventsProps {
-  onBoundsChange: (bounds: LatLngBounds) => void
-}
-
-function MapEvents({ onBoundsChange, onViewportChange }: MapEventsProps & { onViewportChange: (bounds: LatLngBounds) => void }) {
+function MapEvents({ onViewportChange }: { onViewportChange: (bounds: LatLngBounds) => void }) {
   const map = useMapEvents({
-    moveend: () => {
-      const b = map.getBounds()
-      onBoundsChange(b)
-      onViewportChange(b)
-    },
-    load: () => {
-      const b = map.getBounds()
-      onBoundsChange(b)
-      onViewportChange(b)
-    },
+    moveend: () => onViewportChange(map.getBounds()),
+    load: () => onViewportChange(map.getBounds()),
   })
 
   useEffect(() => {
-    const b = map.getBounds()
-    onBoundsChange(b)
-    onViewportChange(b)
-  }, [map, onBoundsChange, onViewportChange])
+    onViewportChange(map.getBounds())
+  }, [map, onViewportChange])
 
   return null
 }
@@ -77,7 +63,6 @@ interface MapProps {
   highlightedShopId: string | null
   selectedShop: Shop | null
   onMarkerClick: (shop: Shop) => void
-  onBoundsChange: (bounds: LatLngBounds) => void
 }
 
 export function Map({
@@ -85,7 +70,6 @@ export function Map({
   highlightedShopId,
   selectedShop,
   onMarkerClick,
-  onBoundsChange,
 }: MapProps) {
   const [viewport, setViewport] = useState<LatLngBounds | null>(null)
 
@@ -108,7 +92,7 @@ export function Map({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
       />
-      <MapEvents onBoundsChange={onBoundsChange} onViewportChange={setViewport} />
+      <MapEvents onViewportChange={setViewport} />
       <FlyToShop shop={selectedShop} />
 
       {viewportShops.map(shop => (

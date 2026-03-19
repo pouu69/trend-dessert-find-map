@@ -7,22 +7,11 @@ import { ShopPanel } from './ShopPanel'
 import { DetailPanel } from './DetailPanel'
 import { useShops } from '@/hooks/useShops'
 import { useFavorites } from '@/hooks/useFavorites'
+import { useIsMobile } from '@/hooks/useIsMobile'
 import { products, type Product } from '@/data/products'
 import type { Shop } from '@/types/shop'
 
 const Map = dynamic(() => import('./Map').then(m => m.Map), { ssr: false })
-
-function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false)
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 768)
-    const mq = window.matchMedia('(min-width: 768px)')
-    const handler = (e: MediaQueryListEvent) => setIsMobile(!e.matches)
-    mq.addEventListener('change', handler)
-    return () => mq.removeEventListener('change', handler)
-  }, [])
-  return isMobile
-}
 
 function getShopIdFromHash(): string | null {
   if (typeof window === 'undefined') return null
@@ -49,7 +38,6 @@ export function MapView({ product, initialShops }: MapViewProps) {
     setSearchQuery,
     selectedRegion,
     setSelectedRegion,
-    setMapBounds,
   } = useShops(initialShops)
 
   const { favoriteIds, toggleFavorite, isFavorite } = useFavorites()
@@ -130,7 +118,6 @@ export function MapView({ product, initialShops }: MapViewProps) {
         highlightedShopId={highlightedShopId}
         selectedShop={selectedShop}
         onMarkerClick={handleMarkerClick}
-        onBoundsChange={setMapBounds}
       />
 
       <TopBar

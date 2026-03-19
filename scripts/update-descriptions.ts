@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const shopsPath = path.join(__dirname, "../src/data/shops.json");
+const shopsPath = path.join(__dirname, "../data/shops.json");
 const gmapAPath = path.join(__dirname, "gmap-info-a.json");
 const gmapCPath = path.join(__dirname, "gmap-info-c.json");
 

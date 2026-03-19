@@ -106,7 +106,7 @@ function extractDistrict(address: string): string {
 // ── Load data ──────────────────────────────────────────────────────────────
 
 const ROOT = path.resolve(__dirname, "..");
-const shopsPath = path.join(ROOT, "src/data/shops.json");
+const shopsPath = path.join(ROOT, "data/shops.json");
 
 const currentShops: Shop[] = JSON.parse(fs.readFileSync(shopsPath, "utf-8"));
 

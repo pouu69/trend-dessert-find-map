@@ -5,9 +5,6 @@ node_modules
 .next/
 out/
 
-# Vite (legacy)
-dist
-dist-ssr
 
 # Environment
 *.local
@@ -40,3 +37,4 @@ dist-scripts/
 
 # Pipeline data (intermediate)
 pipeline/data/
+dist

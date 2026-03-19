@@ -2,7 +2,7 @@
  * build-shops.ts
  *
  * Combines real shop data from Kakao Map and Naver Blog crawl results,
- * geocodes addresses via Nominatim, and writes src/data/shops.json.
+ * geocodes addresses via Nominatim, and writes data/shops.json.
  */
 
 import * as fs from "fs";
@@ -310,7 +310,7 @@ async function main() {
   // Write output
   const outPath = path.resolve(
     import.meta.dirname ?? path.dirname(new URL(import.meta.url).pathname),
-    "../src/data/shops.json"
+    "../data/shops.json"
   );
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(shops, null, 2) + "\n", "utf-8");

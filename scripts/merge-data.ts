@@ -1,5 +1,5 @@
 import type { RawShop } from './crawl-naver'
-import type { Shop } from '../src/types/shop'
+import type { Shop } from '../types/shop'
 
 function normalizeName(name: string): string {
   return name.replace(/[\s\-·.,()]/g, '').toLowerCase()

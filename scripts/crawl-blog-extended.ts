@@ -420,7 +420,7 @@ async function main() {
   console.log('=== Shanghai Butter Rice Cake - Extended Blog Crawl ===\n')
 
   const shopsJsonPath = resolve(
-    '/Users/kwanung/development/experiments/shanghai-butter-rice/src/data/shops.json'
+    path.join(__dirname, '../data/shops.json')
   )
   const existingShops: Shop[] = JSON.parse(readFileSync(shopsJsonPath, 'utf-8'))
   console.log(`[init] Loaded ${existingShops.length} existing shops\n`)

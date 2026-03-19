@@ -40,14 +40,13 @@ export default async function ProductPage({
     '@type': 'ItemList',
     name: `${productData.name} 맛집 목록`,
     numberOfItems: shops.length,
-    itemListElement: shops.map((shop, i) => ({
+    itemListElement: shops.slice(0, 50).map((shop, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       item: {
         '@type': 'LocalBusiness',
         name: shop.name,
         address: shop.address,
-        ...(shop.description && { description: shop.description }),
         ...(shop.phone && { telephone: shop.phone }),
       },
     })),
@@ -57,7 +56,7 @@ export default async function ProductPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
       />
       <MapView product={productData} initialShops={shops} />
       <ShopDirectory shops={shops} productName={productData.name} />

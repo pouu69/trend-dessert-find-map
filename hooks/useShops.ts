@@ -1,12 +1,10 @@
 'use client'
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo } from 'react'
 import type { Shop } from '@/types/shop'
-import type { LatLngBounds } from 'leaflet'
 
 export function useShops(initialShops: Shop[]) {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
-  const [mapBounds, setMapBounds] = useState<LatLngBounds | null>(null)
 
   const allShops = initialShops
 
@@ -29,35 +27,18 @@ export function useShops(initialShops: Shop[]) {
     return result
   }, [allShops, searchQuery, selectedRegion])
 
-  const visibleShops = useMemo(() => {
-    if (!mapBounds) return filteredShops
-    return filteredShops.filter(s => {
-      if (s.lat === null || s.lng === null) return false
-      return mapBounds.contains([s.lat, s.lng])
-    })
-  }, [filteredShops, mapBounds])
-
   const mappableShops = useMemo(() => {
     return filteredShops.filter(s => s.lat !== null && s.lng !== null)
   }, [filteredShops])
 
-  const clearFilters = useCallback(() => {
-    setSearchQuery('')
-    setSelectedRegion(null)
-  }, [])
-
   return {
     allShops,
     filteredShops,
-    visibleShops,
     mappableShops,
     regions,
     searchQuery,
     setSearchQuery,
     selectedRegion,
     setSelectedRegion,
-    mapBounds,
-    setMapBounds,
-    clearFilters,
   }
 }
