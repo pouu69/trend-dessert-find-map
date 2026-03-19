@@ -3,6 +3,7 @@ import { getShopsByProduct } from '@/lib/data'
 import { getProductBySlug, products } from '@/data/products'
 import { notFound } from 'next/navigation'
 import { MapView } from '@/components/MapView'
+import { ShopDirectory } from '@/components/ShopDirectory'
 
 export function generateStaticParams() {
   return products.map(p => ({ product: p.slug }))
@@ -34,5 +35,32 @@ export default async function ProductPage({
 
   const shops = getShopsByProduct(product)
 
-  return <MapView product={productData} initialShops={shops} />
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `${productData.name} 맛집 목록`,
+    numberOfItems: shops.length,
+    itemListElement: shops.map((shop, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'LocalBusiness',
+        name: shop.name,
+        address: shop.address,
+        ...(shop.description && { description: shop.description }),
+        ...(shop.phone && { telephone: shop.phone }),
+      },
+    })),
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <MapView product={productData} initialShops={shops} />
+      <ShopDirectory shops={shops} productName={productData.name} />
+    </>
+  )
 }

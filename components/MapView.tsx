@@ -37,7 +37,7 @@ interface MapViewProps {
 
 export function MapView({ product, initialShops }: MapViewProps) {
   const isMobile = useIsMobile()
-  const [selectedShopId, setSelectedShopId] = useState<string | null>(() => getShopIdFromHash())
+  const [selectedShopId, setSelectedShopId] = useState<string | null>(null)
   const [mobileSheetExpanded, setMobileSheetExpanded] = useState(false)
 
   const {
