@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, useMemo } from 'react'
-import { MapContainer, TileLayer, Marker, Tooltip, useMap, useMapEvents } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Tooltip, useMap, useMapEvents, ZoomControl } from 'react-leaflet'
 import L from 'leaflet'
 import type { Shop } from '@/types/shop'
 import type { LatLngBounds } from 'leaflet'
@@ -37,6 +37,42 @@ function MapEvents({ onViewportChange }: { onViewportChange: (bounds: LatLngBoun
   useEffect(() => {
     onViewportChange(map.getBounds())
   }, [map, onViewportChange])
+
+  return null
+}
+
+function LocateMe() {
+  const map = useMap()
+  const controlRef = useRef<L.Control | null>(null)
+
+  useEffect(() => {
+    const LocateControl = L.Control.extend({
+      options: { position: 'bottomright' as const },
+      onAdd() {
+        const container = L.DomUtil.create('div', 'leaflet-control leaflet-control-locate')
+        const btn = L.DomUtil.create('button', '', container)
+        btn.title = '내 위치'
+        btn.setAttribute('aria-label', '내 위치로 이동')
+        btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>`
+
+        L.DomEvent.disableClickPropagation(container)
+        L.DomEvent.on(btn, 'click', () => {
+          btn.classList.add('is-locating')
+          map.locate({ setView: true, maxZoom: 16 })
+          map.once('locationfound', () => btn.classList.remove('is-locating'))
+          map.once('locationerror', () => btn.classList.remove('is-locating'))
+        })
+
+        return container
+      },
+    })
+
+    const control = new LocateControl()
+    control.addTo(map)
+    controlRef.current = control
+
+    return () => { control.remove() }
+  }, [map])
 
   return null
 }
@@ -86,12 +122,14 @@ export function Map({
       center={SEOUL_CENTER}
       zoom={DEFAULT_ZOOM}
       className="h-full w-full"
-      zoomControl={true}
+      zoomControl={false}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
       />
+      <LocateMe />
+      <ZoomControl position="bottomright" />
       <MapEvents onViewportChange={setViewport} />
       <FlyToShop shop={selectedShop} />
 
