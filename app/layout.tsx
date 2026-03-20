@@ -45,7 +45,13 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
         />
+        <meta name="google-adsense-account" content="ca-pub-5353705048338468" />
         <link rel="icon" href="/favicon.svg" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5353705048338468"
+          crossOrigin="anonymous"
+        />
       </head>
       <body>{children}</body>
     </html>
