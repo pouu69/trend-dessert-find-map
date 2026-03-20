@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { X, Heart, Phone, NavigationArrow, ShareNetwork, Clock, CalendarX, Tag, ArrowSquareOut, Check, MapPin } from '@phosphor-icons/react'
 import type { Shop } from '@/types/shop'
 
@@ -16,6 +16,22 @@ function kakaoMapUrl(name: string) {
   return `https://map.kakao.com/?q=${encodeURIComponent(name)}`
 }
 
+// --- Bottom sheet snap points ---
+const SNAP_PEEK = 0.55
+const SNAP_FULL = 0.90
+const SNAPS = [SNAP_PEEK, SNAP_FULL]
+const VELOCITY_CLOSE_THRESHOLD = 0.4 // px/ms — fast swipe down = close
+
+function closestSnap(ratio: number): number {
+  let best = SNAPS[0]
+  let bestDist = Math.abs(ratio - best)
+  for (const s of SNAPS) {
+    const d = Math.abs(ratio - s)
+    if (d < bestDist) { best = s; bestDist = d }
+  }
+  return best
+}
+
 export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMobile }: DetailPanelProps) {
   const [copied, setCopied] = useState(false)
 
@@ -25,40 +41,151 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
     return () => clearTimeout(t)
   }, [copied])
 
-  // --- MOBILE LAYOUT: full-screen overlay ---
-  if (isMobile) {
-    return (
-      <div className="fixed inset-0 z-[1001] pointer-events-auto flex flex-col">
-        {/* Top spacer for map peek -- tap to close */}
-        <div className="flex-shrink-0 h-[80px]" onClick={onClose} />
+  // --- Mobile bottom sheet state ---
+  const [sheetHeight, setSheetHeight] = useState(SNAP_PEEK)
+  const [viewportHeight, setViewportHeight] = useState(800)
+  const [mounted, setMounted] = useState(false)
+  const dragRef = useRef({ dragging: false, startY: 0, startHeight: 0, startTime: 0 })
+  const scrollRef = useRef<HTMLDivElement>(null)
 
-        {/* Sheet */}
-        <div className="anim-overlay-in flex-1 flex flex-col glass rounded-t-2xl overflow-hidden"
-          style={{ borderBottom: 'none', borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}>
-          {/* Handle */}
-          <div className="bottom-sheet-handle" />
+  useEffect(() => {
+    if (!isMobile) return
+    setViewportHeight(window.innerHeight)
+    setMounted(true)
+    const handleResize = () => setViewportHeight(window.innerHeight)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [isMobile])
+
+  const handleDragStart = useCallback((clientY: number) => {
+    dragRef.current = { dragging: true, startY: clientY, startHeight: sheetHeight, startTime: Date.now() }
+  }, [sheetHeight])
+
+  const handleDragMove = useCallback((clientY: number) => {
+    if (!dragRef.current.dragging) return
+    const deltaY = dragRef.current.startY - clientY
+    const deltaRatio = deltaY / viewportHeight
+    const newHeight = Math.max(0.1, Math.min(SNAP_FULL, dragRef.current.startHeight + deltaRatio))
+    setSheetHeight(newHeight)
+  }, [viewportHeight])
+
+  const handleDragEnd = useCallback((clientY: number) => {
+    if (!dragRef.current.dragging) return
+    dragRef.current.dragging = false
+
+    const elapsed = Date.now() - dragRef.current.startTime
+    const distancePx = clientY - dragRef.current.startY
+    const velocity = distancePx / Math.max(elapsed, 1) // px/ms, positive = downward
+
+    // Fast downward swipe → close
+    if (velocity > VELOCITY_CLOSE_THRESHOLD) {
+      onClose()
+      return
+    }
+
+    setSheetHeight(prev => {
+      // If dragged below minimum, close
+      if (prev < SNAP_PEEK * 0.5) {
+        setTimeout(() => onClose(), 0)
+        return prev
+      }
+      return closestSnap(prev)
+    })
+  }, [onClose])
+
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    handleDragStart(e.touches[0].clientY)
+  }, [handleDragStart])
+
+  const onTouchMove = useCallback((e: React.TouchEvent) => {
+    handleDragMove(e.touches[0].clientY)
+  }, [handleDragMove])
+
+  const onTouchEnd = useCallback((e: React.TouchEvent) => {
+    handleDragEnd(e.changedTouches[0].clientY)
+  }, [handleDragEnd])
+
+  const onMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault()
+    handleDragStart(e.clientY)
+  }, [handleDragStart])
+
+  useEffect(() => {
+    if (!dragRef.current.dragging) return
+    function onMove(e: MouseEvent) { handleDragMove(e.clientY) }
+    function onUp(e: MouseEvent) { handleDragEnd(e.clientY) }
+    window.addEventListener('mousemove', onMove)
+    window.addEventListener('mouseup', onUp)
+    return () => {
+      window.removeEventListener('mousemove', onMove)
+      window.removeEventListener('mouseup', onUp)
+    }
+  })
+
+  // --- MOBILE LAYOUT: draggable bottom sheet ---
+  if (isMobile) {
+    const heightPx = Math.round(sheetHeight * viewportHeight)
+    const isDragging = dragRef.current.dragging
+
+    return (
+      <>
+        {/* Dim backdrop — tap to close */}
+        <div
+          className="fixed inset-0 z-[1000] pointer-events-auto"
+          style={{
+            background: `rgba(0,0,0,${Math.min(sheetHeight * 0.25, 0.18)})`,
+            transition: isDragging ? 'none' : 'background 0.3s ease',
+          }}
+          onClick={onClose}
+        />
+
+        {/* Bottom sheet */}
+        <div
+          className="fixed bottom-0 left-0 right-0 z-[1001] pointer-events-auto glass rounded-t-2xl flex flex-col overflow-hidden"
+          style={{
+            height: mounted ? `${heightPx}px` : '0px',
+            transition: isDragging ? 'none' : 'height 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+            borderBottom: 'none',
+            borderBottomLeftRadius: 0,
+            borderBottomRightRadius: 0,
+          }}
+        >
+          {/* Drag handle area */}
+          <div
+            className="flex-shrink-0 cursor-grab active:cursor-grabbing select-none touch-none"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+            onMouseDown={onMouseDown}
+          >
+            <div className="bottom-sheet-handle" />
+
+            {/* Top actions row inside handle for easy drag access */}
+            <div className="flex items-center justify-between px-5 pt-1 pb-2">
+              <button onClick={onClose}
+                className="w-8 h-8 rounded-full bg-panel-hover flex items-center justify-center hover:bg-line transition-colors active:scale-[0.95]">
+                <X size={14} weight="bold" className="text-ink-secondary" />
+              </button>
+              <button onClick={() => onToggleFavorite(shop.id)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-all active:scale-[0.96] ${
+                  isFavorite
+                    ? 'bg-danger text-white shadow-[0_2px_8px_rgba(220,38,38,0.2)]'
+                    : 'bg-panel-hover text-ink-secondary hover:bg-line'
+                }`}>
+                <Heart size={13} weight={isFavorite ? 'fill' : 'regular'} />
+                {isFavorite ? '저장됨' : '즐겨찾기'}
+              </button>
+            </div>
+          </div>
 
           {/* Scrollable content */}
-          <div className="flex-1 overflow-y-auto">
+          <div
+            ref={scrollRef}
+            className="flex-1 overflow-y-auto overscroll-contain"
+            style={{ overflowY: 'auto' }}
+          >
             {/* Hero header */}
-            <div className="relative px-5 pt-2 pb-4 bg-gradient-to-b from-brand/[0.06] to-transparent">
-              {/* Top actions */}
-              <div className="flex items-center justify-between mb-3">
-                <button onClick={onClose}
-                  className="w-8 h-8 rounded-full bg-panel-hover flex items-center justify-center hover:bg-line transition-colors active:scale-[0.95]">
-                  <X size={14} weight="bold" className="text-ink-secondary" />
-                </button>
-                <button onClick={() => onToggleFavorite(shop.id)}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-all active:scale-[0.96] ${
-                    isFavorite
-                      ? 'bg-danger text-white shadow-[0_2px_8px_rgba(220,38,38,0.2)]'
-                      : 'bg-panel-hover text-ink-secondary hover:bg-line'
-                  }`}>
-                  <Heart size={13} weight={isFavorite ? 'fill' : 'regular'} />
-                  {isFavorite ? '저장됨' : '즐겨찾기'}
-                </button>
-              </div>
-
+            <div className="relative px-5 pt-1 pb-4 bg-gradient-to-b from-brand/[0.06] to-transparent">
               {/* Shop name */}
               <h2 className="font-heading text-[24px] font-extrabold text-ink leading-[1.1] tracking-[-0.03em]">
                 {shop.name}
@@ -98,7 +225,7 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
               <button
                 onClick={() => {
                   if (typeof window !== 'undefined') {
-                    navigator.clipboard.writeText(window.location.origin + `?shop=${shop.id}`).then(() => setCopied(true))
+                    navigator.clipboard.writeText(window.location.origin + window.location.pathname + `#${shop.id}`).then(() => setCopied(true))
                   }
                 }}
                 className="flex-1 flex items-center justify-center gap-1.5 py-3.5 text-[12px] font-semibold text-ink-secondary active:bg-panel-hover active:scale-[0.97] transition-all">
@@ -167,7 +294,7 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
             )}
 
             {/* Kakao link */}
-            <div className="px-5 pb-5">
+            <div className="px-5 pt-2 pb-5">
               <a href={kakaoMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-ink text-ink-on-dark text-[13px] font-semibold active:scale-[0.98] transition-all shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
                 카카오맵에서 보기
@@ -179,7 +306,7 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
             <div className="h-[env(safe-area-inset-bottom)]" />
           </div>
         </div>
-      </div>
+      </>
     )
   }
 
@@ -245,7 +372,7 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
           <button
             onClick={() => {
               if (typeof window !== 'undefined') {
-                navigator.clipboard.writeText(window.location.origin + `?shop=${shop.id}`).then(() => setCopied(true))
+                navigator.clipboard.writeText(window.location.origin + window.location.pathname + `#${shop.id}`).then(() => setCopied(true))
               }
             }}
             className="flex-1 flex items-center justify-center gap-1.5 py-3 text-[12px] font-semibold text-ink-secondary hover:bg-panel-hover active:scale-[0.97] transition-all">
