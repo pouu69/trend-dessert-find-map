@@ -18,9 +18,25 @@ export async function generateMetadata({
   const productData = getProductBySlug(product)
   if (!productData) return {}
 
+  const title = `${productData.name} 맛집 지도 — 요즘 뭐가 맛있어?`
+  const description = `전국 ${productData.name} 판매처를 지도에서 한눈에 찾아보세요.`
+
   return {
-    title: `${productData.name} 맛집 지도 — 요즘 뭐가 맛있어?`,
-    description: `전국 ${productData.name} 판매처를 지도에서 한눈에 찾아보세요.`,
+    title,
+    description,
+    alternates: {
+      canonical: `/${product}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `/${product}`,
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    },
   }
 }
 
