@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://trendeat.org/sitemap.xml',
+    sitemap: 'https://trend-dessert.com/sitemap.xml',
   }
 }

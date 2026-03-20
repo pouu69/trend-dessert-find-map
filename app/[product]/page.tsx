@@ -24,6 +24,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    keywords: productData.keywords,
     alternates: {
       canonical: `/${product}`,
     },

@@ -11,9 +11,10 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://trendeat.org'),
+  metadataBase: new URL('https://trend-dessert.com'),
   title: '요즘 뭐가 맛있어? — 트렌드 간식 맛집 지도',
   description: '전국 트렌드 디저트 & 간식 맛집을 지도에서 한눈에 찾아보세요.',
+  keywords: ['트렌드디저트', '간식맛집', '맛집지도', '디저트맛집', '간식맵'],
   alternates: {
     canonical: '/',
   },
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     description: '전국 트렌드 디저트 & 간식 맛집을 지도에서 한눈에 찾아보세요.',
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://trendeat.org',
+    url: 'https://trend-dessert.com',
     siteName: '요즘 뭐가 맛있어?',
   },
   twitter: {

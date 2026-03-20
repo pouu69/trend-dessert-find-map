@@ -106,23 +106,16 @@ export function PrivacyPolicy() {
             <p>광고 수익은 서비스의 유지·개선에 사용됩니다.</p>
           </Section>
 
-          <Section number="5" title="지도 서비스 이용">
-            <p>서비스는 지도 표시를 위해 <strong className="text-[#F5F0EB]">Kakao Maps API</strong> 및 <strong className="text-[#F5F0EB]">Leaflet</strong> 오픈소스 라이브러리를 사용합니다. Kakao Maps 이용 시 Kakao의 개인정보처리방침이 적용될 수 있습니다.</p>
-            <ul>
-              <li>Kakao 개인정보처리방침: <ExtLink href="https://www.kakao.com/policy/privacy">kakao.com/policy/privacy</ExtLink></li>
-            </ul>
-          </Section>
-
-          <Section number="6" title="제3자 제공">
+          <Section number="5" title="제3자 제공">
             <p>서비스는 이용자의 정보를 광고 파트너(Google)를 제외하고 제3자에게 판매·제공·공유하지 않습니다. 법령에 따른 수사기관의 요청이 있는 경우 관련 법률이 정한 절차에 따라 제공할 수 있습니다.</p>
           </Section>
 
-          <Section number="7" title="개인정보의 보관 및 파기">
+          <Section number="6" title="개인정보의 보관 및 파기">
             <p>서비스는 서버에 개인정보를 저장하지 않습니다. 이용자 기기의 <code>localStorage</code>에 저장된 즐겨찾기 데이터는 이용자가 직접 브라우저 저장 데이터를 삭제하면 즉시 파기됩니다.</p>
             <p>Google AdSense 등 제3자 쿠키의 보관 기간은 각 사업자의 방침에 따릅니다.</p>
           </Section>
 
-          <Section number="8" title="이용자의 권리">
+          <Section number="7" title="이용자의 권리">
             <p>이용자는 언제든지 브라우저 설정을 통해 다음 조치를 취할 수 있습니다.</p>
             <ul>
               <li>쿠키 저장 거부 또는 삭제</li>
@@ -131,15 +124,11 @@ export function PrivacyPolicy() {
             </ul>
           </Section>
 
-          <Section number="9" title="아동 이용자">
-            <p>서비스는 만 14세 미만 아동을 대상으로 개인정보를 수집하지 않습니다. 만 14세 미만 아동의 개인정보가 수집된 사실을 확인하는 경우 즉시 삭제 조치합니다.</p>
-          </Section>
-
-          <Section number="10" title="방침 변경">
+          <Section number="8" title="방침 변경">
             <p>본 개인정보처리방침은 법령 변경 또는 서비스 변경에 따라 업데이트될 수 있습니다. 변경 시 페이지 상단의 최종 수정일을 갱신하며, 중요한 변경은 서비스 내 공지를 통해 안내합니다.</p>
           </Section>
 
-          <Section number="11" title="문의">
+          <Section number="9" title="문의">
             <p>개인정보 처리에 관한 문의는 아래 채널을 통해 연락주시기 바랍니다.</p>
             <p>개인정보 침해에 관한 신고·상담은 개인정보보호위원회(<ExtLink href="https://www.privacy.go.kr">privacy.go.kr</ExtLink>) 또는 한국인터넷진흥원(<ExtLink href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</ExtLink>)에 문의하실 수 있습니다.</p>
           </Section>

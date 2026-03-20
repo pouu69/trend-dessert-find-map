@@ -4,7 +4,7 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: '요즘 뭐가 맛있어?',
-  url: 'https://trendeat.org',
+  url: 'https://trend-dessert.com',
   description: '전국 트렌드 디저트 & 간식 맛집을 지도에서 한눈에 찾아보세요.',
   inLanguage: 'ko',
 }
@@ -13,8 +13,8 @@ const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: '요즘 뭐가 맛있어?',
-  url: 'https://trendeat.org',
-  logo: 'https://trendeat.org/favicon.svg',
+  url: 'https://trend-dessert.com',
+  logo: 'https://trend-dessert.com/favicon.svg',
 }
 
 export default function HomePage() {

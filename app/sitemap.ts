@@ -4,7 +4,7 @@ import { products } from '@/data/products'
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://trendeat.org'
+  const baseUrl = 'https://trend-dessert.com'
 
   const productPages = products.map(p => ({
     url: `${baseUrl}/${p.slug}`,
