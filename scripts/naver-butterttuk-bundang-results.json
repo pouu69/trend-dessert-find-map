@@ -1,0 +1,101 @@
+[
+  {
+    "name": "오보타르트 선유도역 본점",
+    "address": "서울 영등포구 양평로22길 11",
+    "phone": "0507-1350-9559",
+    "hours": "",
+    "category": "카페,디저트",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "카페 인 선유",
+    "address": "서울 영등포구 선유로49길 25 1층 카페 인 선유",
+    "phone": "0507-2093-6291",
+    "hours": "",
+    "category": "카페,디저트",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "ToTo1001",
+    "address": "서울 영등포구 선유로49길 24 1층 ToTo1001",
+    "phone": "02-2677-8403",
+    "hours": "",
+    "category": "카페,디저트",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "히키쿠키",
+    "address": "서울 영등포구 선유로53길 30-16 1층",
+    "phone": "",
+    "hours": "",
+    "category": "베이커리",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "네가 있어 고마워",
+    "address": "서울 영등포구 양평로28길 33 아트리버빌 J동 1층 네가 있어 고마워",
+    "phone": "0507-1306-1180",
+    "hours": "",
+    "category": "카페,디저트",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "카페 흘러",
+    "address": "서울 영등포구 당산로35길 3 1층",
+    "phone": "0507-1394-3731",
+    "hours": "",
+    "category": "카페,디저트",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "카페 고토",
+    "address": "서울 영등포구 당산로35길 4-8 보이드에이빌딩 1층",
+    "phone": "",
+    "hours": "",
+    "category": "카페,디저트",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "오브네뜨",
+    "address": "서울 영등포구 당산로 166 1층",
+    "phone": "0507-1495-0796",
+    "hours": "",
+    "category": "베이커리",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "피아첸차",
+    "address": "서울 영등포구 당산로46길 19 1층 PIACENZA",
+    "phone": "0507-1481-2096",
+    "hours": "",
+    "category": "카페",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "슬래시위드",
+    "address": "서울 영등포구 국회대로37길 5 1층",
+    "phone": "0507-1364-2733",
+    "hours": "",
+    "category": "카페,디저트",
+    "query": "선유도역 버터떡",
+    "source": "naver-place"
+  },
+  {
+    "name": "",
+    "address": "서울 영등포구 선유로 53길",
+    "phone": "",
+    "hours": "",
+    "category": "",
+    "query": "선유도역 버터떡",
+    "source": "blog-text"
+  }
+]

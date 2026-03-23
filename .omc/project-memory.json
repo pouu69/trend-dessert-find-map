@@ -1,0 +1,577 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1774242583708,
+  "projectRoot": "/Users/kwanung/development/experiments/shanghai-butter-rice",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "16.1.7",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "playwright",
+        "version": "1.58.2",
+        "category": "testing"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "collect-data": "npx tsx scripts/collect-data.ts",
+      "pipeline": "npx tsx pipeline/run.ts"
+    }
+  },
+  "conventions": {
+    "namingStyle": "camelCase",
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "app",
+      "components",
+      "docs",
+      "lib",
+      "public",
+      "scripts",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "app": {
+      "path": "app",
+      "purpose": "Application code",
+      "fileCount": 6,
+      "lastAccessed": 1774242583688,
+      "keyFiles": [
+        "globals.css",
+        "layout.tsx",
+        "not-found.tsx",
+        "page.tsx",
+        "robots.ts"
+      ]
+    },
+    "components": {
+      "path": "components",
+      "purpose": "UI components",
+      "fileCount": 11,
+      "lastAccessed": 1774242583689,
+      "keyFiles": [
+        "About.tsx",
+        "DetailPanel.tsx",
+        "Landing.tsx",
+        "Map.tsx",
+        "MapView.tsx"
+      ]
+    },
+    "data": {
+      "path": "data",
+      "purpose": "Data files",
+      "fileCount": 3,
+      "lastAccessed": 1774242583693,
+      "keyFiles": [
+        "dujjonku.json",
+        "products.ts",
+        "shops.json"
+      ]
+    },
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 3,
+      "lastAccessed": 1774242583694,
+      "keyFiles": [
+        "favicon.svg",
+        "icons.svg",
+        "index.html"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1774242583694,
+      "keyFiles": []
+    },
+    "hooks": {
+      "path": "hooks",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1774242583694,
+      "keyFiles": [
+        "useFavorites.ts",
+        "useIsMobile.ts",
+        "useShops.ts"
+      ]
+    },
+    "lib": {
+      "path": "lib",
+      "purpose": "Library code",
+      "fileCount": 2,
+      "lastAccessed": 1774242583695,
+      "keyFiles": [
+        "data.ts",
+        "supabase.ts"
+      ]
+    },
+    "out": {
+      "path": "out",
+      "purpose": "Build output",
+      "fileCount": 24,
+      "lastAccessed": 1774242583696,
+      "keyFiles": [
+        "404.html",
+        "__next.__PAGE__.txt",
+        "__next._full.txt",
+        "__next._head.txt",
+        "__next._index.txt"
+      ]
+    },
+    "pipeline": {
+      "path": "pipeline",
+      "purpose": null,
+      "fileCount": 7,
+      "lastAccessed": 1774242583697,
+      "keyFiles": [
+        "pipeline.config.json",
+        "run.ts",
+        "stage1-keywords.ts",
+        "stage2-crawl-blogs.ts",
+        "stage3-clean.ts"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 3,
+      "lastAccessed": 1774242583697,
+      "keyFiles": [
+        "ads.txt",
+        "favicon.svg",
+        "icons.svg"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 32,
+      "lastAccessed": 1774242583698,
+      "keyFiles": [
+        "build-shops.ts",
+        "bundang-results.json",
+        "cities-results.json",
+        "collect-data.ts",
+        "crawl-blog-extended.ts"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1774242583698,
+      "keyFiles": []
+    },
+    "supabase": {
+      "path": "supabase",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1774242583699,
+      "keyFiles": [
+        "schema.sql"
+      ]
+    },
+    "types": {
+      "path": "types",
+      "purpose": "Type definitions",
+      "fileCount": 1,
+      "lastAccessed": 1774242583699,
+      "keyFiles": [
+        "shop.ts"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1774242583700,
+      "keyFiles": [
+        "index-BYeTyny-.js",
+        "index-DItkdtSw.css"
+      ]
+    },
+    "pipeline/data": {
+      "path": "pipeline/data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1774242583701,
+      "keyFiles": [
+        "keywords.json"
+      ]
+    },
+    "pipeline/lib": {
+      "path": "pipeline/lib",
+      "purpose": "Library code",
+      "fileCount": 4,
+      "lastAccessed": 1774242583702,
+      "keyFiles": [
+        "blog-extractor.ts",
+        "google-maps.ts",
+        "types.ts"
+      ]
+    },
+    "src/utils": {
+      "path": "src/utils",
+      "purpose": "Utility functions",
+      "fileCount": 0,
+      "lastAccessed": 1774242583703,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "components/DetailPanel.tsx",
+      "accessCount": 13,
+      "lastAccessed": 1774248773075,
+      "type": "file"
+    },
+    {
+      "path": "data/products.ts",
+      "accessCount": 13,
+      "lastAccessed": 1774261800652,
+      "type": "file"
+    },
+    {
+      "path": "lib/data.ts",
+      "accessCount": 12,
+      "lastAccessed": 1774270336268,
+      "type": "file"
+    },
+    {
+      "path": "app/[product]/page.tsx",
+      "accessCount": 8,
+      "lastAccessed": 1774261882972,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/pipeline.config.json",
+      "accessCount": 8,
+      "lastAccessed": 1774270332367,
+      "type": "file"
+    },
+    {
+      "path": "components/ProductIcon.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1774252595376,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/lib/google-maps.ts",
+      "accessCount": 7,
+      "lastAccessed": 1774257961262,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/stage5-finalize.ts",
+      "accessCount": 7,
+      "lastAccessed": 1774263746391,
+      "type": "file"
+    },
+    {
+      "path": "scripts/crawl-butterttuk-bundang.ts",
+      "accessCount": 7,
+      "lastAccessed": 1774264470013,
+      "type": "file"
+    },
+    {
+      "path": "app/layout.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1774261843592,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/lib/utils.ts",
+      "accessCount": 6,
+      "lastAccessed": 1774263644646,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/lib/types.ts",
+      "accessCount": 5,
+      "lastAccessed": 1774261717774,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/data/cleaned-shops.json",
+      "accessCount": 4,
+      "lastAccessed": 1774248830494,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/stage4-enrich.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774261723111,
+      "type": "file"
+    },
+    {
+      "path": "scripts/generate-og-images.mjs",
+      "accessCount": 3,
+      "lastAccessed": 1774250626917,
+      "type": "file"
+    },
+    {
+      "path": "scripts/crawl-naver-place.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774252662472,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/stage3-clean.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774261729233,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/stage2-crawl-blogs.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774261734040,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/run.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774242704735,
+      "type": "file"
+    },
+    {
+      "path": "components/Landing.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774243359530,
+      "type": "file"
+    },
+    {
+      "path": "types/shop.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774243359903,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/lib/blog-extractor.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774248785030,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/filter-sellers.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774248885666,
+      "type": "file"
+    },
+    {
+      "path": "app/[product]/opengraph-image.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774249134489,
+      "type": "file"
+    },
+    {
+      "path": "app/opengraph-image.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774249136060,
+      "type": "file"
+    },
+    {
+      "path": "public/og-default.png",
+      "accessCount": 2,
+      "lastAccessed": 1774250636107,
+      "type": "file"
+    },
+    {
+      "path": "scripts/crawl-naver-place-cheese.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774252662889,
+      "type": "file"
+    },
+    {
+      "path": "scripts/crawl-naver-place-butterttuk.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774253154797,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/stage1-keywords.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774261729040,
+      "type": "file"
+    },
+    {
+      "path": "next.config.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774261852668,
+      "type": "file"
+    },
+    {
+      "path": "app/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774261852826,
+      "type": "file"
+    },
+    {
+      "path": "components/MapView.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774242651786,
+      "type": "file"
+    },
+    {
+      "path": "hooks/useShops.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774242655250,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1774242661018,
+      "type": "file"
+    },
+    {
+      "path": "scripts/collect-data.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774242663616,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1774242666930,
+      "type": "file"
+    },
+    {
+      "path": "components/TopBar.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774243359753,
+      "type": "file"
+    },
+    {
+      "path": "components/About.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774243367772,
+      "type": "file"
+    },
+    {
+      "path": "components/Map.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774243371211,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/enrich-batch.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774245700385,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/enrich-retry.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774246081232,
+      "type": "file"
+    },
+    {
+      "path": "pipeline/enrich-sellers.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774249411249,
+      "type": "file"
+    },
+    {
+      "path": "scripts/crawl-blog.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774253162806,
+      "type": "file"
+    },
+    {
+      "path": "scripts/naver-place-butterttuk-results.json",
+      "accessCount": 1,
+      "lastAccessed": 1774253497534,
+      "type": "file"
+    },
+    {
+      "path": "scripts/naver-butterttuk-bundang-results.json",
+      "accessCount": 1,
+      "lastAccessed": 1774253498850,
+      "type": "file"
+    },
+    {
+      "path": "scripts/enrich-butterttuk.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774255767838,
+      "type": "file"
+    },
+    {
+      "path": "scripts/final-merge.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774261711272,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1774261780940,
+      "type": "directory"
+    },
+    {
+      "path": "app",
+      "accessCount": 1,
+      "lastAccessed": 1774261831453,
+      "type": "directory"
+    },
+    {
+      "path": "components",
+      "accessCount": 1,
+      "lastAccessed": 1774261832368,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}
