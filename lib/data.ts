@@ -3,7 +3,7 @@ import dujjonkuData from '@/data/dujjonku.json'
 import type { Shop } from '@/types/shop'
 
 const dataMap: Record<string, Shop[]> = {
-  'shanghai-butter-rice': shopsData as Shop[],
+  'butter-tteok': shopsData as Shop[],
   'dujjonku': dujjonkuData as Shop[],
 }
 

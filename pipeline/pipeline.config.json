@@ -1,5 +1,5 @@
 {
-  "product": "상하이버터떡",
+  "product": "촉촉한황치즈칩",
   "searchPatterns": [
     "{product} 파는곳",
     "{product} 판매점",
@@ -8,6 +8,7 @@
     "{product} 베이커리",
     "{product} 추천",
     "{product} 매장",
+    "{product} 판매 매장",
     "{city} {product} 파는곳",
     "{city} {product}"
   ],
@@ -20,6 +21,6 @@
   "maxPostsPerKeyword": 10,
   "googleMapsDelayMs": 2000,
   "blogDelayMs": 1500,
-  "outputPath": "../src/data/shops.json",
+  "outputPath": "../data/chokchokhan.json",
   "dataDir": "./data"
 }

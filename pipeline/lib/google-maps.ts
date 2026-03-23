@@ -15,7 +15,7 @@ export async function searchGoogleMaps(
   const url = `https://www.google.com/maps/search/${query}`
 
   try {
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 15000 })
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 })
     await sleep(delayMs)
 
     // Click the first result if a list appears
@@ -23,14 +23,15 @@ export async function searchGoogleMaps(
     const hasResults = await firstResult.count().catch(() => 0)
     if (hasResults > 0) {
       await firstResult.click()
-      await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {})
-      await sleep(1000)
+      await page.waitForLoadState('domcontentloaded', { timeout: 10000 }).catch(() => {})
+      await sleep(3000)
     }
 
     // Extract business info from detail panel
     const info = await extractBusinessInfo(page)
 
-    // Parse coordinates from URL
+    // Wait for URL to settle with coordinate data
+    await sleep(1000)
     const coords = parseCoordinatesFromUrl(page.url())
 
     return {

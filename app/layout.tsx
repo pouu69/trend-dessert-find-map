@@ -25,11 +25,20 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     url: 'https://trend-dessert.com',
     siteName: '요즘 뭐가 맛있어?',
+    images: [
+      {
+        url: '/og-default.png',
+        width: 1200,
+        height: 630,
+        alt: '요즘 뭐가 맛있어? — 트렌드 간식 맛집 지도',
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: '요즘 뭐가 맛있어? — 트렌드 간식 맛집 지도',
     description: '전국 트렌드 디저트 & 간식 맛집을 지도에서 한눈에 찾아보세요.',
+    images: ['/og-default.png'],
   },
 }
 

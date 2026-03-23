@@ -17,7 +17,24 @@ console.log(`  입력: ${enrichedShops.length}개 매장`)
 
 // Convert to Shop schema
 const shops: Shop[] = enrichedShops.map((enriched, index) => {
-  const region = extractRegion(enriched.address)
+  const rawRegion = extractRegion(enriched.address)
+  // Normalize to short form using startsWith for robustness
+  const regionPairs: [string, string][] = [
+    ['서울', '서울'], ['부산', '부산'], ['대구', '대구'],
+    ['인천', '인천'], ['광주', '광주'], ['대전', '대전'],
+    ['울산', '울산'], ['세종', '세종'], ['제주', '제주'],
+    ['경기', '경기'], ['강원', '강원'],
+    ['충북', '충북'], ['충청북', '충북'],
+    ['충남', '충남'], ['충청남', '충남'],
+    ['전북', '전북'], ['전라북', '전북'],
+    ['전남', '전남'], ['전라남', '전남'],
+    ['경북', '경북'], ['경상북', '경북'],
+    ['경남', '경남'], ['경상남', '경남'],
+  ]
+  let region = '기타'
+  for (const [prefix, short] of regionPairs) {
+    if (rawRegion.startsWith(prefix)) { region = short; break }
+  }
 
   // Build tags from category
   const tags: string[] = []

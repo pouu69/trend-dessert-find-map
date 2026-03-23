@@ -12,8 +12,19 @@ interface DetailPanelProps {
   isMobile: boolean
 }
 
-function kakaoMapUrl(name: string) {
-  return `https://map.kakao.com/?q=${encodeURIComponent(name)}`
+const NAVER_MAP_BASE_URL = "https://map.naver.com/p/search";
+
+function naverMapUrl(query: string): string {
+  const params = new URLSearchParams({
+    c: "15.00,0,0,0,dh",
+    placePath: "/home",
+    bk_query: query,
+    searchText: query,
+    locale: "ko",
+    entry: "bmp",
+  });
+
+  return `${NAVER_MAP_BASE_URL}/${encodeURIComponent(query)}?${params.toString()}`;
 }
 
 // --- Bottom sheet snap points ---
@@ -217,7 +228,7 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
                   전화
                 </a>
               )}
-              <a href={kakaoMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
+              <a href={naverMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-1.5 py-3.5 text-[12px] font-semibold text-ink-secondary active:bg-panel-hover active:scale-[0.97] transition-all border-r border-line">
                 <NavigationArrow size={15} weight="duotone" className="text-brand" />
                 길찾기
@@ -293,11 +304,11 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
               </div>
             )}
 
-            {/* Kakao link */}
+            {/* Naver map link */}
             <div className="px-5 pt-2 pb-5">
-              <a href={kakaoMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-ink text-ink-on-dark text-[13px] font-semibold active:scale-[0.98] transition-all shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
-                카카오맵에서 보기
+              <a href={naverMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-[#03C75A] text-white text-[13px] font-semibold active:scale-[0.98] transition-all shadow-[0_2px_8px_rgba(3,199,90,0.3)]">
+                네이버맵에서 보기
                 <ArrowSquareOut size={13} weight="bold" />
               </a>
             </div>
@@ -364,7 +375,7 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
               전화
             </a>
           )}
-          <a href={kakaoMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
+          <a href={naverMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-1.5 py-3 text-[12px] font-semibold text-ink-secondary hover:bg-panel-hover active:scale-[0.97] transition-all border-r border-line">
             <NavigationArrow size={15} weight="duotone" className="text-brand" />
             길찾기
@@ -442,11 +453,11 @@ export function DetailPanel({ shop, isFavorite, onToggleFavorite, onClose, isMob
             </div>
           )}
 
-          {/* Kakao link */}
+          {/* Naver map link */}
           <div className="px-5 pb-5">
-            <a href={kakaoMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-ink text-ink-on-dark text-[13px] font-semibold hover:bg-ink/90 active:scale-[0.98] transition-all shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
-              카카오맵에서 보기
+            <a href={naverMapUrl(shop.name)} target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#03C75A] text-white text-[13px] font-semibold hover:bg-[#02b350] active:scale-[0.98] transition-all shadow-[0_2px_8px_rgba(3,199,90,0.3)]">
+              네이버맵에서 보기
               <ArrowSquareOut size={13} weight="bold" />
             </a>
           </div>

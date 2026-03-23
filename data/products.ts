@@ -7,10 +7,10 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    slug: 'shanghai-butter-rice',
-    name: '상하이버터떡',
+    slug: 'butter-tteok',
+    name: '버터떡',
     iconName: 'butter',
-    keywords: ['상하이버터떡', '버터떡', '상하이버터떡맵', '버터떡맵', '버터떡파는곳'],
+    keywords: ['버터떡', '상하이버터떡', '버터떡맵', '버터떡파는곳', '버터모찌'],
   },
   {
     slug: 'dujjonku',
