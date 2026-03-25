@@ -38,3 +38,6 @@ dist-scripts/
 # Pipeline data (intermediate)
 pipeline/data/
 dist
+
+
+.omc/
