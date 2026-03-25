@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import 'leaflet/dist/leaflet.css'
@@ -50,6 +51,18 @@ export default function RootLayout({
   return (
     <html lang="ko" className={outfit.variable}>
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QC0M7H6CY8"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QC0M7H6CY8');
+          `}
+        </Script>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
