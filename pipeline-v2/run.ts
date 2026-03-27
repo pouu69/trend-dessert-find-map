@@ -11,7 +11,7 @@ const config = loadConfig()
 console.log(`\n========================================`)
 console.log(`  Unified Data Pipeline v2`)
 console.log(`  Product: ${config.product}`)
-console.log(`  Sources: ${config.sources.join(', ')}`)
+console.log(`  Discovery: Naver Blog → Enrichment: Kakao Maps + Google Maps`)
 console.log(`========================================\n`)
 
 const stages = [

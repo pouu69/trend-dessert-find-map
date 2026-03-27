@@ -7,8 +7,10 @@
  *
  * Usage by Claude Code:
  *   - Stage 1: Run inline (fast, <1 second)
- *   - Stage 2: Dispatch 3 crawler agents in PARALLEL, then merge
- *   - Stages 3-5: Run sequentially
+ *   - Stage 2: Naver Blog crawling (discovery)
+ *   - Stage 3: Data cleaning
+ *   - Stage 4: Kakao Maps + Google Maps enrichment (parallel Agent Team)
+ *   - Stage 5: Finalize
  *
  * Each function returns a StageResult with success/failure, item counts,
  * and error details for the coordinator to inspect.

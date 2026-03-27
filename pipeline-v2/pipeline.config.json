@@ -1,5 +1,5 @@
 {
-  "product": "상하이버터떡",
+  "product": "버터떡",
   "searchPatterns": [
     "{product} 파는곳",
     "{product} 판매점",
@@ -17,10 +17,10 @@
     "수원", "성남", "분당", "용인", "천안", "청주", "전주",
     "창원", "김해", "제주", "강릉", "세종"
   ],
-  "sources": ["naver-blog", "naver-maps", "kakao-maps"],
   "blogPages": 2,
   "maxPostsPerKeyword": 10,
   "googleMapsDelayMs": 2000,
+  "kakaoMapsDelayMs": 2000,
   "blogDelayMs": 1500,
   "nominatimDelayMs": 1100,
   "outputPath": "../data/shops.json",

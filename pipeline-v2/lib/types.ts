@@ -3,32 +3,32 @@ export interface PipelineConfig {
   readonly product: string
   readonly searchPatterns: readonly string[]
   readonly cities: readonly string[]
-  readonly sources: readonly CrawlSource[]
   readonly blogPages: number
   readonly maxPostsPerKeyword: number
   readonly googleMapsDelayMs: number
+  readonly kakaoMapsDelayMs: number
   readonly blogDelayMs: number
   readonly nominatimDelayMs: number
   readonly outputPath: string
   readonly dataDir: string
 }
 
-/** Available crawl sources — each maps to a crawler module */
-export type CrawlSource = 'naver-blog' | 'naver-maps' | 'kakao-maps'
-
-/** Raw shop data extracted by any crawler */
+/** Raw shop data discovered from blog posts */
 export interface RawShop {
   readonly name: string
   readonly address: string
   readonly phone: string
   readonly hours: string
   readonly category: string
-  readonly source: CrawlSource
   readonly keyword: string
   readonly blogUrl: string
+  readonly lat: number | null
+  readonly lng: number | null
+  readonly confidence: number
+  readonly extractionMethod: string
 }
 
-/** Shop enriched with Google Maps / Nominatim data */
+/** Shop enriched with map services data (Kakao Maps, Google Maps, Nominatim) */
 export interface EnrichedShop {
   readonly name: string
   readonly address: string
@@ -40,7 +40,7 @@ export interface EnrichedShop {
   readonly lat: number | null
   readonly lng: number | null
   readonly description: string
-  readonly source: CrawlSource
+  readonly enrichedBy: string // 'kakao-maps' | 'google-maps' | 'nominatim' | 'blog-coords'
 }
 
 /** Final shop schema — matches types/shop.ts for frontend consumption */
@@ -57,14 +57,6 @@ export interface Shop {
   readonly tags: readonly string[]
   readonly description: string
   readonly region: string
-}
-
-/** Result of a single crawler run */
-export interface CrawlResult {
-  readonly source: CrawlSource
-  readonly shops: readonly RawShop[]
-  readonly errors: readonly string[]
-  readonly duration: number
 }
 
 /** Stage execution result for agent coordination */

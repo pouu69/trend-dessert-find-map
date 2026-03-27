@@ -1,11 +1,17 @@
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
-import type { RawShop, CrawlResult, PipelineConfig } from '../lib/types'
+import type { RawShop, PipelineConfig } from '../lib/types'
 import { launchBrowser, safeGoto } from '../lib/browser'
 import { extractShopsFromBlogPost } from '../lib/blog-extractor'
 import { sleep, getDataDir, loadConfig } from '../lib/utils'
 
-export async function crawlNaverBlog(config: PipelineConfig): Promise<CrawlResult> {
+export interface BlogCrawlResult {
+  readonly shops: RawShop[]
+  readonly errors: string[]
+  readonly duration: number
+}
+
+export async function crawlNaverBlog(config: PipelineConfig): Promise<BlogCrawlResult> {
   const start = Date.now()
   const errors: string[] = []
   const dataDir = getDataDir()
@@ -63,10 +69,24 @@ export async function crawlNaverBlog(config: PipelineConfig): Promise<CrawlResul
           if (!ok) continue
           await sleep(config.blogDelayMs)
 
-          const shops = await extractShopsFromBlogPost(page, keyword, blogUrl)
-          if (shops.length > 0) {
-            console.log(`    + ${shops.length} shops from ${blogUrl}`)
-            allShops.push(...shops)
+          const extracted = await extractShopsFromBlogPost(page, keyword, blogUrl)
+          if (extracted.length > 0) {
+            console.log(`    + ${extracted.length} shops from ${blogUrl}`)
+            for (const shop of extracted) {
+              allShops.push({
+                name: shop.name,
+                address: shop.address,
+                phone: shop.phone,
+                hours: shop.hours,
+                category: shop.category,
+                keyword: shop.keyword,
+                blogUrl: shop.blogUrl,
+                lat: shop.lat,
+                lng: shop.lng,
+                confidence: shop.confidence,
+                extractionMethod: shop.extractionMethod,
+              })
+            }
           }
         } catch (error) {
           errors.push(`Blog error: ${blogUrl} — ${error instanceof Error ? error.message : error}`)
@@ -79,7 +99,7 @@ export async function crawlNaverBlog(config: PipelineConfig): Promise<CrawlResul
     await browser.close()
   }
 
-  return { source: 'naver-blog', shops: allShops, errors, duration: Date.now() - start }
+  return { shops: allShops, errors, duration: Date.now() - start }
 }
 
 // CLI entrypoint
