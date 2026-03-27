@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "collect-data": "npx tsx scripts/collect-data.ts",
-    "pipeline": "npx tsx pipeline/run.ts"
+    "pipeline": "npx tsx pipeline-v2/run.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

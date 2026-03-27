@@ -36,7 +36,7 @@ pnpm-debug.log*
 dist-scripts/
 
 # Pipeline data (intermediate)
-pipeline/data/
+pipeline-v2/data/
 dist
 
 
