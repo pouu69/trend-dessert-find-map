@@ -2,7 +2,7 @@ import { resolve, dirname } from 'path'
 import { existsSync, mkdirSync } from 'fs'
 import { fileURLToPath } from 'url'
 import type { PipelineConfig, EnrichedShop, Shop, StageResult } from './lib/types'
-import { extractRegion, loadConfig, getDataDir, saveJson, loadJson } from './lib/utils'
+import { extractRegion, isDuplicate, loadConfig, getDataDir, saveJson, loadJson } from './lib/utils'
 
 const REGION_PAIRS: readonly [string, string][] = [
   ['서울', '서울'], ['부산', '부산'], ['대구', '대구'],
@@ -71,11 +71,23 @@ export async function runStage5(config: PipelineConfig): Promise<StageResult> {
     }
   })
 
-  shops.sort((a, b) => {
+  // Final dedup: enrichment may unify names that slipped through earlier dedup
+  const deduped: Shop[] = []
+  for (const shop of shops) {
+    if (!deduped.some(existing => isDuplicate(existing, shop))) {
+      deduped.push(shop)
+    }
+  }
+  if (deduped.length < shops.length) {
+    console.log(`  Deduped: removed ${shops.length - deduped.length} duplicates → ${deduped.length} shops`)
+  }
+  const finalShops = deduped
+
+  finalShops.sort((a, b) => {
     const regionCmp = a.region.localeCompare(b.region, 'ko')
     return regionCmp !== 0 ? regionCmp : a.name.localeCompare(b.name, 'ko')
   })
-  shops.forEach((shop, index) => {
+  finalShops.forEach((shop, index) => {
     shop.id = `shop-${String(index + 1).padStart(3, '0')}`
   })
 
@@ -84,13 +96,13 @@ export async function runStage5(config: PipelineConfig): Promise<StageResult> {
   if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true })
   }
-  saveJson(outputPath, shops)
+  saveJson(outputPath, finalShops)
 
   const regionCounts: Record<string, number> = {}
-  for (const shop of shops) {
+  for (const shop of finalShops) {
     regionCounts[shop.region] = (regionCounts[shop.region] || 0) + 1
   }
-  console.log(`  Final: ${shops.length} shops`)
+  console.log(`  Final: ${finalShops.length} shops`)
   for (const [region, count] of Object.entries(regionCounts).sort((a, b) => b[1] - a[1])) {
     console.log(`    ${region}: ${count}`)
   }
@@ -101,7 +113,7 @@ export async function runStage5(config: PipelineConfig): Promise<StageResult> {
     stage: 'stage5-finalize',
     success: true,
     outputFile: outputPath,
-    itemCount: shops.length,
+    itemCount: finalShops.length,
     errors: [],
     duration: Date.now() - start,
   }

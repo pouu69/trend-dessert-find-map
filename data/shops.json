@@ -1,93 +1,59 @@
 [
   {
     "id": "shop-001",
-    "name": "The드이소",
-    "address": "경기 수원시 영통구 광교호수공원로 20 1동 B1층 62호",
-    "lat": 37.2719159,
-    "lng": 127.0604244,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡",
-      "한과"
-    ],
-    "description": "떡,한과",
-    "region": "경기"
-  },
-  {
-    "id": "shop-002",
-    "name": "가을제과",
-    "address": "경기 광명시 일직로 22 1층 123호",
-    "lat": 37.4227871,
-    "lng": 126.8840236,
-    "phone": "0507-1416-3998",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "베이커리"
-    ],
-    "description": "베이커리",
-    "region": "경기"
-  },
-  {
-    "id": "shop-003",
-    "name": "고마운",
-    "address": "경기 하남시 미사강변대로 38 파시뉴(고마운)1층 114-1호",
-    "lat": 37.5537101,
-    "lng": 127.1855832,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "과자류제조"
-    ],
-    "description": "과자류제조",
-    "region": "경기"
-  },
-  {
-    "id": "shop-004",
-    "name": "뉴데이커피",
-    "address": "경기도 성남시 분당구 황새울로108번길 15 101호",
-    "lat": 37.3697729,
-    "lng": 127.1117601,
-    "phone": "031-717-0126",
+    "name": "그날의 우리 us in the day",
+    "address": "강원특별자치도 춘천시 퇴계동 우묵길56번길 24",
+    "lat": 37.8653305,
+    "lng": 127.7234814,
+    "phone": "033-244-0601",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
       "카페"
     ],
-    "description": "★ 4.7 (리뷰 3개) · 카페",
-    "region": "경기"
+    "description": "★ 4.3 (리뷰 63개) · 카페",
+    "region": "강원"
   },
   {
-    "id": "shop-005",
-    "name": "단다미제과점",
-    "address": "경기 군포시 번영로 497 2층 208호",
-    "lat": 37.3613314,
-    "lng": 126.9393913,
-    "phone": "0507-1485-8263",
+    "id": "shop-002",
+    "name": "카페초이",
+    "address": "강원특별자치도 강릉시 임영로155번길 11-2",
+    "lat": 37.7545648,
+    "lng": 128.8904901,
+    "phone": "",
+    "hours": "영업 중 · PM 7:00에 영업 종료",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.1 (리뷰 49개) · 카페",
+    "region": "강원"
+  },
+  {
+    "id": "shop-003",
+    "name": "그때거기",
+    "address": "경기도 안양시 동안구 귀인로190번길 131",
+    "lat": 37.384027,
+    "lng": 126.9621921,
+    "phone": "031-443-7090",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
-      "카페",
-      "디저트"
+      "음식점"
     ],
-    "description": "카페,디저트",
+    "description": "★ 5.0 (리뷰 1개) · 음식점",
     "region": "경기"
   },
   {
-    "id": "shop-006",
-    "name": "댓이즈커피",
-    "address": "경기도 성남시 분당구 정자1동 136-4",
-    "lat": 37.3609962,
-    "lng": 127.1129983,
-    "phone": "0507-1382-1531",
+    "id": "shop-004",
+    "name": "그라비에",
+    "address": "경기도 안양시 동편로183번길 40",
+    "lat": 37.4074113,
+    "lng": 126.9703048,
+    "phone": "050-71352-9849",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
@@ -95,32 +61,418 @@
       "커피숍",
       "커피 전문점"
     ],
-    "description": "★ 4.5 (리뷰 25개) · 커피숍/커피 전문점",
+    "description": "★ 5.0 (리뷰 6개) · 커피숍/커피 전문점",
     "region": "경기"
   },
   {
-    "id": "shop-007",
-    "name": "더버터하우스",
-    "address": "경기 화성시 만세구 향남읍 한절이1길 27 101호",
-    "lat": 37.1185181,
-    "lng": 126.9151685,
-    "phone": "0507-1325-0318",
+    "id": "shop-005",
+    "name": "다니당",
+    "address": "경기도 고양시 덕양구 행신동 번지 1층 743-9",
+    "lat": 37.617966,
+    "lng": 126.835692,
+    "phone": "070-8650-3980",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
-      "카페",
-      "디저트"
+      "카페"
     ],
-    "description": "카페,디저트",
+    "description": "★ 5.0 (리뷰 1개) · 카페",
+    "region": "경기"
+  },
+  {
+    "id": "shop-006",
+    "name": "라라베이커리",
+    "address": "경기도 수원시 영통구 신원로 88",
+    "lat": 37.2474697,
+    "lng": 127.0503626,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 제과점",
+    "region": "경기"
+  },
+  {
+    "id": "shop-007",
+    "name": "라이크림",
+    "address": "경기도 의정부시 민락동 777 KR",
+    "lat": 37.7456609,
+    "lng": 127.0916399,
+    "phone": "070-7785-0882",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.4 (리뷰 41개) · 커피숍/커피 전문점",
     "region": "경기"
   },
   {
     "id": "shop-008",
-    "name": "동경빵집",
-    "address": "경기도 화성시 동탄광역환승로 73 2층 224호",
-    "lat": 37.2017016,
-    "lng": 127.087962,
+    "name": "로뎀카페",
+    "address": "경기도 안양시 동안구 귀인로 301",
+    "lat": 37.3886483,
+    "lng": 126.9716208,
+    "phone": "031-420-8559",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.2 (리뷰 44개) · 카페",
+    "region": "경기"
+  },
+  {
+    "id": "shop-009",
+    "name": "바이핸드 베이커리",
+    "address": "경기도 성남시 수정구 위례광장로310 A 동 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "031-755-7577",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 제과점",
+    "region": "경기"
+  },
+  {
+    "id": "shop-010",
+    "name": "범계 카페 3층 다락방",
+    "address": "경기도 안양시 동안구 평촌대로223번길 59 KR 서련코아빌딩 305호",
+    "lat": 37.390104,
+    "lng": 126.952542,
+    "phone": "070-4354-4580",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.6 (리뷰 19개) · 카페",
+    "region": "경기"
+  },
+  {
+    "id": "shop-011",
+    "name": "카페도화 행궁본점 Cafe Dohwa Haenggung",
+    "address": "경기도 수원시 정조로 887",
+    "lat": 37.287296,
+    "lng": 127.01481,
+    "phone": "050-71353-4943",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.4 (리뷰 44개) · 커피숍/커피 전문점",
+    "region": "경기"
+  },
+  {
+    "id": "shop-012",
+    "name": "카페페이버릿컬러",
+    "address": "경기도 안양시 동안구 평촌대로223번길 31 4층 403호",
+    "lat": 37.3906408,
+    "lng": 126.9539407,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.6 (리뷰 14개) · 카페",
+    "region": "경기"
+  },
+  {
+    "id": "shop-013",
+    "name": "더로드101",
+    "address": "경상남도 하동군 화개면 화개로 357",
+    "lat": 35.256626,
+    "lng": 128.6249982,
+    "phone": "050-71314-4118",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.3 (리뷰 1489개) · 커피숍/커피 전문점",
+    "region": "경남"
+  },
+  {
+    "id": "shop-014",
+    "name": "한옥카페 오감",
+    "address": "경상북도 안동시 옥정동 455-6",
+    "lat": 36.5668233,
+    "lng": 128.7340463,
+    "phone": "054-841-5316",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.7 (리뷰 40개) · 카페",
+    "region": "경북"
+  },
+  {
+    "id": "shop-015",
+    "name": "스위티베이커리",
+    "address": "광주광역시 북구 운암산길 48 운암산대광로제비앙 114동 상가 101호",
+    "lat": 35.179088,
+    "lng": 126.8615003,
+    "phone": "062-512-6132",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 제과점",
+    "region": "광주"
+  },
+  {
+    "id": "shop-016",
+    "name": "키리키리 베이커리 하우스",
+    "address": "광주광역시 광산구 수완로50번길 42-2 키리키리 베이커리 하우스",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71395-0345",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.1 (리뷰 23개) · 카페",
+    "region": "광주"
+  },
+  {
+    "id": "shop-017",
+    "name": "1층",
+    "address": " 서울특별시 강남구 선릉로161길 19 1층  ",
+    "lat": 37.5074391,
+    "lng": 127.0463889,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "서울특별시 강남구 선릉로161길 19 1층"
+    ],
+    "description": "서울특별시 강남구 선릉로161길 19 1층",
+    "region": "기타"
+  },
+  {
+    "id": "shop-018",
+    "name": "가는 길",
+    "address": "성동구 연무장길 37-14",
+    "lat": 37.5431783,
+    "lng": 127.0529199,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "",
+    "region": "기타"
+  },
+  {
+    "id": "shop-019",
+    "name": "구십이도",
+    "address": "상암동 1654번지 상암동DMC이안상암1단지아파트 110호 마포구 서울특별시 KR",
+    "lat": 37.5773051,
+    "lng": 126.8906358,
+    "phone": "02-561-1079",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "극단"
+    ],
+    "description": "극단",
+    "region": "기타"
+  },
+  {
+    "id": "shop-020",
+    "name": "달콤라르",
+    "address": "은평구 KR 서울특별시 은평구 진관동 19번지 818동 상가101호 뉴타운상림마을8단지 상림마을",
+    "lat": 37.6447607,
+    "lng": 126.9215464,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "장소의 전화번호 추가"
+    ],
+    "description": "장소의 전화번호 추가",
+    "region": "기타"
+  },
+  {
+    "id": "shop-021",
+    "name": "모스과자점",
+    "address": "일부 번지 B 동 KR 부산광역시 해운대구 좌동 1461-8 호블루스퀘어 1층 103호",
+    "lat": 35.172012,
+    "lng": 129.17575,
+    "phone": "051-999-9999",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "영업시간 추가"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 영업시간 추가",
+    "region": "기타"
+  },
+  {
+    "id": "shop-022",
+    "name": "블루문&명인한정식",
+    "address": "진천군 초평면 초금로 212",
+    "lat": 36.8638936,
+    "lng": 127.5110206,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.2 (리뷰 120개) · 커피숍/커피 전문점",
+    "region": "기타"
+  },
+  {
+    "id": "shop-023",
+    "name": "오프닝",
+    "address": "광명동 158-408번지 광명시 경기도 KR",
+    "lat": 37.3420664,
+    "lng": 126.9358812,
+    "phone": "02-2625-9379",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "영업시간 추가"
+    ],
+    "description": "영업시간 추가",
+    "region": "기타"
+  },
+  {
+    "id": "shop-024",
+    "name": "참신기한2분다이어트",
+    "address": "삼성동 20-5번지 1층 강남구 서울특별시 KR",
+    "lat": 37.5275858,
+    "lng": 127.0381029,
+    "phone": "",
+    "hours": "10:00 - 21:30",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "장소의 전화번호 추가"
+    ],
+    "description": "장소의 전화번호 추가",
+    "region": "기타"
+  },
+  {
+    "id": "shop-025",
+    "name": "캠프데이비드커피",
+    "address": "당산동1가 11-74번지 센스빌딩 2층 영등포구 서울특별시 KR",
+    "lat": 37.25502,
+    "lng": 127.075646,
+    "phone": "02-2676-5278",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 카페",
+    "region": "기타"
+  },
+  {
+    "id": "shop-026",
+    "name": "바닐라크럼브",
+    "address": "대구광역시 중구 봉산문화길 43 1층",
+    "lat": 35.8619227,
+    "lng": 128.5976712,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 3.4 (리뷰 5개) · 커피숍/커피 전문점",
+    "region": "대구"
+  },
+  {
+    "id": "shop-027",
+    "name": "플루니",
+    "address": "대구광역시 중구 봉산동 23-38",
+    "lat": 35.8661176,
+    "lng": 128.596766,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 음식점",
+    "region": "대구"
+  },
+  {
+    "id": "shop-028",
+    "name": "냐냐쿄쿄",
+    "address": "부산광역시 사하구 괴정동 314-25",
+    "lat": 35.103699,
+    "lng": 129.000365,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "카페",
+    "region": "부산"
+  },
+  {
+    "id": "shop-029",
+    "name": "넷넷",
+    "address": "부산광역시 부산진구 전포동 354 29번지",
+    "lat": 35.153025,
+    "lng": 129.067368,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 카페",
+    "region": "부산"
+  },
+  {
+    "id": "shop-030",
+    "name": "래이호베이커리",
+    "address": "부산광역시 동래구 미남로146번길 83",
+    "lat": 35.2061873,
+    "lng": 129.0761252,
     "phone": "",
     "hours": "",
     "closedDays": [],
@@ -129,131 +481,15 @@
       "제과점"
     ],
     "description": "★ 5.0 (리뷰 1개) · 제과점",
-    "region": "경기"
+    "region": "부산"
   },
   {
-    "id": "shop-009",
-    "name": "맛나제과 범계점",
-    "address": "경기 안양시 동안구 평촌대로 217 1층 112호",
-    "lat": 37.3906591,
-    "lng": 126.9556017,
-    "phone": "0507-1418-0249",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "경기"
-  },
-  {
-    "id": "shop-010",
-    "name": "바니란다",
-    "address": "경기 부천시 원미구 부흥로 133 상가동 118호 일부",
-    "lat": 37.4986276,
-    "lng": 126.7583026,
-    "phone": "0507-1361-3788",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡",
-      "한과"
-    ],
-    "description": "떡,한과",
-    "region": "경기"
-  },
-  {
-    "id": "shop-011",
-    "name": "버터앙굼",
-    "address": "경기 안양시 동안구 동편로27번길 33 101호",
-    "lat": 37.4076874,
-    "lng": 126.9715101,
-    "phone": "0507-1350-9467",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "경기"
-  },
-  {
-    "id": "shop-012",
-    "name": "버터이오X크로플마을 구래점",
-    "address": "경기 김포시 김포한강4로 543 1층 117호 크로플마을 구래점",
-    "lat": 37.6449592,
-    "lng": 126.6245522,
-    "phone": "031-991-8423",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "경기"
-  },
-  {
-    "id": "shop-013",
-    "name": "버터주의보",
-    "address": "경기 남양주시 진건읍 사릉로 416 1층",
-    "lat": 37.6548657,
-    "lng": 127.1832045,
-    "phone": "0507-1453-5629",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "경기"
-  },
-  {
-    "id": "shop-014",
-    "name": "본구떼 제과점",
-    "address": "경기 화성시 동탄구 동탄순환대로12길 85 카림3차 카림상가 2층 F104호 본구떼 제과점",
-    "lat": 37.1999291,
-    "lng": 127.1151359,
-    "phone": "0507-1467-1955",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "경기"
-  },
-  {
-    "id": "shop-015",
-    "name": "소소과자점916",
-    "address": "경기 성남시 분당구 판교원로82번길 60",
-    "lat": 37.3840756,
-    "lng": 127.0724208,
+    "id": "shop-031",
+    "name": "래이호앤까사버나뎃",
+    "address": "부산광역시 동래구 중앙대로1333번길 22",
+    "lat": 35.206153,
+    "lng": 129.076155,
     "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "경기"
-  },
-  {
-    "id": "shop-016",
-    "name": "소소카페",
-    "address": "경기도 용인시 수지구 동천로 210",
-    "lat": 37.3386893,
-    "lng": 127.0809817,
-    "phone": "0507-1433-1646",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
@@ -261,44 +497,80 @@
       "커피숍",
       "커피 전문점"
     ],
-    "description": "★ 5.0 (리뷰 1개) · 커피숍/커피 전문점",
-    "region": "경기"
+    "description": "★ 4.6 (리뷰 5개) · 커피숍/커피 전문점",
+    "region": "부산"
   },
   {
-    "id": "shop-017",
-    "name": "쌀퐁당 떡케이크",
-    "address": "경기 양주시 옥정동로7길 40",
-    "lat": 37.8209793,
-    "lng": 127.0971505,
+    "id": "shop-032",
+    "name": "마이페이보릿쿠키",
+    "address": "부산광역시 수영구 광남로 103",
+    "lat": 35.1494826,
+    "lng": 129.1139545,
+    "phone": "051-753-5111",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "쿠키 가게"
+    ],
+    "description": "★ 4.1 (리뷰 118개) · 쿠키 가게",
+    "region": "부산"
+  },
+  {
+    "id": "shop-033",
+    "name": "머더파커 부산점",
+    "address": "부산광역시 부산진구 중앙대로680번길 45-8",
+    "lat": 35.155721,
+    "lng": 129.066993,
+    "phone": "070-7784-0059",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "방 탈출 센터"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 방 탈출 센터",
+    "region": "부산"
+  },
+  {
+    "id": "shop-034",
+    "name": "바리떼",
+    "address": "부산광역시 동래구 온천천로437번길 25",
+    "lat": 35.192887,
+    "lng": 129.101264,
+    "phone": "010-3775-6339",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 5.0 (리뷰 24개) · 카페",
+    "region": "부산"
+  },
+  {
+    "id": "shop-035",
+    "name": "보소보소",
+    "address": "부산광역시 부산진구 전포대로 210",
+    "lat": 35.1484168,
+    "lng": 129.0664154,
     "phone": "",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "경기"
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.3 (리뷰 15개) · 제과점",
+    "region": "부산"
   },
   {
-    "id": "shop-018",
-    "name": "얍버터",
-    "address": "경기 김포시 풍무로68번길 39",
-    "lat": 37.6000427,
-    "lng": 126.7325515,
+    "id": "shop-036",
+    "name": "뿌드망",
+    "address": "부산광역시 서구 구덕로 274",
+    "lat": 35.1089092,
+    "lng": 129.0189459,
     "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "경기"
-  },
-  {
-    "id": "shop-019",
-    "name": "어글리버터 디저트 카페",
-    "address": "경기도 성남시 분당구 판교역로 230 B동 123호",
-    "lat": 37.401288,
-    "lng": 127.110444,
-    "phone": "050-71382-3262",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
@@ -307,64 +579,565 @@
       "커피 전문점"
     ],
     "description": "★ 5.0 (리뷰 2개) · 커피숍/커피 전문점",
-    "region": "경기"
+    "region": "부산"
   },
   {
-    "id": "shop-020",
-    "name": "위클리버터",
-    "address": "경기 하남시 미사강변대로226번길 48 A+구산프라자 1층 114호",
-    "lat": 37.5697433,
-    "lng": 127.1859505,
-    "phone": "0507-1406-3310",
+    "id": "shop-037",
+    "name": "슈가몽카페",
+    "address": "부산광역시 기장군 정관면 방곡리 413-3",
+    "lat": 35.3242382,
+    "lng": 129.1875345,
+    "phone": "051-782-9579",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
-      "카페",
-      "디저트"
+      "커피숍",
+      "커피 전문점"
     ],
-    "description": "카페,디저트",
-    "region": "경기"
+    "description": "★ 3.7 (리뷰 3개) · 커피숍/커피 전문점",
+    "region": "부산"
   },
   {
-    "id": "shop-021",
-    "name": "카타리나",
-    "address": "경기도 성남시 분당구 느티로69번길 15",
-    "lat": 37.3698397,
-    "lng": 127.112233,
-    "phone": "031-717-8797",
+    "id": "shop-038",
+    "name": "스윗홈DIETSPACAFE",
+    "address": "부산광역시 부산진구 부암동 번지 상가동 720 쌍용스윗닷홈 3층 302호",
+    "lat": 35.158881,
+    "lng": 129.064011,
+    "phone": "051-808-3579",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 1.0 (리뷰 1개) · 카페",
+    "region": "부산"
+  },
+  {
+    "id": "shop-039",
+    "name": "신동석베이커리",
+    "address": "부산광역시 부산진구 가야대로 483",
+    "lat": 35.1538383,
+    "lng": 129.0308573,
+    "phone": "051-891-9821",
+    "hours": "8:00 ~ 23:00",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 3.7 (리뷰 7개) · 제과점",
+    "region": "부산"
+  },
+  {
+    "id": "shop-040",
+    "name": "앙시앙(Ancien)",
+    "address": "부산광역시 수영구 광남로 77 1층",
+    "lat": 35.1494826,
+    "lng": 129.1139545,
+    "phone": "050-71384-5527",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
       "제과점"
     ],
-    "description": "★ 4.8 (리뷰 23개) · 제과점",
-    "region": "경기"
+    "description": "★ 4.6 (리뷰 32개) · 제과점",
+    "region": "부산"
   },
   {
-    "id": "shop-022",
-    "name": "카페 오브닝",
-    "address": "경기도 성남시 분당구 돌마로 481 1층 117-2호",
-    "lat": 37.3777365,
-    "lng": 127.1328726,
-    "phone": "",
-    "hours": "월~토 10:00-18:00 (일요일 정기휴무)",
+    "id": "shop-041",
+    "name": "오븐의온도",
+    "address": "부산광역시 부산진구 서전로38번길 43-13 101호",
+    "lat": 35.20565,
+    "lng": 129.07461,
+    "phone": "050-71348-5179",
+    "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
       "카페"
     ],
-    "description": "★ 3.7 · 카페",
-    "region": "경기"
+    "description": "★ 4.8 (리뷰 20개) · 카페",
+    "region": "부산"
   },
   {
-    "id": "shop-023",
-    "name": "카페욜로",
-    "address": "경기도 부천시 원미구 상동 318-10번지 1층",
-    "lat": 37.4886419,
-    "lng": 126.7620738,
-    "phone": "02-807-2629",
+    "id": "shop-042",
+    "name": "위파티",
+    "address": "부산광역시 부산진구 냉정로 166-1",
+    "lat": 35.149591,
+    "lng": 129.01817,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.1 (리뷰 8개) · 카페",
+    "region": "부산"
+  },
+  {
+    "id": "shop-043",
+    "name": "카페드에마블",
+    "address": "부산광역시 남구 수영로219번길 5 카페드에마블 2층",
+    "lat": 35.135279,
+    "lng": 129.090417,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 5.0 (리뷰 4개) · 카페",
+    "region": "부산"
+  },
+  {
+    "id": "shop-044",
+    "name": "쿨키즈네버다이",
+    "address": "부산광역시 금정구 장전동 221-12",
+    "lat": 35.229196,
+    "lng": 129.087635,
+    "phone": "010-665-4757",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "★ 4.3 (리뷰 7개)",
+    "region": "부산"
+  },
+  {
+    "id": "shop-045",
+    "name": "파밀리아제과점",
+    "address": "부산광역시 사상구 학장동 573-1",
+    "lat": null,
+    "lng": null,
+    "phone": "051-326-7671",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.2 (리뷰 57개) · 제과점",
+    "region": "부산"
+  },
+  {
+    "id": "shop-046",
+    "name": "페로어페로 광안리점",
+    "address": "부산광역시 수영구 남천바다로 38-6",
+    "lat": 35.234104,
+    "lng": 129.01761,
+    "phone": "050-21918-2223",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.7 (리뷰 184개) · 커피숍/커피 전문점",
+    "region": "부산"
+  },
+  {
+    "id": "shop-047",
+    "name": "핔타임",
+    "address": "부산광역시 수영구 광안동 128-22",
+    "lat": 35.160123,
+    "lng": 129.11968,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "커피숍/커피 전문점",
+    "region": "부산"
+  },
+  {
+    "id": "shop-048",
+    "name": "하라케이크 부산점",
+    "address": "부산광역시 강서구 명지동 국제6로302번길 11-6",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 2.5 (리뷰 2개) · 커피숍/커피 전문점",
+    "region": "부산"
+  },
+  {
+    "id": "shop-049",
+    "name": "(주)핀스정보기술",
+    "address": "서울특별시",
+    "lat": 37.4951557,
+    "lng": 126.9090763,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "보안 시스템 공급업체"
+    ],
+    "description": "보안 시스템 공급업체",
+    "region": "서울"
+  },
+  {
+    "id": "shop-050",
+    "name": "나폴레옹과자점 성북본점",
+    "address": "서울특별시 성북구 성북로 7",
+    "lat": 37.5618384,
+    "lng": 126.9253491,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.1 (리뷰 1561개) · 제과점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-051",
+    "name": "늘",
+    "address": "서울특별시 성북구 성북동 58-14",
+    "lat": 37.51675,
+    "lng": 127.040846,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.8 (리뷰 5개) · 커피숍/커피 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-052",
+    "name": "돌체디앤",
+    "address": "서울특별시 마포구 망원동 번지 1층 57-100",
+    "lat": 37.554705,
+    "lng": 126.907656,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "장소의 전화번호 추가"
+    ],
+    "description": "★ 3.0 (리뷰 1개) · 장소의 전화번호 추가",
+    "region": "서울"
+  },
+  {
+    "id": "shop-053",
+    "name": "동작충효길1코스 (고구동산길)",
+    "address": "서울특별시 동작구 상도동 상도로53길 70",
+    "lat": 37.5036804,
+    "lng": 126.9544797,
+    "phone": "",
+    "hours": "10:30 ~ 21:30",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "하이킹코스"
+    ],
+    "description": "★ 4.6 (리뷰 9개) · 하이킹코스",
+    "region": "서울"
+  },
+  {
+    "id": "shop-054",
+    "name": "롯데백화점 잠실점",
+    "address": "서울특별시 송파구 올림픽로 240",
+    "lat": null,
+    "lng": null,
+    "phone": "02-1577-0001",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.3 (리뷰 4829개) · 백화점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-055",
+    "name": "롯데월드몰",
+    "address": "서울특별시 송파구 올림픽로 300",
+    "lat": 37.5137422,
+    "lng": 127.1042466,
+    "phone": "02-3213-5000",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "쇼핑몰"
+    ],
+    "description": "★ 4.4 (리뷰 10665개) · 쇼핑몰",
+    "region": "서울"
+  },
+  {
+    "id": "shop-056",
+    "name": "리멤버미",
+    "address": "서울특별시 관악구 관악로14길 70 효림빌딩 4층",
+    "lat": 37.4782498,
+    "lng": 126.9563605,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.8 (리뷰 29개) · 카페",
+    "region": "서울"
+  },
+  {
+    "id": "shop-057",
+    "name": "매일휴일",
+    "address": "서울특별시 은평구 대조동 206-26",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "베이글 전문점"
+    ],
+    "description": "★ 5.0 (리뷰 4개) · 베이글 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-058",
+    "name": "봄마카롱",
+    "address": "서울특별시 강서구 화곡동 까치산로4길 11 1층",
+    "lat": 37.5421807,
+    "lng": 126.8442741,
+    "phone": "050-71325-9103",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "디저트 전문점"
+    ],
+    "description": "★ 4.8 (리뷰 4개) · 디저트 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-059",
+    "name": "새들러하우스",
+    "address": "서울특별시 강남구 신사동 도산대로17길 10",
+    "lat": 37.519389,
+    "lng": 127.024942,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.1 (리뷰 333개) · 카페",
+    "region": "서울"
+  },
+  {
+    "id": "shop-060",
+    "name": "스위트피",
+    "address": "서울특별시 영등포구 당산동3가 386-1",
+    "lat": 37.5019325,
+    "lng": 126.7551234,
+    "phone": "02-2677-4648",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "디저트 전문점"
+    ],
+    "description": "디저트 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-061",
+    "name": "시에로시네마",
+    "address": "서울특별시 동대문구 서울시립대로 80-1 2호",
+    "lat": 37.577968,
+    "lng": 127.049455,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 2.0 (리뷰 1개) · 커피숍/커피 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-062",
+    "name": "압구정로데오",
+    "address": "서울특별시",
+    "lat": 37.527394,
+    "lng": 127.040572,
+    "phone": "02-548-0704",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "지하철역"
+    ],
+    "description": "★ 4.2 (리뷰 134개) · 지하철역",
+    "region": "서울"
+  },
+  {
+    "id": "shop-063",
+    "name": "에비뉴엘 잠실점",
+    "address": "서울특별시 송파구 올림픽로 300",
+    "lat": 37.5127856,
+    "lng": 127.1017172,
+    "phone": "02-3213-2335",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.4 (리뷰 652개) · 백화점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-064",
+    "name": "오보타르트 선유도역",
+    "address": "서울특별시 영등포구 양평동5가 88-4 1층",
+    "lat": 37.53906,
+    "lng": 126.8928,
+    "phone": "",
+    "hours": "영업 중 · PM 7:00에 영업 종료",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "제과점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-065",
+    "name": "오우드베이커리 성수",
+    "address": "서울특별시 성동구 성수이로24길 36 2층",
+    "lat": 37.5443221,
+    "lng": 127.0618023,
+    "phone": "070-8840-2436",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.6 (리뷰 70개) · 커피숍/커피 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-066",
+    "name": "오투베이커리",
+    "address": "서울특별시 마포구 대흥동 백범로 84",
+    "lat": 37.546699,
+    "lng": 127.088899,
+    "phone": "010-5664-1166",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 4개) · 제과점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-067",
+    "name": "오트스퀘어",
+    "address": "서울특별시 강서구 강서로 405",
+    "lat": 37.5618918,
+    "lng": 126.8387021,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "디저트 전문점"
+    ],
+    "description": "★ 4.0 (리뷰 1개) · 디저트 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-068",
+    "name": "이웃집 통통이 압구정로데오점",
+    "address": "서울특별시 강남구 선릉로161길 19",
+    "lat": 37.5275858,
+    "lng": 127.0381029,
+    "phone": "050-71313-9286",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.1 (리뷰 52개) · 커피숍/커피 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-069",
+    "name": "이웃집통통이 망원점",
+    "address": "서울특별시 마포구 월드컵로13길 79 1층 101호",
+    "lat": 37.554979,
+    "lng": 126.9057939,
+    "phone": "050-71340-9337",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 8개) · 제과점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-070",
+    "name": "카페 이오이",
+    "address": "서울특별시 마포구 독막로 252",
+    "lat": 37.545232,
+    "lng": 126.9443892,
+    "phone": "050-71390-1758",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 카페",
+    "region": "서울"
+  },
+  {
+    "id": "shop-071",
+    "name": "카페더함",
+    "address": "서울특별시 마포구 신수동 번지 지층 91-15 104호",
+    "lat": 37.5026205,
+    "lng": 126.9488147,
+    "phone": "",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
@@ -372,32 +1145,15 @@
       "카페"
     ],
     "description": "카페",
-    "region": "경기"
+    "region": "서울"
   },
   {
-    "id": "shop-024",
-    "name": "크레이지버터",
-    "address": "경기 파주시 경의로 1108 1층 105호",
-    "lat": 37.7161985,
-    "lng": 126.7602074,
-    "phone": "0507-1340-8228",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "경기"
-  },
-  {
-    "id": "shop-025",
-    "name": "폰드먼트",
-    "address": "경기도 광주시 문형산길 72-4",
-    "lat": 37.3637975,
-    "lng": 127.1652992,
-    "phone": "031-603-8253",
+    "id": "shop-072",
+    "name": "카페밀노",
+    "address": "서울특별시 마포구 동교로 266-10 1층",
+    "lat": 37.562916,
+    "lng": 126.925767,
+    "phone": "",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
@@ -405,781 +1161,15 @@
       "카페"
     ],
     "description": "★ 4.4 (리뷰 7개) · 카페",
-    "region": "경기"
-  },
-  {
-    "id": "shop-026",
-    "name": "플뢰르드버터",
-    "address": "경기 화성시 동탄구 동탄치동천로3길 3-21 1층 101호",
-    "lat": 37.2182789,
-    "lng": 127.0787221,
-    "phone": "0507-1337-1562",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡류제조"
-    ],
-    "description": "떡류제조",
-    "region": "경기"
-  },
-  {
-    "id": "shop-027",
-    "name": "하이플레르",
-    "address": "경기 부천시 원미구 부흥로 339",
-    "lat": 37.4973132,
-    "lng": 126.7432937,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "경기"
-  },
-  {
-    "id": "shop-028",
-    "name": "BUTTERBAKE 버터베이크",
-    "address": "대구광역시 중구 동성로 22-1",
-    "lat": 35.8688008,
-    "lng": 128.5951836,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 4.5 (리뷰 26개) · 제과점",
-    "region": "대구"
-  },
-  {
-    "id": "shop-029",
-    "name": "도너츠윤 대전점",
-    "address": "대전광역시 서구 둔산북로 36",
-    "lat": 36.3554272,
-    "lng": 127.3783785,
-    "phone": "070-8777-0510",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 5.0 (리뷰 4개) · 제과점",
-    "region": "대전"
-  },
-  {
-    "id": "shop-030",
-    "name": "성심당 대전역점",
-    "address": "대전광역시 동구 중앙로 215 대전역사 2F",
-    "lat": 36.3322847,
-    "lng": 127.433649,
-    "phone": "042-220-4138",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 4.3 (리뷰 510개) · 제과점",
-    "region": "대전"
-  },
-  {
-    "id": "shop-031",
-    "name": "성심당 본점",
-    "address": "대전광역시 중구 대종로480번길 15",
-    "lat": 36.3276832,
-    "lng": 127.4273424,
-    "phone": "1588-8069",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 4.5 (리뷰 12803개) · 제과점",
-    "region": "대전"
-  },
-  {
-    "id": "shop-032",
-    "name": "뭉구점 비건베이커리(Moongoojeom Vegan)",
-    "address": "부산광역시 부산진구 서전로37번길 26",
-    "lat": 35.1589216,
-    "lng": 129.064227,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 5.0 (리뷰 24개) · 제과점",
-    "region": "부산"
-  },
-  {
-    "id": "shop-033",
-    "name": "꼬메르제과",
-    "address": "서울 동작구 여의대방로22길 94 1층",
-    "lat": 37.4980583,
-    "lng": 126.9261555,
-    "phone": "0507-1443-7795",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "서울"
-  },
-  {
-    "id": "shop-034",
-    "name": "꽃이든",
-    "address": "서울 강서구 마곡중앙6로 21 7층 713호",
-    "lat": 37.5604026,
-    "lng": 126.8324552,
-    "phone": "0507-1373-9934",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡",
-      "한과"
-    ],
-    "description": "떡,한과",
-    "region": "서울"
-  },
-  {
-    "id": "shop-035",
-    "name": "낫배드커피 한남",
-    "address": "서울특별시 용산구 한남동 744-19",
-    "lat": 37.5371656,
-    "lng": 126.9982878,
-    "phone": "0507-1345-2172",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "커피숍",
-      "커피 전문점"
-    ],
-    "description": "★ 4.8 (리뷰 123개) · 커피숍/커피 전문점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-036",
-    "name": "늘해피",
-    "address": "서울 강남구 학동로 342",
-    "lat": 37.5167674,
-    "lng": 127.0408857,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-037",
-    "name": "다수제과",
-    "address": "서울 마포구 월드컵북로6길 46 1층",
-    "lat": 37.5590594,
-    "lng": 126.9210272,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "베이커리"
-    ],
-    "description": "베이커리",
-    "region": "서울"
-  },
-  {
-    "id": "shop-038",
-    "name": "도토리 용산점",
-    "address": "서울특별시 용산구 한강대로52길 25-6",
-    "lat": 37.5318998,
-    "lng": 126.9727524,
-    "phone": "050-71498-0225",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페"
-    ],
-    "description": "★ 4.3 (리뷰 395개) · 카페",
-    "region": "서울"
-  },
-  {
-    "id": "shop-039",
-    "name": "마곡레터링케이크 다람과자점",
-    "address": "서울 강서구 마곡중앙2로 11 M밸리 W타워 3차 2층 202호 다람과자점",
-    "lat": 37.558198,
-    "lng": 126.8280611,
-    "phone": "0507-1467-3419",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "베이커리"
-    ],
-    "description": "베이커리",
-    "region": "서울"
-  },
-  {
-    "id": "shop-040",
-    "name": "모찌방앗간 성신여대점",
-    "address": "서울 성북구 보문로32길 44 나동 1층",
-    "lat": 37.5900579,
-    "lng": 127.0186635,
-    "phone": "0507-1409-0497",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "서울"
-  },
-  {
-    "id": "shop-041",
-    "name": "모찌방앗간 연남본점",
-    "address": "서울 마포구 양화로23길 24 1층",
-    "lat": 37.5595366,
-    "lng": 126.9249755,
-    "phone": "0507-1385-4456",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "서울"
-  },
-  {
-    "id": "shop-042",
-    "name": "문식빵",
-    "address": "서울특별시 마포구 동교로39길 4-8 1층 101호",
-    "lat": 37.5625243,
-    "lng": 126.9238828,
-    "phone": "0507-1359-5911",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 4.7 (리뷰 6개) · 제과점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-043",
-    "name": "밀랍 커피앤베이커리",
-    "address": "서울 성동구 서울숲4길 28-19",
-    "lat": 37.5465183,
-    "lng": 127.0438433,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-044",
-    "name": "버터리하우스",
-    "address": "서울 구로구 구로동로49길 9-2",
-    "lat": 37.4991388,
-    "lng": 126.8814577,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-045",
-    "name": "버터바닐라",
-    "address": "서울 금천구 금하로 763 1층 107호",
-    "lat": 37.4503307,
-    "lng": 126.91457,
-    "phone": "0502-5552-7033",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "서울"
-  },
-  {
-    "id": "shop-046",
-    "name": "버터베이커리",
-    "address": "서울특별시 마포구 동교로 226",
-    "lat": 37.5523471,
-    "lng": 126.9057244,
-    "phone": "02-332-2642",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 4.6 (리뷰 112개) · 제과점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-047",
-    "name": "보따리제과점 연남",
-    "address": "서울 마포구 동교로 251 1층",
-    "lat": 37.5623912,
-    "lng": 126.9241636,
-    "phone": "0507-1395-5794",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "베이커리"
-    ],
-    "description": "베이커리",
-    "region": "서울"
-  },
-  {
-    "id": "shop-048",
-    "name": "봉땅",
-    "address": "서울특별시 송파구 송파1동 백제고분로41길 42-8",
-    "lat": 37.5096244,
-    "lng": 127.1061749,
-    "phone": "010-8821-7769",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "커피숍",
-      "커피 전문점"
-    ],
-    "description": "★ 4.2 (리뷰 100개) · 커피숍/커피 전문점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-049",
-    "name": "새들러하우스",
-    "address": "서울 강남구 도산대로17길",
-    "lat": 37.5206634,
-    "lng": 127.0242058,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-050",
-    "name": "설경케이크",
-    "address": "서울 중랑구 상봉로1길 41",
-    "lat": 37.5862079,
-    "lng": 127.0931917,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-051",
-    "name": "스윗모노",
-    "address": "서울특별시 송파구 중대로12길 33",
-    "lat": 37.4921674,
-    "lng": 127.1250467,
-    "phone": "0507-1366-1826",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "디저트 전문점"
-    ],
-    "description": "★ 5.0 (리뷰 2개) · 디저트 전문점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-052",
-    "name": "시오팡야 광화문D타워점",
-    "address": "서울특별시 종로구 종로3길 17 1층 105호",
-    "lat": 37.5709961,
-    "lng": 126.9789392,
-    "phone": "050-71430-8166",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "일본식 제과점"
-    ],
-    "description": "★ 4.5 (리뷰 13개) · 일본식 제과점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-053",
-    "name": "신비한과자가게",
-    "address": "서울 마포구 와우산로29나길 24 1층 101호",
-    "lat": 37.5544495,
-    "lng": 126.9278696,
-    "phone": "0507-1417-3057",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "과자",
-      "사탕",
-      "초코렛"
-    ],
-    "description": "과자,사탕,초코렛",
-    "region": "서울"
-  },
-  {
-    "id": "shop-054",
-    "name": "신비한과자가게 연남",
-    "address": "서울 마포구 동교로46길 42-5 1층",
-    "lat": 37.5622367,
-    "lng": 126.926053,
-    "phone": "0507-1365-5148",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "서울"
-  },
-  {
-    "id": "shop-055",
-    "name": "아담버터",
-    "address": "서울 강북구 한천로123길 13",
-    "lat": 37.6360006,
-    "lng": 127.0301647,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-056",
-    "name": "안녕과자점",
-    "address": "서울 관악구 남부순환로228길 20",
-    "lat": 37.4777729,
-    "lng": 126.9545154,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-057",
-    "name": "앤드픽케이크 떡케이크",
-    "address": "서울 강동구 명일로 260 신동아아파트 상가 104호 앤드픽",
-    "lat": 37.5322774,
-    "lng": 127.140115,
-    "phone": "0507-1355-8659",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡",
-      "한과"
-    ],
-    "description": "떡,한과",
-    "region": "서울"
-  },
-  {
-    "id": "shop-058",
-    "name": "연남허니밀크",
-    "address": "서울특별시 마포구 양화로23길 10-14 1층",
-    "lat": 37.5593908,
-    "lng": 126.9257928,
-    "phone": "02-3144-7104",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과점"
-    ],
-    "description": "★ 5.0 (리뷰 1개) · 제과점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-059",
-    "name": "예빈당 성수본점",
-    "address": "서울 성동구 성수이로 87 성문빌딩 1층",
-    "lat": 37.5451447,
-    "lng": 127.0578397,
-    "phone": "0507-1441-5542",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡카페"
-    ],
-    "description": "떡카페",
-    "region": "서울"
-  },
-  {
-    "id": "shop-060",
-    "name": "옐로우버터드림",
-    "address": "서울 관악구 관악로14나길 10 2층",
-    "lat": 37.4776692,
-    "lng": 126.9573121,
-    "phone": "0507-1406-5533",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페",
-      "디저트"
-    ],
-    "description": "카페,디저트",
-    "region": "서울"
-  },
-  {
-    "id": "shop-061",
-    "name": "오화당",
-    "address": "서울 동대문구 고산자로36길 3 신관3층(서울훼미리, 청년몰 3층) 70122호",
-    "lat": 37.5795275,
-    "lng": 127.0393572,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡",
-      "한과"
-    ],
-    "description": "떡,한과",
-    "region": "서울"
-  },
-  {
-    "id": "shop-062",
-    "name": "올드페리도넛 가로수길점",
-    "address": "서울특별시 강남구 강남대로162길 35 1층",
-    "lat": 37.5203916,
-    "lng": 127.0207711,
-    "phone": "02-549-2588",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "도넛 전문점"
-    ],
-    "description": "★ 4.5 (리뷰 89개) · 도넛 전문점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-063",
-    "name": "올드페리도넛 용산아이파크몰점",
-    "address": "서울특별시 용산구 한강대로23길 55 4층",
-    "lat": 37.5298022,
-    "lng": 126.9646385,
-    "phone": "02-2012-0478",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "도넛 전문점"
-    ],
-    "description": "★ 4.1 (리뷰 15개) · 도넛 전문점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-064",
-    "name": "윤의궁",
-    "address": "서울 강동구 성내로6길 42-8",
-    "lat": 37.5284009,
-    "lng": 127.1223568,
-    "phone": "0507-1332-3259",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡",
-      "한과"
-    ],
-    "description": "떡,한과",
-    "region": "서울"
-  },
-  {
-    "id": "shop-065",
-    "name": "잠실 고소리향과자점 송파방이점",
-    "address": "서울 송파구 가락로 252 1층 102호",
-    "lat": 37.5001494,
-    "lng": 127.1044044,
-    "phone": "0507-1378-2095",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "베이커리"
-    ],
-    "description": "베이커리",
-    "region": "서울"
-  },
-  {
-    "id": "shop-066",
-    "name": "정과자점",
-    "address": "서울 마포구 동교로38길 22 정과자점",
-    "lat": 37.5617296,
-    "lng": 126.926669,
-    "phone": "0507-1362-0044",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "베이커리"
-    ],
-    "description": "베이커리",
-    "region": "서울"
-  },
-  {
-    "id": "shop-067",
-    "name": "제라진 제과점",
-    "address": "서울 양천구 중앙로32길 67",
-    "lat": 37.5203881,
-    "lng": 126.8614435,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-068",
-    "name": "종로떡방",
-    "address": "서울특별시 마포구 성산동 152-7",
-    "lat": 37.5697336,
-    "lng": 126.9045131,
-    "phone": "02-372-5588",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡집"
-    ],
-    "description": "★ 5.0 (리뷰 1개) · 떡집",
-    "region": "서울"
-  },
-  {
-    "id": "shop-069",
-    "name": "쥬르드쥬아케이크",
-    "address": "서울 성북구 솔샘로6길 24-1",
-    "lat": 37.6094751,
-    "lng": 127.0065189,
-    "phone": "0507-1316-6081",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "제과",
-      "제빵"
-    ],
-    "description": "제과,제빵",
-    "region": "서울"
-  },
-  {
-    "id": "shop-070",
-    "name": "진무",
-    "address": "서울 양천구 목동중앙북로 38 상가동 105-3호",
-    "lat": 37.5478142,
-    "lng": 126.8671327,
-    "phone": "0507-1316-0529",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡카페"
-    ],
-    "description": "떡카페",
-    "region": "서울"
-  },
-  {
-    "id": "shop-071",
-    "name": "카페 고토",
-    "address": "서울특별시 서초구 신반포로 200 지하1층 G-024호",
-    "lat": 37.5048044,
-    "lng": 127.0010348,
-    "phone": "02-591-3434",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "커피숍",
-      "커피 전문점"
-    ],
-    "description": "★ 4.9 (리뷰 306개) · 커피숍/커피 전문점",
-    "region": "서울"
-  },
-  {
-    "id": "shop-072",
-    "name": "카페 스미다",
-    "address": "서울특별시 금천구 벚꽃로 298 대륭포스트타워6차 b143호",
-    "lat": 37.4814721,
-    "lng": 126.8837592,
-    "phone": "070-4633-2525",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "카페"
-    ],
-    "description": "★ 4.4 (리뷰 32개) · 카페",
     "region": "서울"
   },
   {
     "id": "shop-073",
-    "name": "카페 이오이",
-    "address": "서울 마포구 독막로 252 1층 101호",
-    "lat": 37.545232,
-    "lng": 126.9443892,
-    "phone": "0507-1390-1758",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡카페"
-    ],
-    "description": "떡카페",
-    "region": "서울"
-  },
-  {
-    "id": "shop-074",
-    "name": "카페 인 선유",
-    "address": "서울특별시 영등포구 양평동4가 95 1층",
-    "lat": 37.5367067,
-    "lng": 126.8946965,
-    "phone": "050-71440-5667",
+    "name": "카페총각",
+    "address": "서울특별시 중구 다산로46길",
+    "lat": 37.567036,
+    "lng": 127.016597,
+    "phone": "02-2231-9430",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
@@ -1187,32 +1177,178 @@
       "커피숍",
       "커피 전문점"
     ],
-    "description": "★ 4.0 (리뷰 2개) · 커피숍/커피 전문점",
+    "description": "★ 3.5 (리뷰 4개) · 커피숍/커피 전문점",
     "region": "서울"
   },
   {
-    "id": "shop-075",
-    "name": "카페포엠",
-    "address": "서울특별시 중구 명동2가 명동4길 13",
-    "lat": 37.5631601,
-    "lng": 126.9837158,
-    "phone": "02-776-5003",
+    "id": "shop-074",
+    "name": "커피하오",
+    "address": "서울특별시 양천구 목2동 목동중앙로 103-1 1층",
+    "lat": 37.5382851,
+    "lng": 126.8728313,
+    "phone": "02-2061-7472",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
       "카페"
     ],
-    "description": "★ 4.5 (리뷰 405개) · 카페",
+    "description": "★ 4.7 (리뷰 23개) · 카페",
+    "region": "서울"
+  },
+  {
+    "id": "shop-075",
+    "name": "쿠치cwtch",
+    "address": "서울특별시 서대문구 연희로11라길 16",
+    "lat": 37.568684,
+    "lng": 126.92989,
+    "phone": "070-4070-0270",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 카페",
     "region": "서울"
   },
   {
     "id": "shop-076",
-    "name": "쿠루커피",
-    "address": "서울특별시 금천구 시흥동 814번지",
-    "lat": 37.457318,
-    "lng": 126.9055911,
-    "phone": "0507-1300-9148",
+    "name": "쿠키 앤 클레이",
+    "address": "서울특별시 종로구 삼일대로 437 103",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.6 (리뷰 15개) · 카페",
+    "region": "서울"
+  },
+  {
+    "id": "shop-077",
+    "name": "하우스엠",
+    "address": "서울특별시 강남구 논현로26길",
+    "lat": 37.483807,
+    "lng": 127.045563,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 3.7 (리뷰 3개) · 커피숍/커피 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-078",
+    "name": "하츠베이커리",
+    "address": "서울특별시 양천구 목동 916",
+    "lat": 37.500466,
+    "lng": 127.127116,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.7 (리뷰 3개) · 제과점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-079",
+    "name": "하츠베이커리 성수점",
+    "address": "서울특별시 성동구 성수동2가 316-46",
+    "lat": 37.543291,
+    "lng": 127.05376,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 제과점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-080",
+    "name": "핸드릭스 커피 로스터스",
+    "address": "서울특별시 마포구 월드컵북로4길 20 지층",
+    "lat": 37.5572054,
+    "lng": 126.9209045,
+    "phone": "02-6403-3986",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.6 (리뷰 64개) · 커피숍/커피 전문점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-081",
+    "name": "호안끼엠",
+    "address": "서울특별시 마포구 연남동 동교로46길 42-9",
+    "lat": 37.5617899,
+    "lng": 126.9266496,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.9 (리뷰 27개) · 음식점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-082",
+    "name": "Beton 베통 신세계백화점 강남점",
+    "address": "서울특별시 서초구 신반포로 176신세계백화점 강남점 지하1층",
+    "lat": 37.5043637,
+    "lng": 127.0036211,
+    "phone": "02-3479-1317",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 25개) · 제과점",
+    "region": "서울"
+  },
+  {
+    "id": "shop-083",
+    "name": "Bumpy",
+    "address": "서울특별시 용산구 녹사평대로46길 9 1층",
+    "lat": 37.5373867,
+    "lng": 126.9873863,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.0 (리뷰 1개) · 카페",
+    "region": "서울"
+  },
+  {
+    "id": "shop-084",
+    "name": "GAZELLE COFFEE 가젤커피 문래본점",
+    "address": "서울특별시 영등포구 문래북로 116 101~102호",
+    "lat": 37.520797,
+    "lng": 126.8914163,
+    "phone": "070-5029-6030",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
@@ -1224,146 +1360,215 @@
     "region": "서울"
   },
   {
-    "id": "shop-077",
-    "name": "쿠운 신논현본점",
-    "address": "서울특별시 서초구 강남대로83길 18 104호",
-    "lat": 37.5063828,
-    "lng": 127.0224634,
-    "phone": "0507-1338-1809",
+    "id": "shop-085",
+    "name": "쿠키부",
+    "address": "세종특별자치시 보람동 한누리대로 2200 쿠키부 b동 106호",
+    "lat": 36.476248,
+    "lng": 127.282502,
+    "phone": "070-7778-9222",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
       "카페"
     ],
-    "description": "★ 4.8 (리뷰 6개) · 카페",
-    "region": "서울"
+    "description": "카페",
+    "region": "세종"
   },
   {
-    "id": "shop-078",
-    "name": "하우모찌",
-    "address": "서울 송파구 오금로18길 12 지하1층",
-    "lat": 37.5102335,
-    "lng": 127.1108465,
-    "phone": "0507-1372-8141",
+    "id": "shop-086",
+    "name": "토피디저트",
+    "address": "울산광역시 남구 중앙로 109-1",
+    "lat": 35.5310596,
+    "lng": 129.3153777,
+    "phone": "010-8964-1120",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
-      "카페",
-      "디저트"
+      "카페"
     ],
-    "description": "카페,디저트",
-    "region": "서울"
-  },
-  {
-    "id": "shop-079",
-    "name": "호돌제과",
-    "address": "서울 구로구 고척로31길 4",
-    "lat": 37.5046726,
-    "lng": 126.8474335,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [],
-    "description": "",
-    "region": "서울"
-  },
-  {
-    "id": "shop-080",
-    "name": "도깨비떡방본점",
-    "address": "울산광역시 동구 화정동 번지 1층 861-9",
-    "lat": 35.4942549,
-    "lng": 129.4209702,
-    "phone": "",
-    "hours": "",
-    "closedDays": [],
-    "priceRange": "",
-    "tags": [
-      "떡집"
-    ],
-    "description": "떡집",
+    "description": "★ 5.0 (리뷰 1개) · 카페",
     "region": "울산"
   },
   {
-    "id": "shop-081",
-    "name": "몽뻬르과자점",
-    "address": "인천광역시 계양구 경명대로 1141",
-    "lat": 37.5432162,
-    "lng": 126.7339978,
-    "phone": "031-757-1023",
+    "id": "shop-087",
+    "name": "롯데백화점 인천점",
+    "address": "인천광역시 미추홀구 연남로 35",
+    "lat": 37.3806347,
+    "lng": 126.6647178,
+    "phone": "032-1577-0001",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
-      "제과점"
+      "백화점"
     ],
-    "description": "★ 4.4 (리뷰 37개) · 제과점",
+    "description": "★ 4.1 (리뷰 6785개) · 백화점",
     "region": "인천"
   },
   {
-    "id": "shop-082",
-    "name": "명문제과",
-    "address": "전북특별자치도 남원시 하정동 용성로 56",
-    "lat": 35.4090003,
-    "lng": 127.3824982,
-    "phone": "063-632-0933",
+    "id": "shop-088",
+    "name": "르우",
+    "address": "인천광역시 서구 청라동 커낼로 260번길 27 B동 지하 1층",
+    "lat": 37.5326643,
+    "lng": 126.6471305,
+    "phone": "",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
-      "제과점"
+      "커피숍",
+      "커피 전문점"
     ],
-    "description": "★ 4.1 (리뷰 1300개) · 제과점",
+    "description": "★ 5.0 (리뷰 3개) · 커피숍/커피 전문점",
+    "region": "인천"
+  },
+  {
+    "id": "shop-089",
+    "name": "오몽",
+    "address": "인천광역시 남동구 인주대로604번길 49-26 1층",
+    "lat": 37.446875,
+    "lng": 126.704262,
+    "phone": "032-214-3800",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.8 (리뷰 5개) · 커피숍/커피 전문점",
+    "region": "인천"
+  },
+  {
+    "id": "shop-090",
+    "name": "카페경명대로",
+    "address": "인천광역시 계양구 경명대로 1143 카페",
+    "lat": 37.543231,
+    "lng": 126.734242,
+    "phone": "010-7140-7669",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.4 (리뷰 17개) · 카페",
+    "region": "인천"
+  },
+  {
+    "id": "shop-091",
+    "name": "호카스콘샵",
+    "address": "인천광역시 남동구 구월동 1358-10",
+    "lat": 37.4484907,
+    "lng": 126.6945601,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 커피숍/커피 전문점",
+    "region": "인천"
+  },
+  {
+    "id": "shop-092",
+    "name": "카페 달;밤",
+    "address": "전북특별자치도 김제시 금산면 청도리 산347-8",
+    "lat": 35.725286,
+    "lng": 127.023567,
+    "phone": "010-3074-8228",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.2 (리뷰 144개) · 카페",
     "region": "전북"
   },
   {
-    "id": "shop-083",
-    "name": "구움당",
-    "address": "충청남도 서산시 동헌로 29",
-    "lat": 36.7754229,
-    "lng": 126.4526987,
-    "phone": "010-3929-3485",
+    "id": "shop-093",
+    "name": "카페윤",
+    "address": "전북특별자치도 익산시 부송동 216-5번지 1층",
+    "lat": 35.9597775,
+    "lng": 126.9978409,
+    "phone": "",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
-      "제과점"
+      "카페"
     ],
-    "description": "★ 4.7 (리뷰 28개) · 제과점",
-    "region": "충남"
+    "description": "★ 4.0 (리뷰 1개) · 카페",
+    "region": "전북"
   },
   {
-    "id": "shop-084",
-    "name": "쿠웁 베이크샵",
-    "address": "충청남도 천안시 서북구 불당32길 6",
-    "lat": 36.8085364,
-    "lng": 127.1040225,
-    "phone": "010-4885-3219",
+    "id": "shop-094",
+    "name": "크럼 Crumb",
+    "address": "전북특별자치도 전주시 완산구 홍산중앙로 42 6F",
+    "lat": 35.8173041,
+    "lng": 127.1093663,
+    "phone": "063-237-3618",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 카페",
+    "region": "전북"
+  },
+  {
+    "id": "shop-095",
+    "name": "쿠우 COO",
+    "address": "제주특별자치도 제주시 특별자치도, 용두암길 14 1층",
+    "lat": 33.5140792,
+    "lng": 126.5142995,
+    "phone": "050-71344-1428",
     "hours": "",
     "closedDays": [],
     "priceRange": "",
     "tags": [
       "디저트 전문점"
     ],
-    "description": "디저트 전문점",
-    "region": "충남"
+    "description": "★ 5.0 · 디저트 전문점",
+    "region": "제주"
   },
   {
-    "id": "shop-085",
-    "name": "울랄라 베이커리",
-    "address": "충청북도 청주시 흥덕구 대신로38번길 61-2",
-    "lat": 36.6347284,
-    "lng": 127.4386552,
-    "phone": "",
-    "hours": "",
+    "id": "shop-096",
+    "name": "밀하우스 베이커리",
+    "address": "충청북도 충주시 월촌1길 29 1층",
+    "lat": 36.631833,
+    "lng": 127.487989,
+    "phone": "071-483-2446",
+    "hours": "10:00 - 22:00",
     "closedDays": [],
     "priceRange": "",
     "tags": [
       "제과점"
     ],
-    "description": "★ 4.5 (리뷰 61개) · 제과점",
+    "description": "제과점",
+    "region": "충북"
+  },
+  {
+    "id": "shop-097",
+    "name": "카페퍼지",
+    "address": "충청북도 청주시 서원구 산남로24번길 18-2",
+    "lat": 36.6123106,
+    "lng": 127.4713324,
+    "phone": "050-25550-4139",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 커피숍/커피 전문점",
     "region": "충북"
   }
 ]

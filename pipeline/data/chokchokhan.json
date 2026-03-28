@@ -1,0 +1,3845 @@
+[
+  {
+    "id": "shop-001",
+    "name": "경상남도",
+    "address": "경상남도 남해군 남해읍 화전로38번길 36 1층\n                                    \n                                \n                                \n                                        \n                                            \n                                        바래온\n                                        경상남도 남해군 남해읍 스포츠로 173-9 바래온",
+    "lat": 35.3763461,
+    "lng": 128.147727,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "",
+    "region": "경남"
+  },
+  {
+    "id": "shop-002",
+    "name": "문정동",
+    "address": "서울특별시 송파구 법원로 114",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "",
+    "region": "서울"
+  },
+  {
+    "id": "shop-003",
+    "name": "인천광역시",
+    "address": "인천광역시 미추홀구 소성로 146\n                            \n                        \n                    \n                    \n                                \n                    \n                        \n                            50",
+    "lat": 35.6732085,
+    "lng": 120.9560214,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "",
+    "region": "인천"
+  },
+  {
+    "id": "shop-004",
+    "name": "사랑해베이글 진주점",
+    "address": "166 영천강로, 진주시 경상남도",
+    "lat": 35.1773852,
+    "lng": 128.1433548,
+    "phone": "070-8994-9940",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "베이글 전문점"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 베이글 전문점",
+    "region": "166"
+  },
+  {
+    "id": "shop-005",
+    "name": "찬이네감자탕 호산점",
+    "address": "강원특별자치도 삼척시 특별자치도 원덕읍 호산리 208-14",
+    "lat": 37.3233471,
+    "lng": 129.2661335,
+    "phone": "033-575-8484",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.0 (리뷰 71개) · 한식당",
+    "region": "강원특별자치도"
+  },
+  {
+    "id": "shop-006",
+    "name": "가마치통닭 수원SK스카이뷰점",
+    "address": "경기도 수원시 장안구 정자동 이목로 24-3 스카이프라자 401호",
+    "lat": 37.3096345,
+    "lng": 126.9847745,
+    "phone": "031-269-7772",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "닭요리전문점"
+    ],
+    "description": "★ 3.0 (리뷰 3개) · 닭요리전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-007",
+    "name": "갓덴스시 스타필드수원점",
+    "address": "경기도 수원시 장안구 수성로 175",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71448-1720",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "회전초밥집"
+    ],
+    "description": "★ 3.5 (리뷰 11개) · 회전초밥집",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-008",
+    "name": "갤러리아백화점 광교점",
+    "address": "경기도 수원시 영통구 광교중앙로 124",
+    "lat": 37.2852961,
+    "lng": 127.0572888,
+    "phone": "1544-6600",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.3 (리뷰 4432개) · 백화점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-009",
+    "name": "고수닭갈비",
+    "address": "경기도 수원시 영통구 이의동",
+    "lat": null,
+    "lng": null,
+    "phone": "031-216-9003",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 3.8 (리뷰 53개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-010",
+    "name": "굴사냥",
+    "address": "경기도 성남시 중원구 성남대로1148번길 25",
+    "lat": null,
+    "lng": null,
+    "phone": "031-752-9433",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "굴요리 전문식당"
+    ],
+    "description": "★ 3.9 (리뷰 549개) · 굴요리 전문식당",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-011",
+    "name": "꽃피는화덕피자D485",
+    "address": "경기도 안산시 상록구 월피동 445-25번지 KR 파크프라자 2층 202호 호",
+    "lat": 37.3285717,
+    "lng": 126.8475081,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.4 (리뷰 51개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-012",
+    "name": "나인블럭 기흥점",
+    "address": "경기도 용인시 공세로 34 KR",
+    "lat": null,
+    "lng": null,
+    "phone": "031-8005-8412",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.0 (리뷰 931개) · 카페",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-013",
+    "name": "더진국 용인명지대점",
+    "address": "경기도 용인시 처인구 명지로16번길 9-23 2층",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-014",
+    "name": "뎅과꼬치로",
+    "address": "경기도 수원시 장안구 서부로2105번길 26-8 102호",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일본 음식점"
+    ],
+    "description": "★ 4.7 (리뷰 23개) · 일본 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-015",
+    "name": "동경빵집",
+    "address": "경기도 화성시 동탄광역환승로 73 2층 224호",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 제과점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-016",
+    "name": "드롭 베이커리",
+    "address": "경기도 여주시 시 세종로45번길 8",
+    "lat": 37.2934726,
+    "lng": 127.636913,
+    "phone": "010-6690-0045",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 제과점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-017",
+    "name": "디델리라뽁이",
+    "address": "경기도 수원시 팔달구 팔달로3가 89",
+    "lat": 37.2764351,
+    "lng": 127.016367,
+    "phone": "031-269-5405",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.5 (리뷰 6개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-018",
+    "name": "롯데마트 수원점",
+    "address": "경기도 수원시 권선구 세화로 134",
+    "lat": 37.2641736,
+    "lng": 126.9971088,
+    "phone": "031-8067-2500",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.2 (리뷰 1616개) · 대형 슈퍼마켓",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-019",
+    "name": "롯데슈퍼 언남점",
+    "address": "경기도 용인시 기흥구 구성동 구성로 118",
+    "lat": 37.29263,
+    "lng": 127.121495,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "슈퍼마켓"
+    ],
+    "description": "★ 4.0 (리뷰 135개) · 슈퍼마켓",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-020",
+    "name": "마라천향 마라탕 안양점",
+    "address": "경기도 안양시 만안구 장내로139번길 38 1 층",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71357-6869",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "중국 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-021",
+    "name": "마트킹 동수원점",
+    "address": "경기도 수원시 권선구 동수원로 254",
+    "lat": 37.2521554,
+    "lng": 127.0354156,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "쇼핑몰"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 쇼핑몰",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-022",
+    "name": "맘베이커리",
+    "address": "경기도 안산시 단원구 고잔동 528",
+    "lat": 37.3207924,
+    "lng": 126.8331016,
+    "phone": "031-495-5160",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.4 (리뷰 56개) · 제과점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-023",
+    "name": "먹거리 장터",
+    "address": "경기도 평택시 동삭동 708-9 KR",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-024",
+    "name": "미림양장 수원 타임빌라스",
+    "address": "경기도 수원시 권선구 세화로 134 3 층",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "★ 5.0 (리뷰 57개) · 중국 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-025",
+    "name": "미소본칼국수",
+    "address": "경기도 평택시 용이동 466 5번지 1층 102동 101호",
+    "lat": 36.9940261,
+    "lng": 127.1358909,
+    "phone": "031-618-2034",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.3 (리뷰 52개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-026",
+    "name": "배스킨라빈스 용인흥덕점",
+    "address": "경기도 용인시 기흥구 영덕동 975-2",
+    "lat": 37.2764052,
+    "lng": 127.0713297,
+    "phone": "070-7450-5252",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "디저트 전문점"
+    ],
+    "description": "★ 4.0 (리뷰 127개) · 디저트 전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-027",
+    "name": "백청우칼국수 본점",
+    "address": "경기도 수원시 장다리로 253",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "국수 전문점"
+    ],
+    "description": "★ 4.3 (리뷰 128개) · 국수 전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-028",
+    "name": "붉은닭발",
+    "address": "경기도 안양시 동안구 관양동 1604",
+    "lat": 37.3936102,
+    "lng": 126.962644,
+    "phone": "031-388-7002",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "닭요리전문점"
+    ],
+    "description": "★ 4.6 (리뷰 9개) · 닭요리전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-029",
+    "name": "뼉다구 아지매 육칼",
+    "address": "경기도 화성시 향남읍 행정서로3길 대한민국",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.2 (리뷰 363개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-030",
+    "name": "뽁식당 행궁동점",
+    "address": "경기도 수원시 팔달구 신풍동 221-19 뽁식당행궁동점 1층",
+    "lat": 37.2839664,
+    "lng": 127.0149681,
+    "phone": "070-8670-7448",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "패밀리 레스토랑"
+    ],
+    "description": "★ 4.6 (리뷰 20개) · 패밀리 레스토랑",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-031",
+    "name": "소금과빛",
+    "address": "경기도 성남시 분당구 정자로76번길 11 119-1호 한라프라자 1층 119호",
+    "lat": 37.3622468,
+    "lng": 127.1134173,
+    "phone": "050-71482-1315",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.6 (리뷰 34개) · 제과점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-032",
+    "name": "송미방앗간",
+    "address": "경기도 성남시 중원구 광명로347번길 15 1 층",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71439-1309",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.3 (리뷰 3개) · 제과점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-033",
+    "name": "스타벅스 용인흥덕DT점",
+    "address": "경기도 용인시 기흥구 흥덕1로 85",
+    "lat": 37.2748355,
+    "lng": 127.07189,
+    "phone": "1522-3232",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.4 (리뷰 130개) · 커피숍/커피 전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-034",
+    "name": "엉클스보라카이흥덕점",
+    "address": "경기도 용인시 기흥구 영덕동 987-10번지 103호",
+    "lat": 37.2743983,
+    "lng": 127.0710929,
+    "phone": "031-213-6695",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "상점"
+    ],
+    "description": "★ 3.5 (리뷰 4개) · 상점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-035",
+    "name": "역전할머니맥주 흥덕점",
+    "address": "경기도 용인시 기흥구 흥덕1로79번길 2 가은프라자 107호, 108호",
+    "lat": 37.2750443,
+    "lng": 127.0714131,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "술집"
+    ],
+    "description": "★ 3.6 (리뷰 5개) · 술집",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-036",
+    "name": "오복수산 판교점",
+    "address": "경기도 성남시 판교동 분당내곡로 131 테크원 2층 3호",
+    "lat": 37.3954881,
+    "lng": 127.1121146,
+    "phone": "031-601-7544",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일본 음식점"
+    ],
+    "description": "★ 4.0 (리뷰 122개) · 일본 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-037",
+    "name": "용용선생 수원영통점",
+    "address": "경기도 수원시 영통구 반달로35번길 21",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "술집"
+    ],
+    "description": "★ 4.2 (리뷰 17개) · 술집",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-038",
+    "name": "우리집팔당닭발",
+    "address": "경기도 남양주시 와부읍 팔당로 215 KR",
+    "lat": 37.5418023,
+    "lng": 127.2533451,
+    "phone": "031-576-9788",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 3.9 (리뷰 380개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-039",
+    "name": "이마트 김포한강점",
+    "address": "경기도 김포시 김포한강7로 71",
+    "lat": 37.6443256,
+    "lng": 126.6282353,
+    "phone": "031-990-7124",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.2 (리뷰 1640개) · 대형 슈퍼마켓",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-040",
+    "name": "정아각 본점",
+    "address": "경기도 시흥시 신천6길 2-1",
+    "lat": null,
+    "lng": null,
+    "phone": "031-313-2727",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "★ 4.4 (리뷰 617개) · 중국 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-041",
+    "name": "제주살이 광교",
+    "address": "경기도 수원시 영통구 센트럴타운로 106 제주살이 1층",
+    "lat": 37.2927328,
+    "lng": 127.0501699,
+    "phone": "050-71348-4765",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.2 (리뷰 14개) · 한식당",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-042",
+    "name": "진짜원조소나무집",
+    "address": "경기도 안산시 단원구 대부동동 96-10",
+    "lat": null,
+    "lng": null,
+    "phone": "032-886-2450",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 3.4 (리뷰 383개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-043",
+    "name": "천지연 경기수원점",
+    "address": "경기도 수원시 권선구 곡반정로 72-8",
+    "lat": null,
+    "lng": null,
+    "phone": "031-898-7773",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식 고기구이 레스토랑"
+    ],
+    "description": "★ 4.1 (리뷰 721개) · 한식 고기구이 레스토랑",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-044",
+    "name": "청하양꼬치",
+    "address": "경기도 수원시 장안구 영화동 362-3",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71318-4711",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 중국 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-045",
+    "name": "카페꼼마 갤러리아 광교점",
+    "address": "경기도 수원시 영통구 광교중앙로 124",
+    "lat": 37.2850546,
+    "lng": 127.0570093,
+    "phone": "031-5174-7899",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.8 (리뷰 10개) · 카페",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-046",
+    "name": "커피인류 역북점",
+    "address": "경기도 용인시 처인구 명지로 40번길 9",
+    "lat": null,
+    "lng": null,
+    "phone": "070-8656-0109",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 3.8 (리뷰 5개) · 커피숍/커피 전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-047",
+    "name": "타타스베이글 유림점",
+    "address": "경기도 용인시 처인구 유방동 740-6",
+    "lat": null,
+    "lng": null,
+    "phone": "07-1352-1994",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.4 (리뷰 35개) · 제과점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-048",
+    "name": "탕화쿵푸마라탕",
+    "address": "경기도 용인시 기흥구 영덕동 975 5번지 리써밋타워 2층 206호",
+    "lat": 37.2764831,
+    "lng": 127.0715172,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "장소의 전화번호 추가"
+    ],
+    "description": "★ 5.0 (리뷰 3개) · 장소의 전화번호 추가",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-049",
+    "name": "텃밭 식자재마트 하남점",
+    "address": "경기도 하남시 미사강변서로 30",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "식료품점"
+    ],
+    "description": "★ 4.0 (리뷰 1개) · 식료품점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-050",
+    "name": "티크닉 앨리웨이 광교점",
+    "address": "경기도 수원시 영통구 하동 946",
+    "lat": null,
+    "lng": null,
+    "phone": "010-5019-7116",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.6 (리뷰 7개) · 카페",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-051",
+    "name": "평택 과일촌",
+    "address": "경기도 평택시 통복시장2로9번길 39",
+    "lat": 36.9983105,
+    "lng": 127.0843746,
+    "phone": "031-691-3676",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "과일 및 야채 가게"
+    ],
+    "description": "과일 및 야채 가게",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-052",
+    "name": "프랭크커핀바 수원점",
+    "address": "경기도 수원시 팔달구 신풍동 221-19 번지 플레이스베카 2층",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.2 (리뷰 17개) · 카페",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-053",
+    "name": "플랜에이치 광교호수점",
+    "address": "경기도 용인시 기흥구 흥덕2로87번길 18",
+    "lat": 37.2757617,
+    "lng": 127.071896,
+    "phone": "031-215-5505",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "미용실"
+    ],
+    "description": "미용실",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-054",
+    "name": "하나로마트 광교점",
+    "address": "경기도 수원시 영통구 하동 136",
+    "lat": null,
+    "lng": null,
+    "phone": "031-214-1741",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "식료품점"
+    ],
+    "description": "★ 3.9 (리뷰 280개) · 식료품점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-055",
+    "name": "현대백화점 판교점",
+    "address": "경기도 성남시 분당구 판교역로146번길 20",
+    "lat": 37.3927392,
+    "lng": 127.112094,
+    "phone": "031-5170-2233",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.4 (리뷰 14918개) · 백화점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-056",
+    "name": "현대어린이책미술관",
+    "address": "경기도 분당구 판교역로 146번길 20",
+    "lat": null,
+    "lng": null,
+    "phone": "031-5170-3700",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "미술관"
+    ],
+    "description": "★ 4.5 (리뷰 350개) · 미술관",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-057",
+    "name": "홍라드5호점",
+    "address": "경기도 수원시 영통구 반달로 108 2 층",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 3.5 (리뷰 2개) · 커피숍/커피 전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-058",
+    "name": "화양연화 스타필드 안성점",
+    "address": "경기도 안성시 공도읍 서동대로 3930-39 스타필드안성 1층 1300호",
+    "lat": 36.9947188,
+    "lng": 127.1475203,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 2.2 (리뷰 5개) · 음식점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-059",
+    "name": "ACR • Alegria Coffee Roasters",
+    "address": "경기도 성남시 분당구 분당내곡로 131",
+    "lat": 37.3954881,
+    "lng": 127.1121146,
+    "phone": "031-601-7587",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.6 (리뷰 53개) · 커피숍/커피 전문점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-060",
+    "name": "NC백화점 수원터미널점",
+    "address": "경기도 수원시 권선구 경수대로",
+    "lat": 37.2501823,
+    "lng": 127.0198901,
+    "phone": "010-7351-0036",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.2 (리뷰 30개) · 백화점",
+    "region": "경기도"
+  },
+  {
+    "id": "shop-061",
+    "name": "(주)오지버거경상대점",
+    "address": "경상남도 진주시 가좌동 492 9번지 경상프라자 1층 101호",
+    "lat": 35.1520547,
+    "lng": 128.1054451,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "음식점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-062",
+    "name": "4242샌드위치 김해 내동점",
+    "address": "경상남도 김해시 내동 1141-1 4242 샌드위치 내동점",
+    "lat": 35.2377024,
+    "lng": 128.8680397,
+    "phone": "055-338-5982",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 음식점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-063",
+    "name": "강호맛족 진주혁신점",
+    "address": "경상남도 진주시 사들로",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 3.0 (리뷰 1개) · 한식당",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-064",
+    "name": "경주당",
+    "address": "경상남도 창원시 성산구 사파동 번지 지하층 1호 112-18 충일부호",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 제과점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-065",
+    "name": "더블시트상남점",
+    "address": "경상남도 창원시 성산구 상남동 번지 801호 21-5 KR 동일빌딩",
+    "lat": 35.2205137,
+    "lng": 128.6844739,
+    "phone": "07-1324-6878",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.6 (리뷰 11개) · 카페",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-066",
+    "name": "돈돈짜글이 혁신점",
+    "address": "경상남도 진주시 사들로34번길 8 101,102호",
+    "lat": null,
+    "lng": null,
+    "phone": "070-8199-9625",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "한식당",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-067",
+    "name": "맥도날드 진주혁신GS DT점",
+    "address": "경상남도 진주시 동진로 581",
+    "lat": null,
+    "lng": null,
+    "phone": "055-920-7600",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "패스트푸드점"
+    ],
+    "description": "★ 4.2 (리뷰 708개) · 패스트푸드점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-068",
+    "name": "모던베이프마창진점",
+    "address": "경상남도 창원시 진해구 여좌동 760 264번지 SJ헤어 1층 102호",
+    "lat": 35.1522848,
+    "lng": 128.6607746,
+    "phone": "055-551-5422",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "전자담배 판매점"
+    ],
+    "description": "전자담배 판매점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-069",
+    "name": "버거킹 진주하대DT점",
+    "address": "경상남도 진주시 대신로 345",
+    "lat": null,
+    "lng": null,
+    "phone": "070-7459-7020",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "햄버거 전문점"
+    ],
+    "description": "★ 4.3 (리뷰 87개) · 햄버거 전문점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-070",
+    "name": "샐러디북(SALADY_BOOK)",
+    "address": "경상남도 창원시 성산구 신월로 11-1 KR",
+    "lat": null,
+    "lng": null,
+    "phone": "010-6778-8711",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "카페",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-071",
+    "name": "써브웨이 진주혁신점",
+    "address": "경상남도 진주시 문산읍 소문리",
+    "lat": null,
+    "lng": null,
+    "phone": "055-758-0250",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "샌드위치 가게"
+    ],
+    "description": "★ 4.0 (리뷰 31개) · 샌드위치 가게",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-072",
+    "name": "이네당",
+    "address": "경상남도 창원시 성산구 중앙동 번지 1층 100-2 현대오피스텔 114호",
+    "lat": 35.2207715,
+    "lng": 128.6762701,
+    "phone": "07-1345-5183",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "카페",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-073",
+    "name": "지코바치킨 하동점",
+    "address": "경상남도 하동군 하동읍 중앙3길 3-1",
+    "lat": null,
+    "lng": null,
+    "phone": "055-884-7977",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "치킨 전문점"
+    ],
+    "description": "★ 4.7 (리뷰 10개) · 치킨 전문점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-074",
+    "name": "진국본가 진주혁신도시점",
+    "address": "경상남도 진주시 충무 공동 86-2",
+    "lat": 35.1686375,
+    "lng": 128.1325156,
+    "phone": "055-759-6600",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.0 (리뷰 79개) · 한식당",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-075",
+    "name": "진주냉면산홍 본점",
+    "address": "경상남도 진주시 금산면 금산로 62",
+    "lat": 35.2141147,
+    "lng": 128.1434329,
+    "phone": "055-755-5155",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "냉면 전문점"
+    ],
+    "description": "★ 4.3 (리뷰 815개) · 냉면 전문점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-076",
+    "name": "태영생막창",
+    "address": "경상남도 진주시 하대동 도동로240번길 8",
+    "lat": 35.1916952,
+    "lng": 128.1228365,
+    "phone": "055-753-0772",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "막창 전문점"
+    ],
+    "description": "★ 4.2 (리뷰 127개) · 막창 전문점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-077",
+    "name": "투썸플레이스 진주경상대점",
+    "address": "경상남도 진주시 가좌동 진주대로 504",
+    "lat": null,
+    "lng": null,
+    "phone": "055-759-4375",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.0 (리뷰 192개) · 카페",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-078",
+    "name": "호호하우스",
+    "address": "경상남도 창원시 의창구 도계동 번지 1층 335-16 일부호",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.6 (리뷰 11개) · 제과점",
+    "region": "경상남도"
+  },
+  {
+    "id": "shop-079",
+    "name": "고향밀면 | Gohyang Milmyeon",
+    "address": "경상북도 경주시 태종로791번길 7",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71323-7169",
+    "hours": "영업 중 · PM 7:30에 영업 종료",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "냉면 전문점"
+    ],
+    "description": "★ 4.2 (리뷰 799개) · 냉면 전문점",
+    "region": "경상북도"
+  },
+  {
+    "id": "shop-080",
+    "name": "귀빈대게회타운",
+    "address": "경상북도 영덕군 영덕대게로 207번지",
+    "lat": 36.367336,
+    "lng": 129.394355,
+    "phone": "010-8956-4024",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.8 (리뷰 314개) · 음식점",
+    "region": "경상북도"
+  },
+  {
+    "id": "shop-081",
+    "name": "세종마트(산동점)",
+    "address": "경상북도 구미시 산동읍 신당리 296-3",
+    "lat": 36.1629223,
+    "lng": 128.4329049,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "슈퍼마켓"
+    ],
+    "description": "슈퍼마켓",
+    "region": "경상북도"
+  },
+  {
+    "id": "shop-082",
+    "name": "미풍해장국경주점",
+    "address": "경주시",
+    "lat": null,
+    "lng": null,
+    "phone": "054-772-7721",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.0 (리뷰 24개) · 음식점",
+    "region": "경주시"
+  },
+  {
+    "id": "shop-083",
+    "name": "행포케 용황점",
+    "address": "경주시 용강동 1513",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71358-8281",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "샐러드샵"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 샐러드샵",
+    "region": "경주시"
+  },
+  {
+    "id": "shop-084",
+    "name": "돼지똥꼬 전대본점",
+    "address": "광주광역시 북구 중흥동 279-5 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "062-525-9285",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "막창 전문점"
+    ],
+    "description": "★ 4.2 (리뷰 185개) · 막창 전문점",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-085",
+    "name": "롯데백화점 광주점",
+    "address": "광주광역시 동구 독립로 268",
+    "lat": 35.154519,
+    "lng": 126.91229,
+    "phone": "1577-0001",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.0 (리뷰 2426개) · 백화점",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-086",
+    "name": "맛찬들 광주상무점",
+    "address": "광주광역시 서구 치평동 1222-10",
+    "lat": null,
+    "lng": null,
+    "phone": "062-385-9952",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "숯불구이",
+      "바베큐전문점"
+    ],
+    "description": "★ 4.1 (리뷰 61개) · 숯불구이/바베큐전문점",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-087",
+    "name": "머든 수완점",
+    "address": "광주광역시 광산구 수완로49번길 26",
+    "lat": null,
+    "lng": null,
+    "phone": "062-234-7473",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.5 (리뷰 4개) · 카페",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-088",
+    "name": "버거리 광주수완점",
+    "address": "광주광역시 광산구 장신로 135",
+    "lat": 35.1910334,
+    "lng": 126.825061,
+    "phone": "062-956-3777",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "햄버거 전문점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 햄버거 전문점",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-089",
+    "name": "소문난 오돌뼈·막창",
+    "address": "광주광역시",
+    "lat": 35.173079,
+    "lng": 126.8777927,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.2 (리뷰 22개) · 음식점",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-090",
+    "name": "수일통닭 남구점",
+    "address": "광주광역시 남구 서문대로751번길 7-6",
+    "lat": null,
+    "lng": null,
+    "phone": "062-674-8292",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "치킨 전문점"
+    ],
+    "description": "★ 4.0 (리뷰 1개) · 치킨 전문점",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-091",
+    "name": "월계닭갈비",
+    "address": "광주광역시 광산구 쌍암동 694-5",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "닭요리전문점"
+    ],
+    "description": "★ 4.7 (리뷰 3개) · 닭요리전문점",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-092",
+    "name": "정희 동명점",
+    "address": "광주광역시 동구 동명로20번길 20",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "아시아 레스토랑"
+    ],
+    "description": "★ 4.6 (리뷰 54개) · 아시아 레스토랑",
+    "region": "광주광역시"
+  },
+  {
+    "id": "shop-093",
+    "name": "더현대 대구",
+    "address": "대구광역시 중구 달구벌대로 2077",
+    "lat": 35.8667125,
+    "lng": 128.5906406,
+    "phone": "053-245-2233",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.2 (리뷰 7725개) · 백화점",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-094",
+    "name": "덕일생고기 삼덕점",
+    "address": "대구광역시 중구 공평로8길 14-9",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.1 (리뷰 90개) · 음식점",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-095",
+    "name": "사운즈커피 복현점",
+    "address": "대구광역시 북구 동북로 241",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.5 (리뷰 4개) · 커피숍/커피 전문점",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-096",
+    "name": "이마트 월배점",
+    "address": "대구광역시 달서구 진천로 92",
+    "lat": null,
+    "lng": null,
+    "phone": "053-607-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "편의점"
+    ],
+    "description": "★ 4.2 (리뷰 3947개) · 편의점",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-097",
+    "name": "이마트 칠성점",
+    "address": "대구광역시 북구 침산로 93",
+    "lat": null,
+    "lng": null,
+    "phone": "053-609-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.1 (리뷰 3453개) · 대형 슈퍼마켓",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-098",
+    "name": "트레이더스 홀세일 클럽 비산점",
+    "address": "대구광역시 서구 팔달로 54",
+    "lat": null,
+    "lng": null,
+    "phone": "053-714-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "창고형 매장"
+    ],
+    "description": "★ 4.1 (리뷰 5983개) · 창고형 매장",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-099",
+    "name": "푸른회식당",
+    "address": "대구광역시 서구 달구벌대로375길 14-1",
+    "lat": null,
+    "lng": null,
+    "phone": "053-552-5040",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "해산물 요리 전문식당"
+    ],
+    "description": "★ 4.3 (리뷰 968개) · 해산물 요리 전문식당",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-100",
+    "name": "BUTTERBAKE 버터베이크",
+    "address": "대구광역시 중구 동성로 22-1",
+    "lat": 35.8688008,
+    "lng": 128.5951836,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 26개) · 제과점",
+    "region": "대구광역시"
+  },
+  {
+    "id": "shop-101",
+    "name": "도너츠윤 대전점",
+    "address": "대전광역시 서구 둔산북로 36",
+    "lat": 36.3554272,
+    "lng": 127.3783785,
+    "phone": "070-8777-0510",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 4개) · 제과점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-102",
+    "name": "몽심 대흥3호점",
+    "address": "대전광역시 중구 중교로 32 1 층",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.4 (리뷰 10개) · 제과점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-103",
+    "name": "산오징어비빔회 양푼무침",
+    "address": "대전광역시 서구 둔산로 30",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 음식점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-104",
+    "name": "성심당 대전역점",
+    "address": "대전광역시 동구 중앙로 215 대전역사 2F",
+    "lat": 36.3322847,
+    "lng": 127.433649,
+    "phone": "042-220-4138",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.3 (리뷰 510개) · 제과점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-105",
+    "name": "성심당 본점",
+    "address": "대전광역시 중구 대종로480번길 15",
+    "lat": 36.3276832,
+    "lng": 127.4273424,
+    "phone": "1588-8069",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 12803개) · 제과점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-106",
+    "name": "성심당 본점",
+    "address": "대전광역시 중구 대종로480번길 15",
+    "lat": 36.3276832,
+    "lng": 127.4273424,
+    "phone": "1588-8069",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 12803개) · 제과점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-107",
+    "name": "성심당 본점",
+    "address": "대전광역시 중구 대종로480번길 15",
+    "lat": 36.3276832,
+    "lng": 127.4273424,
+    "phone": "1588-8069",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 12803개) · 제과점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-108",
+    "name": "옥천뼈구이 농민뜨끈이 갈마점",
+    "address": "대전광역시 서구 갈마동 339-3",
+    "lat": 36.3490858,
+    "lng": 127.3697389,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.4 (리뷰 7개) · 한식당",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-109",
+    "name": "이마트 둔산점",
+    "address": "대전광역시 서구 둔산북로 41",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.1 (리뷰 4170개) · 대형 슈퍼마켓",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-110",
+    "name": "처비칙스",
+    "address": "대전광역시 중구 중앙로170번길 7-1",
+    "lat": 36.3292104,
+    "lng": 127.4287251,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "잡화점"
+    ],
+    "description": "★ 4.0 (리뷰 3개) · 잡화점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-111",
+    "name": "히든토이 대전점",
+    "address": "대전광역시 중구 중앙로164번길 37",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "잡화점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 잡화점",
+    "region": "대전광역시"
+  },
+  {
+    "id": "shop-112",
+    "name": "정성식당",
+    "address": "문현동 100-15번지 남구 부산광역시 KR",
+    "lat": 35.1433353,
+    "lng": 129.0757002,
+    "phone": "051-632-8778",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.0 (리뷰 28개) · 음식점",
+    "region": "문현동"
+  },
+  {
+    "id": "shop-113",
+    "name": "용가회전훠궈 안산점",
+    "address": "번지 석탑프라자 101 KR 15360 경기도 안산시 단원구 고잔동 533-2 2호",
+    "lat": null,
+    "lng": null,
+    "phone": "070-8878-6666",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "중국 음식점",
+    "region": "번지"
+  },
+  {
+    "id": "shop-114",
+    "name": "인생극장쪽갈비보령동대점",
+    "address": "보령시",
+    "lat": 36.3467261,
+    "lng": 126.6082887,
+    "phone": "041-932-7203",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.4 (리뷰 5개) · 음식점",
+    "region": "보령시"
+  },
+  {
+    "id": "shop-115",
+    "name": "(주)푸드엔 식자재마트 서면점",
+    "address": "부산광역시 부산진구 동성로118번길 7",
+    "lat": 35.1623342,
+    "lng": 129.0663651,
+    "phone": "051-715-5591",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "도매 식료품점"
+    ],
+    "description": "★ 4.4 (리뷰 17개) · 도매 식료품점",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-116",
+    "name": "고관입구",
+    "address": "부산광역시",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "버스 정류장"
+    ],
+    "description": "버스 정류장",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-117",
+    "name": "농축산마트 광안쌍용점",
+    "address": "부산광역시 수영구 광안로 37",
+    "lat": 35.1556694,
+    "lng": 129.116381,
+    "phone": "051-756-9991",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "슈퍼마켓"
+    ],
+    "description": "★ 4.2 (리뷰 143개) · 슈퍼마켓",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-118",
+    "name": "대쿠이 (デくい) 부산직영점",
+    "address": "부산광역시 부산진구 전포대로175번길 39",
+    "lat": null,
+    "lng": null,
+    "phone": "051-802-0597",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "돈까스 전문식당"
+    ],
+    "description": "★ 4.4 (리뷰 219개) · 돈까스 전문식당",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-119",
+    "name": "더마트",
+    "address": "부산광역시 기장군 정관읍 정관4로 24",
+    "lat": 35.3257539,
+    "lng": 129.1702304,
+    "phone": "051-727-8940",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.0 (리뷰 157개) · 대형 슈퍼마켓",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-120",
+    "name": "더샵 센트럴스타",
+    "address": "부산광역시 부산진구 중앙대로666번길 50",
+    "lat": 35.1515714,
+    "lng": 129.061142,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "아파트"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 아파트",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-121",
+    "name": "롯데마트 부산점",
+    "address": "부산광역시 부산진구 신천대로 241",
+    "lat": null,
+    "lng": null,
+    "phone": "051-608-2500",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.1 (리뷰 1950개) · 대형 슈퍼마켓",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-122",
+    "name": "묵은지돼지김치찌개 본점",
+    "address": "부산광역시 부산진구 가야대로784번길 43",
+    "lat": null,
+    "lng": null,
+    "phone": "051-804-0011",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.5 (리뷰 70개) · 한식당",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-123",
+    "name": "뭉구점 비건베이커리(Moongoojeom Vegan)",
+    "address": "부산광역시 부산진구 서전로37번길 26",
+    "lat": 35.1589216,
+    "lng": 129.064227,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 24개) · 제과점",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-124",
+    "name": "뭉구점 비건베이커리(Moongoojeom Vegan)",
+    "address": "부산광역시 부산진구 서전로37번길 26",
+    "lat": 35.1589216,
+    "lng": 129.064227,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 24개) · 제과점",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-125",
+    "name": "부산시민회관",
+    "address": "부산광역시 동구 자성로133번길 16",
+    "lat": null,
+    "lng": null,
+    "phone": "051-630-5200",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "콘서트홀"
+    ],
+    "description": "★ 4.4 (리뷰 294개) · 콘서트홀",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-126",
+    "name": "빈티지 38 2호점",
+    "address": "부산광역시 부산진구 가야대로784번길 21",
+    "lat": null,
+    "lng": null,
+    "phone": "051-803-4457",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "★ 4.0 (리뷰 142개)",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-127",
+    "name": "샐러디 부산명장점",
+    "address": "부산광역시 동래구 반송로 335",
+    "lat": null,
+    "lng": null,
+    "phone": "051-521-6380",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "샐러드샵"
+    ],
+    "description": "★ 4.2 (리뷰 6개) · 샐러드샵",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-128",
+    "name": "샤브20 광안리점",
+    "address": "부산광역시 수영구 광안해변로 127",
+    "lat": null,
+    "lng": null,
+    "phone": "051-622-4920",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "샤브샤브 전문점"
+    ],
+    "description": "★ 4.4 (리뷰 89개) · 샤브샤브 전문점",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-129",
+    "name": "수변최고돼지국밥 본점",
+    "address": "부산광역시 수영구 광안해변로370번길 9-32",
+    "lat": null,
+    "lng": null,
+    "phone": "051-754-9222",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "돼지국밥 전문점"
+    ],
+    "description": "★ 4.4 (리뷰 2228개) · 돼지국밥 전문점",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-130",
+    "name": "수훈식당",
+    "address": "부산광역시 수영구 민락동 707-10",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "★ 4.5 (리뷰 11개)",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-131",
+    "name": "이마트 해운대점",
+    "address": "부산광역시 해운대구 좌동순환로 511",
+    "lat": null,
+    "lng": null,
+    "phone": "051-608-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.2 (리뷰 3571개) · 대형 슈퍼마켓",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-132",
+    "name": "이케아 동부산점",
+    "address": "부산광역시 기장군 동부산관광3로 17",
+    "lat": null,
+    "lng": null,
+    "phone": "1670-4532",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "잡화점"
+    ],
+    "description": "★ 4.2 (리뷰 7422개) · 잡화점",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-133",
+    "name": "지에스더프레시 부산가야점",
+    "address": "부산광역시 부산진구 가야대로 635-12 금호그랜드타운 1층",
+    "lat": 35.1563344,
+    "lng": 129.0416453,
+    "phone": "051-892-9007",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "슈퍼마켓"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 슈퍼마켓",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-134",
+    "name": "트레이더스 홀세일클럽 서면점",
+    "address": "부산광역시 부산진구 시민공원로 31",
+    "lat": null,
+    "lng": null,
+    "phone": "051-718-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "창고형 매장"
+    ],
+    "description": "★ 4.1 (리뷰 7041개) · 창고형 매장",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-135",
+    "name": "페이센동 전포본점",
+    "address": "부산광역시 부산진구 서전로46번길 6",
+    "lat": null,
+    "lng": null,
+    "phone": "051-808-9399",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일본 음식점"
+    ],
+    "description": "★ 4.6 (리뷰 202개) · 일본 음식점",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-136",
+    "name": "하나로마트 부전점",
+    "address": "부산광역시 부산진구 중앙대로783번길 14",
+    "lat": null,
+    "lng": null,
+    "phone": "051-801-9000",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 3.9 (리뷰 724개) · 대형 슈퍼마켓",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-137",
+    "name": "GS더프레시 부산센텀점",
+    "address": "부산광역시 해운대구 해운대로76번길 65 1 층",
+    "lat": 35.1902688,
+    "lng": 129.1170419,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "슈퍼마켓"
+    ],
+    "description": "슈퍼마켓",
+    "region": "부산광역시"
+  },
+  {
+    "id": "shop-138",
+    "name": "가메골손왕만두 남대문본점",
+    "address": "서울특별시 중구 남대문시장4길 42",
+    "lat": null,
+    "lng": null,
+    "phone": "02-755-2569",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "만두 전문점"
+    ],
+    "description": "★ 4.3 (리뷰 827개) · 만두 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-139",
+    "name": "공푸",
+    "address": "서울특별시 성북구 삼선교로24길 29",
+    "lat": 37.5887752,
+    "lng": 127.016138,
+    "phone": "070-7566-4683",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "★ 4.4 (리뷰 703개) · 중국 음식점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-140",
+    "name": "김태완스시 송파본점",
+    "address": "서울특별시 송파구 송파동 48-16",
+    "lat": null,
+    "lng": null,
+    "phone": "02-2202-3303",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "스시",
+      "초밥집"
+    ],
+    "description": "★ 4.6 · 스시/초밥집",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-141",
+    "name": "까이식당",
+    "address": "서울특별시 서대문구 이화여대2가길 24",
+    "lat": null,
+    "lng": null,
+    "phone": "02-313-7339",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "싱가포르 레스토랑"
+    ],
+    "description": "★ 4.4 (리뷰 153개) · 싱가포르 레스토랑",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-142",
+    "name": "농민백암순대 본점",
+    "address": "서울특별시 강남구 선릉로86길 40-4",
+    "lat": 37.5037065,
+    "lng": 127.0530366,
+    "phone": "02-555-9603",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "순대 전문점"
+    ],
+    "description": "★ 4.5 (리뷰 2811개) · 순대 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-143",
+    "name": "뉴뉴 동대문",
+    "address": "서울특별시 중구 마장로 34",
+    "lat": null,
+    "lng": null,
+    "phone": "02-2235-0921",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "잡화점"
+    ],
+    "description": "★ 4.3 (리뷰 442개) · 잡화점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-144",
+    "name": "능동미나리 신용산",
+    "address": "서울특별시 용산구 한강대로40길 28",
+    "lat": null,
+    "lng": null,
+    "phone": "02-790-1026",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.4 (리뷰 394개) · 한식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-145",
+    "name": "당곡",
+    "address": "서울특별시",
+    "lat": 37.490253,
+    "lng": 126.927559,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "지하철역"
+    ],
+    "description": "★ 3.9 (리뷰 7개) · 지하철역",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-146",
+    "name": "대취",
+    "address": "서울특별시 성동구 성수동2가 315-52",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "술집"
+    ],
+    "description": "★ 4.5 (리뷰 2개) · 술집",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-147",
+    "name": "도토리 용산점",
+    "address": "서울특별시 용산구 한강대로52길 25-6",
+    "lat": 37.5318998,
+    "lng": 126.9727524,
+    "phone": "050-71498-0225",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.3 (리뷰 395개) · 카페",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-148",
+    "name": "동신곱창 신설동본점",
+    "address": "서울특별시 종로구 숭인동 1245",
+    "lat": 37.5762079,
+    "lng": 127.022785,
+    "phone": "050-71476-0461",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 5.0 (리뷰 158개) · 한식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-149",
+    "name": "뚝배기집",
+    "address": "서울특별시 종로구 종로16길 12",
+    "lat": 37.5695341,
+    "lng": 126.9884726,
+    "phone": "02-2265-5744",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.5 (리뷰 1377개) · 한식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-150",
+    "name": "뜨아아아커피집",
+    "address": "서울특별시 성동구 고산자로12길 1-1",
+    "lat": null,
+    "lng": null,
+    "phone": "070-4256-2555",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.3 (리뷰 208개) · 카페",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-151",
+    "name": "록갈비",
+    "address": "서울특별시 관악구 신림동 봉천로6길 18",
+    "lat": 37.48888,
+    "lng": 126.925306,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "갈비 전문 음식점"
+    ],
+    "description": "★ 4.7 (리뷰 76개) · 갈비 전문 음식점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-152",
+    "name": "롯데마트 제타플렉스 서울역점",
+    "address": "서울특별시 중구 한강대로 405",
+    "lat": null,
+    "lng": null,
+    "phone": "02-390-2500",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.2 (리뷰 9752개) · 대형 슈퍼마켓",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-153",
+    "name": "롯데백화점 잠실점",
+    "address": "서울특별시 송파구 올림픽로 240",
+    "lat": 37.5121692,
+    "lng": 127.0993026,
+    "phone": "02-1577-0001",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.3 (리뷰 4826개) · 백화점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-154",
+    "name": "롯데월드몰",
+    "address": "서울특별시 송파구 올림픽로 300",
+    "lat": 37.513618,
+    "lng": 127.1038928,
+    "phone": "02-3213-5000",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "쇼핑몰"
+    ],
+    "description": "★ 4.4 (리뷰 10646개) · 쇼핑몰",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-155",
+    "name": "마키노차야 블랙31",
+    "address": "서울특별시 송파구 올림픽로 300",
+    "lat": 37.5127149,
+    "lng": 127.102435,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "뷔페 식당"
+    ],
+    "description": "★ 4.0 (리뷰 32개) · 뷔페 식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-156",
+    "name": "맥도날드 서울교대점",
+    "address": "서울특별시 서초구 서초대로 316",
+    "lat": null,
+    "lng": null,
+    "phone": "02-6242-6400",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "패스트푸드점"
+    ],
+    "description": "★ 3.6 (리뷰 799개) · 패스트푸드점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-157",
+    "name": "모구모구과자점 인 신당",
+    "address": "서울특별시 중구 흥인동 퇴계로81길 7-11",
+    "lat": 37.5659031,
+    "lng": 127.0174056,
+    "phone": "050-71389-7962",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "디저트 전문점"
+    ],
+    "description": "★ 4.6 (리뷰 21개) · 디저트 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-158",
+    "name": "무월 여의도점 / Muwol Yeouido / 舞月 汝矣岛店 / ムウォル 汝矣島店",
+    "address": "서울특별시 영등포구 여의동 여의대로 70 원센티넬 206호",
+    "lat": 37.5248233,
+    "lng": 126.9241889,
+    "phone": "02-6990-0730",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 5.0 (리뷰 109개) · 한식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-159",
+    "name": "배스킨라빈스 신림점",
+    "address": "서울특별시 관악구 신림동 신림로 311",
+    "lat": 37.4821057,
+    "lng": 126.9296521,
+    "phone": "02-872-9417",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "아이스크림 가게"
+    ],
+    "description": "★ 4.1 (리뷰 238개) · 아이스크림 가게",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-160",
+    "name": "버터베이커리",
+    "address": "서울특별시 마포구 동교로 226",
+    "lat": null,
+    "lng": null,
+    "phone": "02-332-2642",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.6 (리뷰 112개) · 제과점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-161",
+    "name": "봉땅",
+    "address": "서울특별시 송파구 송파1동 백제고분로41길 42-8",
+    "lat": 37.5096244,
+    "lng": 127.1061749,
+    "phone": "010-8821-7769",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.2 (리뷰 100개) · 커피숍/커피 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-162",
+    "name": "붓처스컷 도산",
+    "address": "서울특별시 강남구 신사동 623-13",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "아메리칸 레스토랑"
+    ],
+    "description": "아메리칸 레스토랑",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-163",
+    "name": "블리스라운드 역삼본점",
+    "address": "서울특별시 강남구 테헤란로25길 7 1 층",
+    "lat": null,
+    "lng": null,
+    "phone": "02-563-1144",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.2 (리뷰 150개) · 제과점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-164",
+    "name": "샤넬 화장품 - 신세계백화점 강남점",
+    "address": "서울특별시 서초구 신반포로 176",
+    "lat": 37.5049978,
+    "lng": 127.0042296,
+    "phone": "02-3479-1704",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "미용용품점"
+    ],
+    "description": "★ 4.2 (리뷰 14560개) · 미용용품점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-165",
+    "name": "서브웨이 삼전역점",
+    "address": "서울특별시 송파구 백제고분로 197",
+    "lat": 37.5043427,
+    "lng": 127.0887534,
+    "phone": "02-415-5141",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "샌드위치 가게"
+    ],
+    "description": "★ 4.2 (리뷰 9개) · 샌드위치 가게",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-166",
+    "name": "서울원당초등학교",
+    "address": "서울특별시 관악구 봉천로 505",
+    "lat": 37.4812679,
+    "lng": 126.9557411,
+    "phone": "02-877-4940",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "초등학교"
+    ],
+    "description": "초등학교",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-167",
+    "name": "성수",
+    "address": "서울특별시",
+    "lat": 37.544577,
+    "lng": 127.055991,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "지하철역"
+    ],
+    "description": "★ 3.9 (리뷰 106개) · 지하철역",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-168",
+    "name": "쇼촬땐 (小串店)",
+    "address": "서울특별시 영등포구 대림제3동 710-9",
+    "lat": 37.4951255,
+    "lng": 126.8992848,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.1 (리뷰 165개) · 음식점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-169",
+    "name": "시마스시 용산아이파크몰점",
+    "address": "서울특별시 용산구 한강대로23길 55 아이파크몰 6층",
+    "lat": 37.52939,
+    "lng": 126.9650925,
+    "phone": "02-2012-0628",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "회전초밥집"
+    ],
+    "description": "★ 3.3 (리뷰 28개) · 회전초밥집",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-170",
+    "name": "시오팡야 광화문D타워점",
+    "address": "서울특별시 종로구 종로3길 17 1층 105호",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71430-8166",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일본식 제과점"
+    ],
+    "description": "★ 4.5 (리뷰 13개) · 일본식 제과점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-171",
+    "name": "신류",
+    "address": "서울특별시 용산구 한강대로 100 아모레퍼시픽 지하 1층",
+    "lat": 37.528799,
+    "lng": 126.9687269,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "★ 4.0 (리뷰 24개) · 중국 음식점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-172",
+    "name": "아웃백스테이크하우스 잠실점",
+    "address": "서울특별시 송파구 송파대로 466",
+    "lat": null,
+    "lng": null,
+    "phone": "02-418-4071",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "스테이크 전문점"
+    ],
+    "description": "★ 4.1 (리뷰 2367개) · 스테이크 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-173",
+    "name": "애슐리퀸즈 던던 동대문점",
+    "address": "서울특별시 중구 을지로 264",
+    "lat": null,
+    "lng": null,
+    "phone": "050-71342-2798",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "뷔페 식당"
+    ],
+    "description": "★ 4.3 (리뷰 24개) · 뷔페 식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-174",
+    "name": "여리빈네일 신림점 yeoribin nail sillim",
+    "address": "서울특별시 관악구 신림로 307 3층",
+    "lat": null,
+    "lng": null,
+    "phone": "070-8057-7601",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "네일샵"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 네일샵",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-175",
+    "name": "오레노 야끼 종로점",
+    "address": "서울특별시 종로구 우정국로 45-27 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "010-3756-0575",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일식당 및 일정식집"
+    ],
+    "description": "★ 4.4 (리뷰 53개) · 일식당 및 일정식집",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-176",
+    "name": "오레노라멘 롯데월드몰점",
+    "address": "서울특별시 송파구 올림픽로 300",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일본라면 전문식당"
+    ],
+    "description": "★ 4.8 (리뷰 45개) · 일본라면 전문식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-177",
+    "name": "오복수산참치 여의도점",
+    "address": "서울특별시 영등포구 의사당대로 83",
+    "lat": 37.523335,
+    "lng": 126.9234309,
+    "phone": "02-783-9988",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일본 음식점"
+    ],
+    "description": "★ 4.3 (리뷰 247개) · 일본 음식점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-178",
+    "name": "오준이네감자탕 신용산점",
+    "address": "서울특별시 용산구 한강대로 120 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "02-6958-8111",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "고기 요리 전문점"
+    ],
+    "description": "★ 4.0 (리뷰 87개) · 고기 요리 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-179",
+    "name": "올드페리도넛 가로수길점",
+    "address": "서울특별시 강남구 강남대로162길 35 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "02-549-2588",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "도넛 전문점"
+    ],
+    "description": "★ 4.5 (리뷰 89개) · 도넛 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-180",
+    "name": "올드페리도넛 용산아이파크몰점",
+    "address": "서울특별시 용산구 한강대로23길 55 4층",
+    "lat": null,
+    "lng": null,
+    "phone": "02-2012-0478",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "도넛 전문점"
+    ],
+    "description": "★ 4.1 (리뷰 15개) · 도넛 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-181",
+    "name": "용산전자랜드",
+    "address": "서울특별시 용산구 청파로 74",
+    "lat": null,
+    "lng": null,
+    "phone": "02-707-4700",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "쇼핑몰"
+    ],
+    "description": "★ 3.8 (리뷰 1702개) · 쇼핑몰",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-182",
+    "name": "우디집",
+    "address": "서울특별시 강남구 압구정로46길 32",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.3 (리뷰 40개) · 커피숍/커피 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-183",
+    "name": "위글위글집 도산",
+    "address": "서울특별시 강남구 언주로168길 31",
+    "lat": 37.5260826,
+    "lng": 127.0362786,
+    "phone": "050-71340-2057",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "선물 가게"
+    ],
+    "description": "★ 5.0 (리뷰 11471개) · 선물 가게",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-184",
+    "name": "은희네온집닭떡볶이",
+    "address": "서울특별시 동작구 상도제1동 450-2번지 미르하우스 1층",
+    "lat": 37.5024016,
+    "lng": 126.9509256,
+    "phone": "02-816-4529",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "떡볶이 전문점"
+    ],
+    "description": "★ 4.4 (리뷰 94개) · 떡볶이 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-185",
+    "name": "이가네양꼬치 강남구청역점",
+    "address": "서울특별시 강남구 언주로134길 15",
+    "lat": null,
+    "lng": null,
+    "phone": "02-518-1812",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.7 (리뷰 3개) · 음식점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-186",
+    "name": "이마트 양재점",
+    "address": "서울특별시 서초구 매헌로 16",
+    "lat": null,
+    "lng": null,
+    "phone": "02-6040-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.1 (리뷰 2823개) · 대형 슈퍼마켓",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-187",
+    "name": "이마트 월계점",
+    "address": "서울특별시 노원구 마들로3길 15",
+    "lat": null,
+    "lng": null,
+    "phone": "02-2092-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.2 · 대형 슈퍼마켓",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-188",
+    "name": "이치 서울 ㅣ ichi seoul",
+    "address": "서울특별시 강남구 강남대로158길 21 2층",
+    "lat": 37.5192314,
+    "lng": 127.0205123,
+    "phone": "070-4647-2279",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 3.9 (리뷰 53개) · 카페",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-189",
+    "name": "조가네갑오징어 사당점",
+    "address": "서울특별시 동작구 남부순환로271길 24 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "02-3472-0108",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "해산물 요리 전문식당"
+    ],
+    "description": "★ 3.9 (리뷰 554개) · 해산물 요리 전문식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-190",
+    "name": "차선책 압구정점",
+    "address": "서울특별시 강남구 선릉로155길 14",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.7 (리뷰 14개) · 커피숍/커피 전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-191",
+    "name": "참새방앗간",
+    "address": "서울특별시 영등포구 당산동6가 당산로48길 15",
+    "lat": null,
+    "lng": null,
+    "phone": "02-2671-0498",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "술집"
+    ],
+    "description": "★ 3.6 (리뷰 711개) · 술집",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-192",
+    "name": "청기와타운 왕십리점 ㅣChungkiwa town Wangsimniㅣ Wangsimni Korean BBQ ㅣ カルビグルメㅣ ワンシムニグルメ ㅣ 往十里美食店",
+    "address": "서울특별시 성동구 왕십리광장로 17 1층 C-04호",
+    "lat": 37.5612886,
+    "lng": 127.038382,
+    "phone": "050-71375-3504",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "숯불구이",
+      "바베큐전문점"
+    ],
+    "description": "★ 4.9 (리뷰 113개) · 숯불구이/바베큐전문점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-193",
+    "name": "태극당",
+    "address": "서울특별시 중구 장충동 동호로24길 7",
+    "lat": 37.5595093,
+    "lng": 127.0050347,
+    "phone": "02-2279-3152",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.2 (리뷰 3861개) · 제과점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-194",
+    "name": "피그인더가든 선릉점",
+    "address": "서울특별시 강남구 테헤란로 424",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [],
+    "description": "★ 4.2 (리뷰 30개)",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-195",
+    "name": "훈장골 영등포점",
+    "address": "서울특별시 영등포구 신길동 192-188",
+    "lat": 37.5117142,
+    "lng": 126.9132965,
+    "phone": "02-844-9492",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.0 (리뷰 621개) · 한식당",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-196",
+    "name": "CU 신천올림픽점",
+    "address": "서울특별시 송파구 백제고분로9길 14",
+    "lat": 37.509289,
+    "lng": 127.0806961,
+    "phone": "02-424-9776",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "편의점"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 편의점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-197",
+    "name": "GS25 한티역점",
+    "address": "서울특별시 강남구 도곡로 325",
+    "lat": 37.4961785,
+    "lng": 127.0515117,
+    "phone": "080-999-5425",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "편의점"
+    ],
+    "description": "★ 3.0 (리뷰 2개) · 편의점",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-198",
+    "name": "the belle spa 더벨스파 현대시티아울렛 동대문점",
+    "address": "서울특별시 중구 지하1층 더벨스파",
+    "lat": 37.5686896,
+    "lng": 127.0078892,
+    "phone": "050-71421-2132",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "스파"
+    ],
+    "description": "★ 4.2 (리뷰 1602개) · 스파",
+    "region": "서울특별시"
+  },
+  {
+    "id": "shop-199",
+    "name": "부부제과",
+    "address": "성남시",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "제과점",
+    "region": "성남시"
+  },
+  {
+    "id": "shop-200",
+    "name": "헬로에스프레소",
+    "address": "안산시",
+    "lat": null,
+    "lng": null,
+    "phone": "031-405-5047",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.5 (리뷰 12개) · 카페",
+    "region": "안산시"
+  },
+  {
+    "id": "shop-201",
+    "name": "차이시앙",
+    "address": "여수시",
+    "lat": 34.7539907,
+    "lng": 127.6562646,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "중국 음식점"
+    ],
+    "description": "★ 4.5 (리뷰 80개) · 중국 음식점",
+    "region": "여수시"
+  },
+  {
+    "id": "shop-202",
+    "name": "도깨비떡방본점",
+    "address": "울산광역시 동구 화정동 번지 1층 861-9",
+    "lat": 35.4942549,
+    "lng": 129.4209702,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "떡집"
+    ],
+    "description": "떡집",
+    "region": "울산광역시"
+  },
+  {
+    "id": "shop-203",
+    "name": "창원카페",
+    "address": "의창구 대원동 78번지 창원시 경상남도 KR",
+    "lat": 35.2284487,
+    "lng": 128.6506542,
+    "phone": "055-270-0795",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 3.4 (리뷰 5개) · 카페",
+    "region": "의창구"
+  },
+  {
+    "id": "shop-204",
+    "name": "가온당",
+    "address": "인천광역시 미추홀구 인주대로 380 2 ㅡㅇ",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.4 (리뷰 7개) · 커피숍/커피 전문점",
+    "region": "인천광역시"
+  },
+  {
+    "id": "shop-205",
+    "name": "노브랜드버거 인천완정역점",
+    "address": "인천광역시 서구 검단4동 원당대로 660",
+    "lat": 37.5932856,
+    "lng": 126.674308,
+    "phone": "032-567-8565",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "햄버거 전문점"
+    ],
+    "description": "★ 4.2 (리뷰 74개) · 햄버거 전문점",
+    "region": "인천광역시"
+  },
+  {
+    "id": "shop-206",
+    "name": "롯데리아 인천계산점",
+    "address": "인천광역시 계양구 경명대로 1049",
+    "lat": null,
+    "lng": null,
+    "phone": "032-543-3300",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "햄버거 전문점"
+    ],
+    "description": "★ 3.8 (리뷰 292개) · 햄버거 전문점",
+    "region": "인천광역시"
+  },
+  {
+    "id": "shop-207",
+    "name": "배스킨라빈스 인천임학역",
+    "address": "인천광역시 계양구 임학동 10-7",
+    "lat": 37.5456442,
+    "lng": 126.7388824,
+    "phone": "032-554-1312",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.2 (리뷰 24개) · 음식점",
+    "region": "인천광역시"
+  },
+  {
+    "id": "shop-208",
+    "name": "엔터파크 7",
+    "address": "인천광역시 부평구 부평동 201-9",
+    "lat": null,
+    "lng": null,
+    "phone": "070-7720-0310",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "오락실"
+    ],
+    "description": "★ 4.6 (리뷰 88개) · 오락실",
+    "region": "인천광역시"
+  },
+  {
+    "id": "shop-209",
+    "name": "월드킹 인천계양점",
+    "address": "인천광역시 계양구 효성1동 63",
+    "lat": null,
+    "lng": null,
+    "phone": "032-542-5254",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "어린이 놀이방"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 어린이 놀이방",
+    "region": "인천광역시"
+  },
+  {
+    "id": "shop-210",
+    "name": "GS더프레시 검단신도시점",
+    "address": "인천광역시 서구 원당동 537-2",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "상점"
+    ],
+    "description": "상점",
+    "region": "인천광역시"
+  },
+  {
+    "id": "shop-211",
+    "name": "꿀꿀진순대국석촌점",
+    "address": "일산빌딩 석촌동 번지 1층 294-7 KR 서울특별시 송파구 101호",
+    "lat": 37.5019163,
+    "lng": 127.1083784,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.4 (리뷰 15개) · 음식점",
+    "region": "일산빌딩"
+  },
+  {
+    "id": "shop-212",
+    "name": "롯데마트 여천점",
+    "address": "전라남도 여수시 무선로 187",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "식료품점"
+    ],
+    "description": "★ 4.4 (리뷰 68개) · 식료품점",
+    "region": "전라남도"
+  },
+  {
+    "id": "shop-213",
+    "name": "마제양과자점",
+    "address": "전라남도 목포시 평화로 10 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "제과점",
+    "region": "전라남도"
+  },
+  {
+    "id": "shop-214",
+    "name": "목포프랑스베이커리",
+    "address": "전라남도 무안군 삼향읍 대죽동로16번길 15 1층 112호",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 5.0 (리뷰 2개) · 제과점",
+    "region": "전라남도"
+  },
+  {
+    "id": "shop-215",
+    "name": "서울깍두기 전남도청점",
+    "address": "전라남도 무안군 삼향읍 후광대로 292",
+    "lat": null,
+    "lng": null,
+    "phone": "061-281-7700",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식당"
+    ],
+    "description": "★ 4.2 (리뷰 10개) · 한식당",
+    "region": "전라남도"
+  },
+  {
+    "id": "shop-216",
+    "name": "우동이완성되다목포평화광장점",
+    "address": "전라남도 목포시 평화로 53-2 1층",
+    "lat": null,
+    "lng": null,
+    "phone": "061-282-2000",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일식당 및 일정식집"
+    ],
+    "description": "일식당 및 일정식집",
+    "region": "전라남도"
+  },
+  {
+    "id": "shop-217",
+    "name": "입면 메밀.",
+    "address": "전라남도 곡성군 입면 입면로 417-5",
+    "lat": 35.3007996,
+    "lng": 127.1814308,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "일본 음식점"
+    ],
+    "description": "★ 3.4 (리뷰 5개) · 일본 음식점",
+    "region": "전라남도"
+  },
+  {
+    "id": "shop-218",
+    "name": "프랭크커핀바 순천점",
+    "address": "전라남도 순천시 왕지4길 9-22",
+    "lat": 34.9685399,
+    "lng": 127.5268341,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.8 (리뷰 6개) · 커피숍/커피 전문점",
+    "region": "전라남도"
+  },
+  {
+    "id": "shop-219",
+    "name": "고창황윤석도서관",
+    "address": "전북특별자치도 고창군 특별자치도 고창읍 월곡리 873",
+    "lat": 35.4345182,
+    "lng": 126.7131314,
+    "phone": "063-560-2420",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "도서관"
+    ],
+    "description": "★ 4.3 (리뷰 9개) · 도서관",
+    "region": "전북특별자치도"
+  },
+  {
+    "id": "shop-220",
+    "name": "광달이",
+    "address": "전북특별자치도 전주시 완산구 삼천동1가 287-23",
+    "lat": 35.7970755,
+    "lng": 127.1145756,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 5.0 (리뷰 1개) · 음식점",
+    "region": "전북특별자치도"
+  },
+  {
+    "id": "shop-221",
+    "name": "동해횟집",
+    "address": "전북특별자치도 전주시 덕진구 송천1동 송천중앙로 198",
+    "lat": 35.8646302,
+    "lng": 127.1221235,
+    "phone": "063-275-5505",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "회 전문점"
+    ],
+    "description": "★ 3.9 (리뷰 140개) · 회 전문점",
+    "region": "전북특별자치도"
+  },
+  {
+    "id": "shop-222",
+    "name": "명문제과",
+    "address": "전북특별자치도 남원시 하정동 용성로 56",
+    "lat": 35.4090003,
+    "lng": 127.3824982,
+    "phone": "063-632-0933",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.1 (리뷰 1300개) · 제과점",
+    "region": "전북특별자치도"
+  },
+  {
+    "id": "shop-223",
+    "name": "이바돔감자탕 전주점",
+    "address": "전북특별자치도 전주시 완산구 평화동2가 849-7 KR",
+    "lat": null,
+    "lng": null,
+    "phone": "063-226-4703",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "감자탕 전문점"
+    ],
+    "description": "★ 3.5 (리뷰 302개) · 감자탕 전문점",
+    "region": "전북특별자치도"
+  },
+  {
+    "id": "shop-224",
+    "name": "현대옥 전주본점",
+    "address": "전북특별자치도 전주시 완산구 화산천변2길 7-4",
+    "lat": 35.8197406,
+    "lng": 127.1171446,
+    "phone": "063-228-0020",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "해장국 전문점"
+    ],
+    "description": "★ 4.3 (리뷰 3532개) · 해장국 전문점",
+    "region": "전북특별자치도"
+  },
+  {
+    "id": "shop-225",
+    "name": "설빙 전주한옥마을점",
+    "address": "전주시",
+    "lat": 35.8169935,
+    "lng": 127.1523948,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 3.6 (리뷰 213개) · 커피숍/커피 전문점",
+    "region": "전주시"
+  },
+  {
+    "id": "shop-226",
+    "name": "누리마트",
+    "address": "좌동 1278-1번지 해운대구 부산광역시 KR",
+    "lat": null,
+    "lng": null,
+    "phone": "051-731-6331",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "식료품점"
+    ],
+    "description": "★ 4.3 (리뷰 3개) · 식료품점",
+    "region": "좌동"
+  },
+  {
+    "id": "shop-227",
+    "name": "한식왕비집 을지로점",
+    "address": "지하1층 B101 KR 서울특별시 중구 명동7길 21",
+    "lat": 37.5646777,
+    "lng": 126.9838194,
+    "phone": "02-3789-9991",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "한식 고기구이 레스토랑"
+    ],
+    "description": "★ 5.0 (리뷰 2320개) · 한식 고기구이 레스토랑",
+    "region": "지하1층"
+  },
+  {
+    "id": "shop-228",
+    "name": "공주집",
+    "address": "충청남도 천안시 서북구 성환읍 송덕2길 113",
+    "lat": null,
+    "lng": null,
+    "phone": "041-581-2037",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "★ 4.0 · 음식점",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-229",
+    "name": "구움당",
+    "address": "충청남도 서산시 동헌로 29",
+    "lat": 36.7754229,
+    "lng": 126.4526987,
+    "phone": "010-3929-3485",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.7 (리뷰 28개) · 제과점",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-230",
+    "name": "늘보부엌",
+    "address": "충청남도 천안시 동남구 먹거리2길 5",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "음식점"
+    ],
+    "description": "음식점",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-231",
+    "name": "신세계백화점 천안아산점",
+    "address": "충청남도 천안시 동남구 만남로 43",
+    "lat": 36.8195725,
+    "lng": 127.1561751,
+    "phone": "1588-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "백화점"
+    ],
+    "description": "★ 4.4 (리뷰 536개) · 백화점",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-232",
+    "name": "이마트 천안점",
+    "address": "충청남도 천안시 서북구 충무로 187",
+    "lat": null,
+    "lng": null,
+    "phone": "041-620-1234",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "대형 슈퍼마켓"
+    ],
+    "description": "★ 4.1 (리뷰 3347개) · 대형 슈퍼마켓",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-233",
+    "name": "충남제과제빵커피직업전문학교",
+    "address": "충청남도 천안시 서북구 불당대로 260 503-1호, 503-3호 하이렉스타운 503호",
+    "lat": 36.7995831,
+    "lng": 127.1244854,
+    "phone": "041-575-7760",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "직업전문학교"
+    ],
+    "description": "직업전문학교",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-234",
+    "name": "쿠웁 베이크샵",
+    "address": "충청남도 천안시 서북구 불당32길 6",
+    "lat": 36.8085364,
+    "lng": 127.1040225,
+    "phone": "010-4885-3219",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "디저트 전문점"
+    ],
+    "description": "디저트 전문점",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-235",
+    "name": "G로스터 신부점",
+    "address": "충청남도 천안시 동남구 신부동 472-9",
+    "lat": 36.8166207,
+    "lng": 127.1579374,
+    "phone": "041-576-2530",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.2 (리뷰 49개) · 카페",
+    "region": "충청남도"
+  },
+  {
+    "id": "shop-236",
+    "name": "울랄라 베이커리",
+    "address": "충청북도 청주시 흥덕구 대신로38번길 61-2",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "제과점"
+    ],
+    "description": "★ 4.5 (리뷰 61개) · 제과점",
+    "region": "충청북도"
+  },
+  {
+    "id": "shop-237",
+    "name": "No Brand",
+    "address": "충청북도 청주시 청원구 사천동 444-6 노브랜드 청주사천점",
+    "lat": null,
+    "lng": null,
+    "phone": "02-380-5111",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "할인 슈퍼마켓"
+    ],
+    "description": "★ 4.1 (리뷰 703개) · 할인 슈퍼마켓",
+    "region": "충청북도"
+  },
+  {
+    "id": "shop-238",
+    "name": "다농마트",
+    "address": "평택시",
+    "lat": null,
+    "lng": null,
+    "phone": "",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "식료품점"
+    ],
+    "description": "★ 3.8 (리뷰 299개) · 식료품점",
+    "region": "평택시"
+  },
+  {
+    "id": "shop-239",
+    "name": "써니베이커리",
+    "address": "KR 인천광역시 계양구 장제로 731 성웅빌딩 써니베이커리 103호",
+    "lat": null,
+    "lng": null,
+    "phone": "032-721-4357",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "카페"
+    ],
+    "description": "★ 4.3 (리뷰 6개) · 카페",
+    "region": "KR"
+  },
+  {
+    "id": "shop-240",
+    "name": "스타벅스 경상국립대점",
+    "address": "South Gyeongsang, 진주시 가좌동 492-5",
+    "lat": 35.1524035,
+    "lng": 128.1056479,
+    "phone": "1522-3232",
+    "hours": "",
+    "closedDays": [],
+    "priceRange": "",
+    "tags": [
+      "커피숍",
+      "커피 전문점"
+    ],
+    "description": "★ 4.0 (리뷰 588개) · 커피숍/커피 전문점",
+    "region": "South"
+  }
+]

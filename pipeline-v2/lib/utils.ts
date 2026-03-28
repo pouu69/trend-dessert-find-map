@@ -28,7 +28,8 @@ const REGION_MAP: ReadonlyMap<string, string> = new Map([
 ])
 
 export function extractRegion(address: string): string {
-  const first = address.split(/\s+/)[0]
+  // Strip invisible/non-Korean chars before the first Korean word
+  const first = address.trim().split(/\s+/)[0].replace(/[^\uAC00-\uD7A3a-zA-Z]/g, '')
   if (!first) return '기타'
   return REGION_MAP.get(first) ?? first
 }
@@ -46,9 +47,17 @@ export function isDuplicate(
 }
 
 const GENERIC_PATTERNS: readonly RegExp[] = [
+  // Generic cafe names
   /카페$/, /^.{1,3}카페$/, /동카페$/, /구카페$/, /시카페$/,
   /^디저트카페$/, /^베이커리카페$/, /^맛집카페$/,
+  // Navigation/search artifacts
   /^네이버/, /^검색 결과/, /위치찾기/,
+  // Trails, courses, parks (not shops)
+  /\d+코스/, /코스$/, /둘레길/, /충효길/, /산책로/, /등산로/,
+  // Addresses mistaken as names
+  /^\d+층$/, /^[가-힣]{1,3}구$/, /^[가-힣]{1,3}동$/, /^[가-힣]{1,3}로$/,
+  // Common non-shop fragments
+  /^길 찾기/, /^지도$/, /^위치$/, /^주소$/,
 ]
 
 export function isGenericName(name: string): boolean {
